@@ -98,6 +98,64 @@ ol, ul {
     background: none;
 }
 
+.main-header_account, .main-header_nav-dropdown {
+    float: right;
+}
+
+.hero-header_nav .header-nav_item {
+    display: inline-block;
+    margin-right: 2px;
+}
+
+.u-space-r2 {
+    margin-right: 12px!important;
+}
+
+.u-space-r0 {
+    margin-right: 0!important;
+}
+
+.header-nav_button, a.header-nav_button {
+    background: transparent;
+    box-shadow: none;
+    border-radius: 4px;
+    border: 2px solid #fff;
+    margin-top: -2px;
+    padding: 7px 24px 8px;
+}
+
+a.ybtn {
+    text-decoration: none!important;
+}
+
+.ybtn {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    cursor: pointer;
+    border: 1px solid;
+    font-weight: 700;
+    text-align: center;
+    user-select: none;
+    font-size: 14px;
+    line-height: 1.28571em;
+    border-color: #ccc;
+    color: #666;
+    background-color: #f7f7f7;
+    background: linear-gradient(#fff,#f7f7f7);
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    padding: 8px 19px 9px;
+    border-radius: 3px;
+}
+
+.ybtn--primary, .ybtn-primary {
+  color: #fff;
+  border-color: #8d0005;
+  box-shadow: 0 1px 1px rgba(0,0,0,.3);
+  background-color: #d90007;
+  background: linear-gradient(#d90007,#c91400);
+}
+
 .homepage-hero_logo {
     background-image: url(../../images/yelp_logo.png);
     background-size: 160px 80px;
