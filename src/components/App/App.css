@@ -45,12 +45,6 @@
   width: 100%;
 }
 
-.arrange_unit {
-  box-sizing: border-box;
-  display: table-cell;
-  vertical-align: top;
-}
-
 .nowrap {
   white-space: nowrap;
 }
@@ -181,6 +175,320 @@ a.ybtn {
   text-indent: -1000em;
 }
 
+/* form */
+.u-space-b0 {
+  margin-bottom: 0 !important;
+}
+.yform {
+  margin-bottom: 18px;
+}
+
+.arrange--equal {
+  display: flex;
+}
+
+.arrange {
+  display: table;
+  min-width: 100%;
+  table-layout: auto;
+}
+
+.arrange--equal > .arrange_unit {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  display: block;
+}
+
+.arrange_unit {
+  box-sizing: border-box;
+  display: table-cell;
+  vertical-align: top;
+}
+
+.main-search_pseudo-input--action, .main-search_suggestions-field {
+  position: relative;
+}
+
+.business-search-form_input--find, .yform .business-search-form_input--find {
+  border-radius: 4px 0 0 4px;
+  position: relative;
+}
+
+.business-search-form_input, .yform .business-search-form_input {
+  padding: 11px;
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+  background: #fff;
+}
+
+.business-search-form_input, .business-search-form_input-field, .yform .business-search-form_input, .yform .business-search-form_input-field {
+  font-size: 18px;
+}
+
+.yform .pseudo-input {
+  cursor: text;
+  position: relative;
+  overflow: hidden;
+}
+
+.yform .pseudo-input, .yform [type="date"], .yform [type="email"], .yform [type="number"], .yform [type="password"], .yform [type="tel"], .yform [type="text"], .yform [type="url"], .yform select, .yform textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 5px 9px;
+  background: #fff;
+  border: 1px solid #999;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 1.29em;
+}
+
+.yform label, .yform legend {
+  display: inline-block;
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+
+.yform .pseudo-input {
+  cursor: text;
+}
+
+.business-search-form_input--find::after, .yform .business-search-form_input--find::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 0;
+  bottom: 8px;
+  width: 1px;
+  background-color: #ccc;
+}
+
+.business-search-form_input-text, .yform .business-search-form_input-text {
+  margin-right: 12px;
+  color: #666;
+}
+
+.yform .pseudo-input_text {
+  float: left;
+  margin-right: 5px;
+  font-weight: 700;
+  color: #333;
+  cursor: default;
+  user-select: none;
+}
+
+.yform .pseudo-input_field-holder {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+.yform .pseudo-input.focused input, .yform .pseudo-input.focused textarea, .yform .pseudo-input input, .yform .pseudo-input input:focus, .yform .pseudo-input textarea, .yform .pseudo-input textarea:focus {
+  margin: 0;
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+  background: none;
+  padding: 2px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.business-search-form_input, .business-search-form_input-field, .yform .business-search-form_input, .yform .business-search-form_input-field {
+  font-size: 18px;
+}
+
+.yform .pseudo-input_field {
+  width: 100%;
+  vertical-align: baseline !important;
+  padding: 0 !important;
+}
+
+.arrange {
+  display: table;
+  min-width: 100%;
+  table-layout: auto;
+}
+
+.main-search_pseudo-input--action, .main-search_suggestions-field {
+  position: relative;
+}
+
+.business-search-form_input, .yform .business-search-form_input {
+  padding: 11px;
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+  background: #fff;
+}
+
+.business-search-form_input, .business-search-form_input-field, .yform .business-search-form_input, .yform .business-search-form_input-field {
+  font-size: 18px;
+}
+
+.yform .pseudo-input {
+  cursor: text;
+  position: relative;
+  overflow: hidden;
+}
+
+.yform .pseudo-input, .yform [type="date"], .yform [type="email"], .yform [type="number"], .yform [type="password"], .yform [type="tel"], .yform [type="text"], .yform [type="url"], .yform select, .yform textarea {
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  *width: 90%;
+  margin: 0 0 18px;
+  padding: 5px 9px;
+  background: #fff;
+  border: 1px solid #999;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 1.28571em;
+  line-height: 1.29em;
+}
+
+.yform label, .yform legend {
+  display: inline-block;
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+
+.yform .pseudo-input {
+  cursor: text;
+}
+
+.business-search-form_input-text, .yform .business-search-form_input-text {
+  margin-right: 12px;
+  color: #666;
+}
+
+.yform .pseudo-input_text {
+  float: left;
+  margin-right: 5px;
+  font-weight: 700;
+  color: #333;
+  cursor: default;
+  user-select: none;
+}
+
+.yform .pseudo-input_field-holder {
+  display: block;
+  overflow: hidden;
+}
+
+.yform .pseudo-input.focused input, .yform .pseudo-input.focused textarea, .yform .pseudo-input input, .yform .pseudo-input input:focus, .yform .pseudo-input textarea, .yform .pseudo-input textarea:focus {
+  margin: 0;
+  border: 0;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: none;
+  padding: 2px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.business-search-form_input, .business-search-form_input-field, .yform .business-search-form_input, .yform .business-search-form_input-field {
+  font-size: 18px;
+}
+
+.yform .pseudo-input_field {
+  width: 100%;
+  vertical-align: baseline !important;
+  padding: 0 !important;
+}
+
+.business-search-form_button, .yform .ybtn.business-search-form_button {
+  border-radius: 0 4px 4px 0;
+  border: 0;
+  background: #d32323;
+  padding: 14px 20px 13px;
+  box-shadow: none;
+}
+
+ybtn--small:not(.ybtn--social), .ybtn-small:not(.ybtn--social) {
+  padding: 5px 8px;
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+.ybtn--primary, .ybtn-primary {
+  color: #fff;
+  border-color: #8d0005;
+  box-shadow: 0 1px 1px rgba(0,0,0,.3);
+  background-color: #d90007;
+  background: linear-gradient(#d90007,#c91400);
+}
+
+button {
+  overflow: visible;
+}
+
+.ybtn .icon.icon--size-24 {
+  margin: -12px 0;
+}
+
+.icon--currentColor, .icon--hover-currentColor:focus, .icon--hover-currentColor:hover {
+  fill: currentColor;
+}
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -.1em;
+  fill: #666;
+}
+
+.icon, svg:not(:root) {
+  overflow: hidden;
+}
+
+.ybtn--primary, .ybtn-primary {
+  color: #fff;
+}
+
+.icon::before {
+  background: none;
+}
+
+.icon::before {
+  position: absolute;
+  display: block;
+  left: 0;
+}
+
+.icon::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.icon_svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.icon_amp-svg, .icon_svg {
+  fill: inherit;
+  display: block;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* App */
 .App {
   text-align: center;
 }
