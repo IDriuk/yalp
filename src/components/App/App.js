@@ -6,6 +6,8 @@ class App extends Component {
     return (
       <div className="y-container homepage-hero">
         <div className="y-container_content">
+
+
           <div className="hero-header">
             <div className="arrange arrange--18">
               <div className="arrange_unit arrange_unit--fill">
@@ -35,6 +37,15 @@ class App extends Component {
               </div>
             </div>
           </div>
+
+          <div className="homepage-hero_inner">
+            <div className="u-text-centered">
+              <h1 className="homepage-hero_logo">
+                <a href="/">Yalp</a>
+              </h1>
+            </div>
+          </div>
+
         </div>
       </div>
     );
