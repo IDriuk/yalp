@@ -183,6 +183,27 @@ class App extends Component {
               </li>
             </ul>
 
+            <div className="u-text-centered homepage-hero_biz u-size-full">
+              <div className="business-link-hovercard js-business-link-hovercard business-link-hovercard--strong business-link-hovercard--inline">
+                <span className="business-link-hovercard_business-link js-business-link">
+                  <a className="biz-name js-analytics-click">
+                    <span>Amaranth Bakery & Cafe</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+
+            <div className="u-text-centered homepage-hero_photo-owner u-size-full">
+              <div>
+                <p>
+                  Photo by
+                  <a className="homepage-hero_photo-owner-link">
+                    <strong> Jen K.</strong>
+                  </a>
+                </p>
+              </div>
+            </div>
+
           </div>
 
         </div>

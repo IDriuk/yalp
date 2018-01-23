@@ -534,6 +534,47 @@ button {
     font-weight: 700;
 }
 
+/* business link */
+.u-size-full {
+    width: 100%!important;
+    box-sizing: border-box!important;
+}
+
+.u-text-centered {
+    text-align: center!important;
+}
+
+.business-link-hovercard--inline {
+    display: inline;
+}
+
+.homepage-hero .business-link-hovercard_business-link .biz-name {
+    color: #fff;
+}
+
+.business-link-hovercard--strong .biz-name {
+    font-weight: 700;
+}
+
+.u-size-full {
+    width: 100%!important;
+    -webkit-box-sizing: border-box!important;
+    -moz-box-sizing: border-box!important;
+    box-sizing: border-box!important;
+}
+
+.u-text-centered {
+    text-align: center!important;
+}
+
+.homepage-hero_photo-owner, .homepage-hero_photo-owner-link {
+    color: #fff;
+}
+
+.hero_photo-owner-link {
+    color: #fff;
+}
+
 /* App */
 .App {
   text-align: center;
