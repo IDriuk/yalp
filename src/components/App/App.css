@@ -488,6 +488,52 @@ button {
   bottom: 0;
 }
 
+/* categories */
+.homepage-hero_categories {
+    padding-bottom: 168px;
+}
+
+.text-centered {
+    text-align: center;
+}
+
+.homepage-hero_category {
+    display: inline-block;
+    padding: 0 12px;
+}
+
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -.1em;
+    fill: #666;
+}
+
+.icon--hover-inverse:focus, .icon--hover-inverse:hover, .icon--inverse {
+    fill: #fff;
+}
+
+.icon_svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.icon_amp-svg, .icon_svg {
+    fill: inherit;
+    display: block;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.homepage-hero_link {
+    color: #fff;
+    font-weight: 700;
+}
+
 /* App */
 .App {
   text-align: center;
