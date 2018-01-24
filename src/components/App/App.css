@@ -233,23 +233,16 @@ a.ybtn {
   overflow: hidden;
 }
 
-.yform .pseudo-input, .yform [type="date"], .yform [type="email"], .yform [type="number"], .yform [type="password"], .yform [type="tel"], .yform [type="text"], .yform [type="url"], .yform select, .yform textarea {
-  display: block;
-  box-sizing: border-box;
-  width: 100%;
-  margin: 0 0 18px;
-  padding: 5px 9px;
-  background: #fff;
-  border: 1px solid #999;
-  border-radius: 3px;
-  font-size: 14px;
-  line-height: 1.29em;
-}
-
 .yform label, .yform legend {
   display: inline-block;
   font-weight: 700;
   margin: 0 0 6px;
+}
+
+.yform label, .yform legend {
+    display: inline-block;
+    font-weight: 700;
+    margin: 0 0 6px;
 }
 
 .yform .pseudo-input {
@@ -333,23 +326,6 @@ a.ybtn {
   cursor: text;
   position: relative;
   overflow: hidden;
-}
-
-.yform .pseudo-input, .yform [type="date"], .yform [type="email"], .yform [type="number"], .yform [type="password"], .yform [type="tel"], .yform [type="text"], .yform [type="url"], .yform select, .yform textarea {
-  display: block;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100%;
-  *width: 90%;
-  margin: 0 0 18px;
-  padding: 5px 9px;
-  background: #fff;
-  border: 1px solid #999;
-  border-radius: 3px;
-  font-size: 14px;
-  line-height: 1.28571em;
-  line-height: 1.29em;
 }
 
 .yform label, .yform legend {
@@ -486,6 +462,34 @@ button {
   top: 0;
   right: 0;
   bottom: 0;
+}
+
+.arrange--equal {
+    display: flex;
+}
+
+.arrange--equal > .arrange_unit {
+    flex: 1;
+    min-width: 0;
+    min-height: 0;
+    display: block;
+}
+
+.arrange_unit {
+    box-sizing: border-box;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.yform .pseudo-input {
+    cursor: text;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 0 18px;
+    line-height: 1.29em;
 }
 
 /* categories */
