@@ -1,7 +1,11 @@
 {
-  "main.css": "static/css/main.a37a905b.css",
-  "main.css.map": "static/css/main.a37a905b.css.map",
-  "main.js": "static/js/main.52f2b110.js",
-  "main.js.map": "static/js/main.52f2b110.js.map",
+  "main.css": "static/css/main.b44c02dc.css",
+  "main.css.map": "static/css/main.b44c02dc.css.map",
+  "main.js": "static/js/main.2f7b9e1b.js",
+  "main.js.map": "static/js/main.2f7b9e1b.js.map",
+  "static\\media\\dryclean.png": "static/media/dryclean.8f8486bb.png",
+  "static\\media\\hotels.png": "static/media/hotels.b9245f29.png",
+  "static\\media\\massage.png": "static/media/massage.133089f9.png",
+  "static\\media\\movers.png": "static/media/movers.705be974.png",
   "static\\media\\top_photo.jpg": "static/media/top_photo.252051bf.jpg"
 }
