@@ -6,6 +6,11 @@ import hotels from '../../images/hotels.png';
 import dryclean from '../../images/dryclean.png';
 import massage from '../../images/massage.png';
 
+import bluestonelane from '../../images/bluestonelane.jpg';
+import kaya from '../../images/kaya.jpg';
+import pastapopup from '../../images/pastapopup.jpg';
+import stars from '../../images/stars.png';
+
 class App extends Component {
   render() {
     return (
@@ -271,6 +276,261 @@ class App extends Component {
             </div>
           </div>
         </div>
+
+        {/* hot and new */}
+        <div className="y-container">
+          <div className="y-container_content">
+            <div className="home-container home-container--first-top-short">
+
+              <div className="home-container_section home-container_section--top-long">
+                <h2 className="u-text-centered">Yelp San Francisco</h2>
+                <div className="location-bar">
+                  <div className="tab-nav-container">
+                    <ul className="tab-nav tab-nav--center">
+                      <li className="tab-nav_item">
+                        <a className="tab-link tab-link--nav">
+                          <span className="tab-link_label">New York</span>
+                        </a>
+                      </li>
+                      <li className="tab-nav_item">
+                        <a className="tab-link tab-link--nav">
+                          <span className="tab-link_label">San Jose</span>
+                        </a>
+                      </li>
+                      <li className="tab-nav_item">
+                        <a className="tab-link tab-link--nav">
+                          <span className="tab-link_label">Los Angeles</span>
+                        </a>
+                      </li>
+                      <li className="tab-nav_item">
+                        <a className="tab-link tab-link--nav">
+                          <span className="tab-link_label">Chicago</span>
+                        </a>
+                      </li>
+                      <li className="tab-nav_item">
+                        <a className="tab-link tab-link--nav">
+                          <span className="tab-link_label">Palo Alto</span>
+                        </a>
+                      </li>
+                      <li className="tab-nav_item">
+                        <a className="tab-link tab-link--nav">
+                          <span className="tab-link_label">Oakland</span>
+                        </a>
+                      </li>
+                      <li className="tab-nav_item">
+                        <a className="tab-link tab-link--nav">
+                          <span
+                            className="icon icon--18-search-small icon--currentColor icon--size-18 tab-link_icon tab-link_icon-wrap"
+                            style={{width: 18, height: 18}}
+                          >
+                            <svg className="icon_svg" id="18x18_search_small" height="100%" viewBox="0 0 18 18" width="100%">
+                              <path d="M15.913 14.224a1.324 1.324 0 0 0-.3-.466h.01l-3.378-3.376a5.49 5.49 0 0 0 .802-2.857 5.523 5.523 0 1 0-5.522 5.52 5.49 5.49 0 0 0 2.856-.8l3.37 3.368.006.003a1.364 1.364 0 0 0 .93.384C15.41 16 16 15.41 16 14.684c0-.163-.032-.317-.086-.46zM7.525 10.94a3.422 3.422 0 0 1-3.418-3.416 3.422 3.422 0 0 1 3.418-3.417 3.422 3.422 0 0 1 3.416 3.417 3.42 3.42 0 0 1-3.413 3.416z"></path>
+                            </svg>
+                          </span>
+                          <span className="tab-link_label">More Cities</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div className="home-container_section">
+                <h3 className="explore-city_title">Hot & New Businesses</h3>
+                <div className="arrange arrange--3-units arrange--30 arrange--wrap">
+                  <div className="arrange_unit">
+                    <div className="card business-passport-card">
+                      <div className="card_photo">
+                        <div
+                          className="photo-box photo-box--interactive photo-box--background"
+                          style={{backgroundImage: `url(${bluestonelane})`}}
+                        >
+                          <a className="photo-box_link">
+                            <img
+                              className="photo-box-img"
+                              alt="Bluestone Lane"
+                              height="400"
+                              width="600"
+                              src={bluestonelane}
+                            />
+                          </a>
+                        </div>
+                      </div>
+                      <div className="card_body">
+                        <div className="card_content">
+                          <h3 className="card_content-title--linked u-text-truncate">
+                            <div className="business-link-hovercard">
+                              <span className="business-link-hovercard_business-link">
+                                <a className="biz-name">
+                                  <span>Bluestone Lane</span>
+                                </a>
+                              </span>
+                            </div>
+                          </h3>
+                          <div className="biz-rating biz-rating-large clearfix">
+                            <div className="i-stars i-stars--regular-4-half rating-large">
+                              <img className="offscreen" height="303" src={stars} width="84" alt="4.5 star rating" />
+                            </div>
+                            <span className="review-count rating-qualifier">15 reviews</span>
+                          </div>
+                          <div className="price-category">
+                            <span className="bullet-after">
+                              <span className="business-attribute price-range">$$</span>
+                            </span>
+                            <span className="category-str-list">Coffee & Tea</span>
+                          </div>
+                          <div className="neighborhood u-text-truncate u-space-t1 u-space-b1">
+                            <span className="neighborhood-str-list">Financial District, SoMa</span>
+                          </div>
+                          <p className="business-passport-card_date-opened">
+                            <span
+                              className="icon icon--18-flame icon--size-18 icon--currentColor"
+                              style={{
+                                width: 18,
+                                height: 18
+                              }}
+                            >
+                              <svg className="icon_svg" id="18x18_flame" height="100%" viewBox="0 0 18 18" width="100%">
+                                <path d="M11.508 3.743c1.173 2.43-.465 2.27-.696 3.88C10.082 2.758 5.947 1.5 5.947 1.5c2.045 2.697-1.9 4.784-3.63 8.33-1.47 3.016 2.533 5.44 4.67 6.67-2.15-2.993-.563-5.02 1.612-6.793-.81 2.448.5 2.934 1.043 3.944.71-.31 1.028-1.3 1.1-1.79.954 1.31 1.465 2.97-.248 4.64 8.302-3.77 5.977-9.743 1.007-12.752z"></path>
+                              </svg>
+                            </span>
+                            Opened 7 weeks ago
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="arrange_unit">
+                    <div className="card business-passport-card">
+                      <div className="card_photo">
+                        <div className="photo-box photo-box--interactive photo-box--background" style={{backgroundImage: `url(${kaya})`}} >
+                          <a className="photo-box_link">
+                            <img
+                              className="photo-box-img"
+                              alt="Kaya"
+                              height="400"
+                              width="600"
+                              src={kaya}
+                            />
+                          </a>
+                        </div>
+                      </div>
+                      <div className="card_body">
+                        <div className="card_content">
+                          <h3 className="card_content-title--linked u-text-truncate">
+                            <div className="business-link-hovercard">
+                              <span className="business-link-hovercard_business-link">
+                                <a className="biz-name">
+                                  <span>Kaya</span>
+                                </a>
+                              </span>
+                            </div>
+                          </h3>
+                          <div className="biz-rating biz-rating-large clearfix">
+                            <div className="i-stars i-stars--regular-4-half rating-large">
+                              <img className="offscreen" height="303" src={stars} width="84" alt="4.5 star rating" />
+                            </div>
+                            <span className="review-count rating-qualifier">11 reviews</span>
+                          </div>
+                          <div className="price-category">
+                            <span className="bullet-after">
+                              <span className="business-attribute price-range">$$</span>
+                            </span>
+                            <span className="category-str-list">Caribbean</span>
+                          </div>
+                          <div className="neighborhood u-text-truncate u-space-t1 u-space-b1">
+                            <span className="neighborhood-str-list">Civic Center</span>
+                          </div>
+                          <p className="business-passport-card_date-opened">
+                            <span
+                              className="icon icon--18-flame icon--size-18 icon--currentColor"
+                              style={{
+                                width: 18,
+                                height: 18
+                              }}
+                            >
+                              <svg className="icon_svg" id="18x18_flame" height="100%" viewBox="0 0 18 18" width="100%">
+                                <path d="M11.508 3.743c1.173 2.43-.465 2.27-.696 3.88C10.082 2.758 5.947 1.5 5.947 1.5c2.045 2.697-1.9 4.784-3.63 8.33-1.47 3.016 2.533 5.44 4.67 6.67-2.15-2.993-.563-5.02 1.612-6.793-.81 2.448.5 2.934 1.043 3.944.71-.31 1.028-1.3 1.1-1.79.954 1.31 1.465 2.97-.248 4.64 8.302-3.77 5.977-9.743 1.007-12.752z"></path>
+                              </svg>
+                            </span>
+                            Opened 2 weeks ago
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="arrange_unit">
+                    <div className="card business-passport-card">
+                      <div className="card_photo">
+                        <div
+                          className="photo-box photo-box--interactive photo-box--background"
+                          style={{backgroundImage: `url(${pastapopup})`}}
+                        >
+                          <a className="photo-box_link">
+                            <img
+                              className="photo-box-img"
+                              alt="Pasta Pop-Up"
+                              height="400"
+                              width="600"
+                              src={pastapopup}
+                            />
+                          </a>
+                        </div>
+                      </div>
+                      <div className="card_body">
+                        <div className="card_content">
+                          <h3 className="card_content-title--linked u-text-truncate">
+                            <div className="business-link-hovercard">
+                              <span className="business-link-hovercard_business-link">
+                                <a className="biz-name">
+                                  <span>Pasta Pop-Up</span>
+                                </a>
+                              </span>
+                            </div>
+                          </h3>
+                          <div className="biz-rating biz-rating-large clearfix">
+                            <div className="i-stars i-stars--regular-4-half rating-large">
+                              <img className="offscreen" height="303" src={stars} width="84" alt="4.5 star rating" />
+                            </div>
+                            <span className="review-count rating-qualifier">32 reviews</span>
+                          </div>
+                          <div className="price-category">
+                            <span className="bullet-after">
+                              <span className="business-attribute price-range">$$</span>
+                            </span>
+                            <span className="category-str-list">Italian, Pop-Up Restaurants</span>
+                          </div>
+                          <div className="neighborhood u-text-truncate u-space-t1 u-space-b1">
+                            <span className="neighborhood-str-list">North Beach/Telegraph Hill</span>
+                          </div>
+                          <p className="business-passport-card_date-opened">
+                            <span
+                              className="icon icon--18-flame icon--size-18 icon--currentColor"
+                              style={{
+                                width: 18,
+                                height: 18
+                              }}
+                            >
+                              <svg className="icon_svg" id="18x18_flame" height="100%" viewBox="0 0 18 18" width="100%">
+                                <path d="M11.508 3.743c1.173 2.43-.465 2.27-.696 3.88C10.082 2.758 5.947 1.5 5.947 1.5c2.045 2.697-1.9 4.784-3.63 8.33-1.47 3.016 2.533 5.44 4.67 6.67-2.15-2.993-.563-5.02 1.612-6.793-.81 2.448.5 2.934 1.043 3.944.71-.31 1.028-1.3 1.1-1.79.954 1.31 1.465 2.97-.248 4.64 8.302-3.77 5.977-9.743 1.007-12.752z"></path>
+                              </svg>
+                            </span>
+                            Opened 6 weeks ago
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="u-space-t2 u-text-centered">
+                  <a className="explore-city_see-all">See more hot and new businesses</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
       </Fragment>
     );
   }
