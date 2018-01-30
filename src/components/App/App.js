@@ -531,6 +531,109 @@ class App extends Component {
           </div>
         </div>
 
+        {/* alpha and beta */}
+        <div className="y-container">
+          <div className="y-container_content">
+            <div className="home-container">
+              <div className="home-container_section">
+                <div className="clearfix layout-block layout-a">
+                  <div className="column column-alpha">
+                    <div>
+                      <div className="boy_title">
+                        Review of the Day
+                      </div>
+                      <div className="island island--light rotd">
+                        <div className="ypassport arrange arrange--12 u-space-b3">
+                          <div className="arrange_unit">
+                            <div className="photo-box pb-60s">
+                              <a>
+                                <img alt="Emily T." className="photo-box-img" height="60" width="60" src="https://s3-media3.fl.yelpcdn.com/photo/ESeXb2NVPZzYonGbOJzoEw/60s.jpg" />
+                              </a>
+                            </div>
+                          </div>
+                          <div className="arrange_unit arrange_unit--fill">
+                            <strong>
+                              <a className="user-display-name js-analytics-click">Emily T.</a>
+                            </strong>
+                            <ul className="user-passport-stats user-passport-stats--inline" >
+                              <li className="friend-count" >
+                                <span
+                                  style={{fill: '#f15c00', width: 18, height: 18}}
+                                  className="icon icon--18-friends icon--size-18">
+                                    <svg className="icon_svg" id="18x18_friends" height="100%" viewBox="0 0 18 18" width="100%">
+                                      <g>
+                                        <path d="M7.904 9.43l-2.098 4.697a.9.9 0 0 1-1.612 0L2.096 9.43a.902.902 0 0 1 .806-1.305h4.196c.67 0 1.105.705.806 1.305zM5 7.375a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"></path>
+                                        <path d="M15.904 9.43l-2.098 4.697a.89.89 0 0 1-.806.498.89.89 0 0 1-.806-.498L10.096 9.43a.902.902 0 0 1 .806-1.305h4.195c.67 0 1.106.705.807 1.305zM13 7.375a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" opacity=".502"></path>
+                                      </g>
+                                    </svg>
+                                  </span>
+                                <b>410</b>
+                              </li>
+                              <li className="review-count" >
+                                <span
+                                  className="icon icon--18-review icon--size-18"
+                                  style={{fill: '#f15c00', width: 18, height: 18}} >
+                                    <svg className="icon_svg" id="18x18_review" height="100%" viewBox="0 0 18 18" width="100%">
+                                      <path d="M13 3H5c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1.505 9.643l-2.526-1.55L6.526 12.7 7 9.934 5 7.977l2.766-.404L8.97 4.7l1.264 2.873L13 7.977l-2 1.957.495 2.71z"></path>
+                                    </svg>
+                                  </span>
+                                <b>250</b>
+                              </li>
+                              <li className="is-elite responsive-small-display-inline-block" >
+                                <a>Elite ’18</a>
+                              </li>
+                            </ul>
+                            <div className="rotd_text" >
+                              Wrote a review for
+                              <div className="business-link-hovercard business-link-hovercard--inline business-link-hovercard--strong">
+                                <span className="business-link-hovercard_business-link">
+                                  <a className="biz-name">
+                                    <span>Dynamo Donut & Coffee</span>
+                                  </a>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="badge-banner badge-banner--blue">
+                          Review of the Day
+                          <img
+                            src="https://s3-media1.fl.yelpcdn.com/assets/srv0/yelp_styleguide/8bb21835695e/assets/img/badge_banner_icons/40x40_rotd.png"
+                            className="badge-banner_img"
+                            width="40"
+                          />
+                        </div>
+                        <div className="u-space-t3 u-space-b3">
+                          <div className="biz-rating biz-rating-large clearfix">
+                            <div>
+                              <div className="i-stars i-stars--regular-4 rating-large">
+                                <img className="offscreen" height="303" width="84" alt="4.0 star rating" src="https://s3-media2.fl.yelpcdn.com/assets/srv0/yelp_design_web/9b34e39ccbeb/assets/img/stars/stars.png" />
+                              </div>
+                            </div>
+                          </div>
+                          <span className="rating-qualifier">11/5/2017</span>
+                        </div>
+                        <p className="rotd_comment-text">
+                          Time // Tried to come here on a Saturday around 2pm. Lesson learned: Come early before noon if you want the good donuts! By the time my bf and I arrived, they only had a few donuts of one flavor....the maple bacon apple.  Service // You order first at this small coffee shop looking window, first and then you can go inside and sit down. The front cashier was friendly enough.  Atmosphere // bright interior with small t...
+                          <a className="rotd_read-more">
+                            Continue reading
+                          </a>
+                        </p>
+                      </div>
+                      <p className="u-text-centered">
+                        <a className="boy_more-link">Read previous reviews</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div className="column column-beta"></div>
+                </div>
+              </div>
+              <div className="home-container_section home-container_section--top-long"></div>
+              <div className="home-container_section home-container_section--top-long"></div>
+            </div>
+          </div>
+        </div>
+
       </Fragment>
     );
   }

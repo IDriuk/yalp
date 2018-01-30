@@ -1123,7 +1123,7 @@ h3 a.biz-name  {
 }
 
 .i-stars {
-    background: url(https://s3-media2.fl.yelpcdn.com/assets/srv0/yelp_design_web/9b34e39ccbeb/assets/img/stars/stars.png) no-repeat;
+    background: url(../../images/stars.png) no-repeat;
     background-size: 132px 560px;
     display: inline-block;
     vertical-align: middle;
@@ -1233,8 +1233,6 @@ p {
     background-color: transparent;
     background-position: 0 0;
     background-repeat: no-repeat;
-    background-image: url(https://s3-media1.fl.yelpcdn.com/assets/srv0/svg_icons/df7aaeaa732a/assets/sprite.png);
-    background-image: -webkit-gradient(linear,left top,left bottom,from(transparent),to(transparent)),none;
     background-image: linear-gradient(transparent,transparent),none;
 }
 
