@@ -763,7 +763,161 @@ h3 {
 }
 
 /* hot and new */
+.home-container--first-top-short .home-container_section:first-child {
+    padding-top: 36px;
+}
 
+.u-text-centered {
+    text-align: center!important;
+}
+
+h2 {
+    word-wrap: break-word!important;
+    word-break: break-word!important;
+    overflow-wrap: break-word!important;
+    font-weight: 700;
+    margin-bottom: 6px;
+    font-size: 21px;
+    line-height: 1.28571em;
+    color: #d32323;
+}
+
+.location-bar {
+    border-bottom: 1px solid #ccc;
+}
+
+.tab-nav {
+    display: table;
+    margin: 0 0 -1px;
+    padding: 0;
+    list-style: none;
+    white-space: nowrap;
+}
+
+.tab-nav--center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.tab-nav_item {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.tab-link--nav {
+    color: #666;
+    padding: 0 12px;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+
+.tab-link {
+    display: block;
+    vertical-align: bottom;
+    line-height: 1;
+    white-space: nowrap;
+    outline: 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.tab-link--nav .tab-link_label {
+    line-height: 30px;
+}
+
+.tab-link_label {
+    display: inline-block;
+}
+
+.tab-link_label:before {
+    display: block;
+    font-weight: 700;
+    overflow: hidden;
+    visibility: hidden;
+    height: 0;
+    content: attr(title);
+}
+
+.tab-link--nav .tab-link_icon-wrap {
+    line-height: 30px;
+}
+
+.tab-link .icon {
+    top: 0;
+}
+
+.icon--currentColor {
+    fill: currentColor;
+}
+
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+.icon {
+    overflow: hidden;
+}
+
+.tab-link_icon {
+    padding-bottom: 2px;
+}
+
+@media (min-width: 0) {
+  .icon:before {
+      background: none;
+  }
+}
+
+.icon:before {
+    position: absolute;
+    display: block;
+    left: 0;
+    content: "";
+}
+
+.icon:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+.icon_svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.icon_svg {
+    fill: inherit;
+    display: block;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
 
 /* App */
 .App {
