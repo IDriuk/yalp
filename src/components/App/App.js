@@ -10,6 +10,12 @@ import bluestonelane from '../../images/bluestonelane.jpg';
 import kaya from '../../images/kaya.jpg';
 import pastapopup from '../../images/pastapopup.jpg';
 import stars from '../../images/stars.png';
+import rotd from '../../images/rotd.png';
+
+import photo_ESeXb2NVPZzYonGbOJzoEw_60s from '../../images/photo_ESeXb2NVPZzYonGbOJzoEw_60s.jpg';
+import HzFeDvDkWKsugW8ztN4lWg_90s from '../../images/HzFeDvDkWKsugW8ztN4lWg_90s.jpg';
+import BR0mnDHZy3j3RI_hRAMBmg from '../../images/BR0mnDHZy3j3RI_hRAMBmg.jpg';
+import yB8_l5v2e4Rs7rjgkm1WQ from '../../images/8yB8_l5v2e4Rs7rjgkm1WQ.jpg';
 
 class App extends Component {
   render() {
@@ -539,15 +545,15 @@ class App extends Component {
                 <div className="clearfix layout-block layout-a">
                   <div className="column column-alpha">
                     <div>
-                      <div className="boy_title">
+                      <h3 className="boy_title">
                         Review of the Day
-                      </div>
+                      </h3>
                       <div className="island island--light rotd">
                         <div className="ypassport arrange arrange--12 u-space-b3">
                           <div className="arrange_unit">
                             <div className="photo-box pb-60s">
                               <a>
-                                <img alt="Emily T." className="photo-box-img" height="60" width="60" src="https://s3-media3.fl.yelpcdn.com/photo/ESeXb2NVPZzYonGbOJzoEw/60s.jpg" />
+                                <img alt="Emily T." className="photo-box-img" height="60" width="60" src={photo_ESeXb2NVPZzYonGbOJzoEw_60s} />
                               </a>
                             </div>
                           </div>
@@ -588,7 +594,7 @@ class App extends Component {
                               <div className="business-link-hovercard business-link-hovercard--inline business-link-hovercard--strong">
                                 <span className="business-link-hovercard_business-link">
                                   <a className="biz-name">
-                                    <span>Dynamo Donut & Coffee</span>
+                                    <span> Dynamo Donut & Coffee</span>
                                   </a>
                                 </span>
                               </div>
@@ -599,7 +605,7 @@ class App extends Component {
                           Review of the Day
                           <img
                             alt="badge"
-                            src="https://s3-media1.fl.yelpcdn.com/assets/srv0/yelp_styleguide/8bb21835695e/assets/img/badge_banner_icons/40x40_rotd.png"
+                            src={rotd}
                             className="badge-banner_img"
                             width="40"
                           />
@@ -608,16 +614,16 @@ class App extends Component {
                           <div className="biz-rating biz-rating-large clearfix">
                             <div>
                               <div className="i-stars i-stars--regular-4 rating-large">
-                                <img className="offscreen" height="303" width="84" alt="4.0 star rating" src="https://s3-media2.fl.yelpcdn.com/assets/srv0/yelp_design_web/9b34e39ccbeb/assets/img/stars/stars.png" />
+                                <img className="offscreen" height="303" width="84" alt="4.0 star rating" src={stars} />
                               </div>
                             </div>
+                            <span className="rating-qualifier">11/5/2017</span>
                           </div>
-                          <span className="rating-qualifier">11/5/2017</span>
                         </div>
                         <p className="rotd_comment-text">
                           Time // Tried to come here on a Saturday around 2pm. Lesson learned: Come early before noon if you want the good donuts! By the time my bf and I arrived, they only had a few donuts of one flavor....the maple bacon apple.  Service // You order first at this small coffee shop looking window, first and then you can go inside and sit down. The front cashier was friendly enough.  Atmosphere // bright interior with small t...
                           <a className="rotd_read-more">
-                            Continue reading
+                             &nbsp; Continue reading
                           </a>
                         </p>
                       </div>
@@ -637,13 +643,14 @@ class App extends Component {
                                 <div className="media-block media-block--12">
                                   <div className="media-avatar">
                                     <div className="list-island_item-avatar">
-                                      <div style={{backgroundImage: `url(https://s3-media4.fl.yelpcdn.com/bphoto/HzFeDvDkWKsugW8ztN4lWg/90s.jpg)`}} className="photo-box photo-box--interactive photo-box--background">
+                                      <div style={{backgroundImage: `url(${HzFeDvDkWKsugW8ztN4lWg_90s})`}} className="photo-box photo-box--interactive photo-box--background">
                                         <a className="photo-box_link">
                                           <img
+                                            alt="img"
                                             className="photo-box-img"
                                             height="90"
                                             width="90"
-                                            src="https://s3-media4.fl.yelpcdn.com/bphoto/HzFeDvDkWKsugW8ztN4lWg/90s.jpg"
+                                            src={HzFeDvDkWKsugW8ztN4lWg_90s}
                                           />
                                         </a>
                                       </div>
@@ -658,7 +665,7 @@ class App extends Component {
                                     </p>
                                     <div className="list-island_item-owner">
                                       By
-                                      <a className="user-display-name">Annie Z.</a>
+                                      <a className="user-display-name"> Annie Z.</a>
                                     </div>
                                   </div>
                                 </div>
@@ -667,13 +674,14 @@ class App extends Component {
                                 <div className="media-block media-block--12">
                                   <div className="media-avatar">
                                     <div className="list-island_item-avatar">
-                                      <div style={{backgroundImage: `url(https://s3-media2.fl.yelpcdn.com/bphoto/BR0mnDHZy3j3RI_hRAMBmg/90s.jpg)`}} className="photo-box photo-box--interactive photo-box--background">
+                                      <div style={{backgroundImage: `url(${BR0mnDHZy3j3RI_hRAMBmg})`}} className="photo-box photo-box--interactive photo-box--background">
                                         <a className="photo-box_link">
                                           <img
+                                            alt="img"
                                             className="photo-box-img"
                                             height="90"
                                             width="90"
-                                            src="https://s3-media2.fl.yelpcdn.com/bphoto/BR0mnDHZy3j3RI_hRAMBmg/90s.jpg"
+                                            src={BR0mnDHZy3j3RI_hRAMBmg}
                                           />
                                         </a>
                                       </div>
@@ -688,7 +696,7 @@ class App extends Component {
                                     </p>
                                     <div className="list-island_item-owner">
                                       By
-                                      <a className="user-display-name">Audrey H.</a>
+                                      <a className="user-display-name"> Audrey H.</a>
                                     </div>
                                   </div>
                                 </div>
@@ -697,13 +705,14 @@ class App extends Component {
                                 <div className="media-block media-block--12">
                                   <div className="media-avatar">
                                     <div className="list-island_item-avatar">
-                                      <div style={{backgroundImage: `url(https://s3-media4.fl.yelpcdn.com/bphoto/8yB8_l5v2e4Rs7rjgkm1WQ/90s.jpg)`}} className="photo-box photo-box--interactive photo-box--background">
+                                      <div style={{backgroundImage: `url(${yB8_l5v2e4Rs7rjgkm1WQ})`}} className="photo-box photo-box--interactive photo-box--background">
                                         <a className="photo-box_link">
                                           <img
+                                            alt="img"
                                             className="photo-box-img"
                                             height="90"
                                             width="90"
-                                            src="https://s3-media4.fl.yelpcdn.com/bphoto/8yB8_l5v2e4Rs7rjgkm1WQ/90s.jpg"
+                                            src={yB8_l5v2e4Rs7rjgkm1WQ}
                                           />
                                         </a>
                                       </div>
@@ -718,7 +727,7 @@ class App extends Component {
                                     </p>
                                     <div className="list-island_item-owner">
                                       By
-                                      <a className="user-display-name">Carol C.</a>
+                                      <a className="user-display-name"> Carol C.</a>
                                     </div>
                                   </div>
                                 </div>
