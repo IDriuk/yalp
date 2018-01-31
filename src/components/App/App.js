@@ -598,6 +598,7 @@ class App extends Component {
                         <div className="badge-banner badge-banner--blue">
                           Review of the Day
                           <img
+                            alt="badge"
                             src="https://s3-media1.fl.yelpcdn.com/assets/srv0/yelp_styleguide/8bb21835695e/assets/img/badge_banner_icons/40x40_rotd.png"
                             className="badge-banner_img"
                             width="40"
@@ -625,7 +626,112 @@ class App extends Component {
                       </p>
                     </div>
                   </div>
-                  <div className="column column-beta"></div>
+                  <div className="column column-beta">
+                    <div>
+                      <h3 className="boy_title">Recent Lists</h3>
+                      <div className="island fresh-list island--light list-island">
+                        <div className="arrange arrange--30 arrange--equal">
+                          <div className="arrange_unit">
+                            <ul className="list-island_set">
+                              <li className="list-island_item">
+                                <div className="media-block media-block--12">
+                                  <div className="media-avatar">
+                                    <div className="list-island_item-avatar">
+                                      <div style={{backgroundImage: `url(https://s3-media4.fl.yelpcdn.com/bphoto/HzFeDvDkWKsugW8ztN4lWg/90s.jpg)`}} className="photo-box photo-box--interactive photo-box--background">
+                                        <a className="photo-box_link">
+                                          <img
+                                            className="photo-box-img"
+                                            height="90"
+                                            width="90"
+                                            src="https://s3-media4.fl.yelpcdn.com/bphoto/HzFeDvDkWKsugW8ztN4lWg/90s.jpg"
+                                          />
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div className="media-story">
+                                    <p className="list-island_item-title u-text-truncate media-title">
+                                      <a>Not-Good-For-Retirement Stars</a>
+                                    </p>
+                                    <p className="list-island_item-description">
+                                      Michelin restaurants In the order that I experienced them =)
+                                    </p>
+                                    <div className="list-island_item-owner">
+                                      By
+                                      <a className="user-display-name">Annie Z.</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li className="list-island_item">
+                                <div className="media-block media-block--12">
+                                  <div className="media-avatar">
+                                    <div className="list-island_item-avatar">
+                                      <div style={{backgroundImage: `url(https://s3-media2.fl.yelpcdn.com/bphoto/BR0mnDHZy3j3RI_hRAMBmg/90s.jpg)`}} className="photo-box photo-box--interactive photo-box--background">
+                                        <a className="photo-box_link">
+                                          <img
+                                            className="photo-box-img"
+                                            height="90"
+                                            width="90"
+                                            src="https://s3-media2.fl.yelpcdn.com/bphoto/BR0mnDHZy3j3RI_hRAMBmg/90s.jpg"
+                                          />
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div className="media-story">
+                                    <p className="list-island_item-title u-text-truncate media-title">
+                                      <a>2018 AudVentures</a>
+                                    </p>
+                                    <p className="list-island_item-description">
+                                      Finally settling down and still ready to explore!  For all places visited in 2018
+                                    </p>
+                                    <div className="list-island_item-owner">
+                                      By
+                                      <a className="user-display-name">Audrey H.</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li className="list-island_item">
+                                <div className="media-block media-block--12">
+                                  <div className="media-avatar">
+                                    <div className="list-island_item-avatar">
+                                      <div style={{backgroundImage: `url(https://s3-media4.fl.yelpcdn.com/bphoto/8yB8_l5v2e4Rs7rjgkm1WQ/90s.jpg)`}} className="photo-box photo-box--interactive photo-box--background">
+                                        <a className="photo-box_link">
+                                          <img
+                                            className="photo-box-img"
+                                            height="90"
+                                            width="90"
+                                            src="https://s3-media4.fl.yelpcdn.com/bphoto/8yB8_l5v2e4Rs7rjgkm1WQ/90s.jpg"
+                                          />
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div className="media-story">
+                                    <p className="list-island_item-title u-text-truncate media-title">
+                                      <a>My reviews for 2014</a>
+                                    </p>
+                                    <p className="list-island_item-description">
+                                      Thanks to my fellow yelper, Andrew I, who is totally cool, he has inspired me to do a list of reviews for 2014.  It's the new year and a new start.
+                                    </p>
+                                    <div className="list-island_item-owner">
+                                      By
+                                      <a className="user-display-name">Carol C.</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <p className="u-text-centered">
+                        <a className="boy_more-link">Browse more lists</a>
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="home-container_section home-container_section--top-long"></div>
