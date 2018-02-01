@@ -1074,19 +1074,733 @@ class App extends Component {
                     </div>
 
                     <div className="arrange_unit">
-                      <div className="activity-feed_item activity-feed_item--biz_photo activity-feed_item--first-load island island--light" ></div>
-                      <div className="activity-feed_item activity-feed_item--first-load activity-feed_item--review island island--light" ></div>
-                      <div className="activity-feed_item activity-feed_item--biz_photo activity-feed_item--first-load island island--light" ></div>
-                      <div className="activity-feed_item activity-feed_item--first-load activity-feed_item--review island island--light" ></div>
-                      <div className="activity-feed_item activity-feed_item--first-load activity-feed_item--review island island--light" ></div>
+
+                      {/* rewiew */}
+                      <div className="activity-feed_item activity-feed_item--first-load activity-feed_item--review island island--light" >
+                        <div className="feed-item_header">
+                          <div className="arrange arrange--12">
+                            <div className="arrange_unit">
+                              <div className="photo-box pb-30s">
+                                <a>
+                                  <img alt="img" className="photo-box-img" src="https://s3-media3.fl.yelpcdn.com/photo/Q1kaby1yAQEUWlsCP1c3Ow/30s.jpg" height="30" width="30"/>
+                                </a>
+                              </div>
+                            </div>
+                            <div className="arrange_unit arrange_unit--fill">
+                              <a className="feed-item_user-link">
+                                <strong>Vivian D.</strong>
+                              </a><br></br>
+                              <span className="feed-item_action">Wrote a review</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="feed-item_scrollable-content">
+                          <div className="feed-item_hero">
+                            <div className="photo-box photo-box--interactive photo-box--background" style={{backgroundImage: "url(https://s3-media4.fl.yelpcdn.com/bphoto/jsDmbW9Eaqgyc0Kbw4TUvg/l.jpg)"}}>
+                              <a className="photo-box_link">
+                                <img alt="img" className="photo-box-img" height="400" width="600" src="https://s3-media4.fl.yelpcdn.com/bphoto/jsDmbW9Eaqgyc0Kbw4TUvg/l.jpg" />
+                              </a>
+                            </div>
+                          </div>
+                          <div className="feed-item_body">
+                            <div className="feed-item_title u-space-b2 u-text-truncate feed-item_title--bordered">
+                              <div className="business-link-hovercard business-link-hovercard--strong">
+                                <span className="business-link-hovercard_business-link">
+                                  <a className="biz-name">
+                                    <span>Hinodeya Ramen Bar</span>
+                                  </a>
+                                </span>
+                              </div>
+                            </div>
+                            <div className="u-space-b2">
+                              <div className="i-stars i-stars--regular-4 rating-large">
+                                <img className="offscreen" height="303" width="84" src="https://s3-media2.fl.yelpcdn.com/assets/srv0/yelp_design_web/9b34e39ccbeb/assets/img/stars/stars.png" alt="4" />
+                              </div>
+                            </div>
+                            <p className="feed-item_review-content u-break-word">
+                              <span>
+                                Been here a few times now and pretty solid. Never have had to wait too long- maybe 15 minutes. Very hip and Japanese atmosphere. Get the house special ramen and its very clean, but still pretty flavor...
+                                <a className="continue-reading u-nowrap">
+                                  Continue reading
+                                </a>
+                              </span>
+                              <span className="u-hidden" >
+                                Been here a few times now and pretty solid. Never have had to wait too long- maybe 15 minutes. Very hip and Japanese atmosphere. Get the house special ramen and its very clean, but still pretty flavorful. No complaints here! Service is good.
+                              </span>
+                            </p>
+                          </div>
+                        </div>
+                        <div className="feed-item_footer">
+                          <div className="arrange arrange--12">
+                            <div className="arrange_unit arrange_unit--fill">
+                              <ul className="ufc-actions">
+                                <li className="ufc-action">
+                                  <a className="ufc-action_link ufc-action_link--useful">
+                                    <span className="show-tooltip">
+                                      <span style={{width: "24px", height: "24px"}} className="icon icon--24-useful-outline icon--size-24 icon--ufc js-icon--ufc">
+                                        <svg className="icon_svg" id="24x24_useful_outline" height="100%" viewBox="0 0 24 24" width="100%">
+                                          <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-19c-4.963 0-9 4.037-9 9s4.037 9 9 9 9-4.037 9-9-4.037-9-9-9zm2 10.704V15h-4v-1.296c-1.35-.72-2.278-2.124-2.278-3.76a4.278 4.278 0 0 1 8.556 0c0 1.636-.93 3.04-2.278 3.76zM11 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 6.5a2 2 0 0 1-4 0V16h4v.5z"></path>
+                                        </svg>
+                                      </span>
+                                    </span>
+                                  </a>
+                                </li>
+                                <li className="ufc-action">
+                                  <a className="ufc-action_link ufc-action_link--funny">
+                                    <span className="show-tooltip">
+                                      <span style={{width: "24px", height: "24px"}} className="icon icon--24-funny-outline icon--size-24 icon--ufc">
+                                        <svg className="icon_svg" id="24x24_funny_outline" height="100%" viewBox="0 0 24 24" width="100%">
+                                          <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-19c-4.963 0-9 4.037-9 9s4.037 9 9 9 9-4.037 9-9-4.037-9-9-9zm0 15a5.5 5.5 0 0 1-5.288-4h10.576A5.5 5.5 0 0 1 12 18zm3.5-7a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm-7 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"></path>
+                                        </svg>
+                                      </span>
+                                    </span>
+                                  </a>
+                                </li>
+                                <li className="ufc-action">
+                                  <a className="ufc-action_link ufc-action_link--cool">
+                                    <span className="show-tooltip">
+                                      <span style={{width: "24px", height: "24px"}} className="icon icon--24-cool-outline icon--size-24 icon--ufc">
+                                        <svg className="icon_svg" id="24x24_cool_outline" height="100%" viewBox="0 0 24 24" width="100%">
+                                          <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-19c-4.963 0-9 4.037-9 9s4.037 9 9 9 9-4.037 9-9-4.037-9-9-9zm7.994 6.765C19.647 11.612 17.97 13 15.96 13h-.002c-1.617 0-3.028-.9-3.67-2.224a.32.32 0 0 0-.575 0C11.07 12.1 9.66 13 8.043 13H8.04c-2.01 0-3.74-1.15-4.035-3.018l-.124-.734c-.07-.305.257-.25.634-.248h14.972c.39 0 .673-.04.632.248l-.124.517zM17 15.143a5.405 5.405 0 0 1-5 3.357 5.405 5.405 0 0 1-5-3.357 8.6 8.6 0 0 0 5 1.6 8.6 8.6 0 0 0 5-1.6z"></path>
+                                        </svg>
+                                      </span>
+                                    </span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div className="arrange_unit">
+                              <div className="arrange">
+                                <div className="arrange_unit">
+                                  <a className="compliment-btn compliment-btn--not-sent feed-item_action-link feed-item_action-link--compliment">
+                                    <span className="show-tooltip">
+                                      <span style={{width: "24px", height: "24px"}} className="icon icon--24-compliment icon--size-24 icon--currentColor icon--compliment">
+                                        <svg className="icon_svg" id="24x24_compliment" height="100%" viewBox="0 0 24 24" width="100%">
+                                          <path d="M19 9A7 7 0 0 0 5 9a6.995 6.995 0 0 0 3.957 6.297L8 21.992 12.005 19 16 21.992l-.957-6.695A6.995 6.995 0 0 0 19 9zm-7 5c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path>
+                                        </svg>
+                                      </span>
+                                    </span>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="activity-feed_item activity-feed_item--biz_photo activity-feed_item--first-load island island--light" >
+                        <div className="feed-item_header">
+                          <div className="arrange arrange--12">
+                            <div className="arrange_unit">
+                              <div className="photo-box pb-30s">
+                                <a>
+                                  <img
+                                    alt="alt"
+                                    className="photo-box-img"
+                                    height="30"
+                                    width="30"
+                                    src="https://s3-media1.fl.yelpcdn.com/photo/UDkFIThfOLMNO8iCnF0t8A/30s.jpg"
+                                  />
+                                </a>
+                              </div>
+                            </div>
+                            <div className="arrange_unit arrange_unit--fill">
+                              <a className="feed-item_user-link"><strong>Cali G.</strong></a><br></br>
+                              <span className="feed-item_action">Added 3 photos</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="feed-item_scrollable-content">
+                          <div className="feed-item_body">
+                            <div className="feed-item_title u-space-b2 u-text-truncate">
+                              <div className="business-link-hovercard business-link-hovercard--strong">
+                                <span className="business-link-hovercard_business-link">
+                                  <a className="biz-name">
+                                    <span>Elite Event: Donato & Co</span>
+                                  </a>
+                                </span>
+                              </div>
+                            </div>
+                            <div className="feed-item_photos">
+                              <div className="arrange arrange--2-units arrange--6 arrange--wrap">
+                                <div className="arrange_unit u-size-full">
+                                  <div style={{backgrounImage: "url(https://s3-media2.fl.yelpcdn.com/bphoto/dLinn6rjkWYrtnMDTvDisQ/300s.jpg)"}} className="feed-item_photo feed-item_photo--big feed-item_photo--with-actions">
+                                    <a className="feed-item_link">
+                                      <img
+                                        alt="Filet"
+                                        src="https://s3-media2.fl.yelpcdn.com/bphoto/dLinn6rjkWYrtnMDTvDisQ/300s.jpg"
+                                        width="300"
+                                        height="300"
+                                      />
+                                    </a>
+                                  </div>
+                                  <ul className="feed-item_actions feed-item_actions--contained">
+                                    <li className="feed-item_action">
+                                      <a className="feed-item_action-link">
+                                        <span>
+                                          <span>
+                                            <span style={{width: "24", height: "24"}} className="icon icon--24-like-outline icon--size-24 icon--currentColor icon--hover-linked u-space-r-half">
+                                              <svg className="icon_svg" id="24x24_like_outline" height="100%" viewBox="0 0 24 24" width="100%">
+                                                <path d="M21.164 12.236c.05.164.086.334.086.514 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723A1.75 1.75 0 0 1 18 19H7v-9h1c.37 0 1.257-2.37 2.104-3.345.89-1.017 1.234-1.782 1.457-2.513C11.785 3.412 12 2 12 2s2.388.11 2.388 2.9c0 1.39-.758 3.1-.388 4.1h6.25c.966 0 1.75.784 1.75 1.75 0 .63-.336 1.178-.836 1.486zM20.25 10h-6.946l-.242-.653c-.316-.855-.11-1.862.09-2.835.117-.56.236-1.14.236-1.61 0-.844-.283-1.314-.608-1.577-.076.387-.168.797-.262 1.107-.228.748-.604 1.673-1.66 2.88-.336.386-.744 1.166-1.072 1.794C9.146 10.326 8.796 11 8 11v7h10a.75.75 0 0 0 .75-.75.75.75 0 0 0-.07-.308l-.385-.843.812-.45A.74.74 0 0 0 19.5 15a.75.75 0 0 0-.07-.308l-.385-.843.812-.45a.74.74 0 0 0 .393-.65.793.793 0 0 0-.04-.22l-.23-.74.66-.406A.746.746 0 0 0 20.25 10zM2 10h4v10H2V10z"></path>
+                                              </svg>
+                                            </span>
+                                            <span>1 Like</span>
+                                          </span>
+                                        </span>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div className="arrange_unit">
+                                  <div className="feed-item_photo feed-item_photo--with-actions" style={{backgroundImage: "url(https://s3-media1.fl.yelpcdn.com/bphoto/C921ZGj4qJc_TDk92CM5FA/168s.jpg)"}}>
+                                    <a className="feed-item_link">
+                                      <image
+                                        alt="T-bone"
+                                        src="https://s3-media1.fl.yelpcdn.com/bphoto/C921ZGj4qJc_TDk92CM5FA/168s.jpg"
+                                        height="168"
+                                        width="168"
+                                      />
+                                    </a>
+                                  </div>
+                                  <ul className="feed-item_actions feed-item_actions--contained">
+                                    <li className="feed-item_action">
+                                      <a className="feed-item_action-link">
+                                        <span>
+                                          <span>
+                                            <span style={{width: "24", height: "24"}} className="icon icon--24-like-outline icon--size-24 icon--currentColor icon--hover-linked u-space-r-half">
+                                              <svg className="icon_svg" id="24x24_like_outline" height="100%" viewBox="0 0 24 24" width="100%">
+                                                <path d="M21.164 12.236c.05.164.086.334.086.514 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723A1.75 1.75 0 0 1 18 19H7v-9h1c.37 0 1.257-2.37 2.104-3.345.89-1.017 1.234-1.782 1.457-2.513C11.785 3.412 12 2 12 2s2.388.11 2.388 2.9c0 1.39-.758 3.1-.388 4.1h6.25c.966 0 1.75.784 1.75 1.75 0 .63-.336 1.178-.836 1.486zM20.25 10h-6.946l-.242-.653c-.316-.855-.11-1.862.09-2.835.117-.56.236-1.14.236-1.61 0-.844-.283-1.314-.608-1.577-.076.387-.168.797-.262 1.107-.228.748-.604 1.673-1.66 2.88-.336.386-.744 1.166-1.072 1.794C9.146 10.326 8.796 11 8 11v7h10a.75.75 0 0 0 .75-.75.75.75 0 0 0-.07-.308l-.385-.843.812-.45A.74.74 0 0 0 19.5 15a.75.75 0 0 0-.07-.308l-.385-.843.812-.45a.74.74 0 0 0 .393-.65.793.793 0 0 0-.04-.22l-.23-.74.66-.406A.746.746 0 0 0 20.25 10zM2 10h4v10H2V10z"></path>
+                                              </svg>
+                                            </span>
+                                            <span>1 Like</span>
+                                          </span>
+                                        </span>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div className="arrange_unit">
+                                  <div className="feed-item_photo feed-item_photo--with-actions" style={{backgroundImage: "url(https://s3-media4.fl.yelpcdn.com/bphoto/ZB-7LV2NNGBzYm166mc8VQ/168s.jpg)"}}>
+                                    <a className="feed-item_link">
+                                      <image
+                                        alt="T-bone"
+                                        src="https://s3-media4.fl.yelpcdn.com/bphoto/ZB-7LV2NNGBzYm166mc8VQ/168s.jpg"
+                                        height="168"
+                                        width="168"
+                                      />
+                                    </a>
+                                  </div>
+                                  <ul className="feed-item_actions feed-item_actions--contained">
+                                    <li className="feed-item_action">
+                                      <a className="feed-item_action-link">
+                                        <span>
+                                          <span>
+                                            <span style={{width: "24", height: "24"}} className="icon icon--24-like-outline icon--size-24 icon--currentColor icon--hover-linked u-space-r-half">
+                                              <svg className="icon_svg" id="24x24_like_outline" height="100%" viewBox="0 0 24 24" width="100%">
+                                                <path d="M21.164 12.236c.05.164.086.334.086.514 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723A1.75 1.75 0 0 1 18 19H7v-9h1c.37 0 1.257-2.37 2.104-3.345.89-1.017 1.234-1.782 1.457-2.513C11.785 3.412 12 2 12 2s2.388.11 2.388 2.9c0 1.39-.758 3.1-.388 4.1h6.25c.966 0 1.75.784 1.75 1.75 0 .63-.336 1.178-.836 1.486zM20.25 10h-6.946l-.242-.653c-.316-.855-.11-1.862.09-2.835.117-.56.236-1.14.236-1.61 0-.844-.283-1.314-.608-1.577-.076.387-.168.797-.262 1.107-.228.748-.604 1.673-1.66 2.88-.336.386-.744 1.166-1.072 1.794C9.146 10.326 8.796 11 8 11v7h10a.75.75 0 0 0 .75-.75.75.75 0 0 0-.07-.308l-.385-.843.812-.45A.74.74 0 0 0 19.5 15a.75.75 0 0 0-.07-.308l-.385-.843.812-.45a.74.74 0 0 0 .393-.65.793.793 0 0 0-.04-.22l-.23-.74.66-.406A.746.746 0 0 0 20.25 10zM2 10h4v10H2V10z"></path>
+                                              </svg>
+                                            </span>
+                                            <span>Like</span>
+                                          </span>
+                                        </span>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* rewiew */}
+                      <div className="activity-feed_item activity-feed_item--first-load activity-feed_item--review island island--light" >
+                        <div className="feed-item_header">
+                          <div className="arrange arrange--12">
+                            <div className="arrange_unit">
+                              <div className="photo-box pb-30s">
+                                <a>
+                                  <img alt="img" className="photo-box-img" src="https://s3-media3.fl.yelpcdn.com/photo/Q1kaby1yAQEUWlsCP1c3Ow/30s.jpg" height="30" width="30"/>
+                                </a>
+                              </div>
+                            </div>
+                            <div className="arrange_unit arrange_unit--fill">
+                              <a className="feed-item_user-link">
+                                <strong>Vivian D.</strong>
+                              </a><br></br>
+                              <span className="feed-item_action">Wrote a review</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="feed-item_scrollable-content">
+                          <div className="feed-item_hero">
+                            <div className="photo-box photo-box--interactive photo-box--background" style={{backgroundImage: "url(https://s3-media4.fl.yelpcdn.com/bphoto/jsDmbW9Eaqgyc0Kbw4TUvg/l.jpg)"}}>
+                              <a className="photo-box_link">
+                                <img alt="img" className="photo-box-img" height="400" width="600" src="https://s3-media4.fl.yelpcdn.com/bphoto/jsDmbW9Eaqgyc0Kbw4TUvg/l.jpg" />
+                              </a>
+                            </div>
+                          </div>
+                          <div className="feed-item_body">
+                            <div className="feed-item_title u-space-b2 u-text-truncate feed-item_title--bordered">
+                              <div className="business-link-hovercard business-link-hovercard--strong">
+                                <span className="business-link-hovercard_business-link">
+                                  <a className="biz-name">
+                                    <span>Hinodeya Ramen Bar</span>
+                                  </a>
+                                </span>
+                              </div>
+                            </div>
+                            <div className="u-space-b2">
+                              <div className="i-stars i-stars--regular-4 rating-large">
+                                <img className="offscreen" height="303" width="84" src="https://s3-media2.fl.yelpcdn.com/assets/srv0/yelp_design_web/9b34e39ccbeb/assets/img/stars/stars.png" alt="4" />
+                              </div>
+                            </div>
+                            <p className="feed-item_review-content u-break-word">
+                              <span>
+                                Been here a few times now and pretty solid. Never have had to wait too long- maybe 15 minutes. Very hip and Japanese atmosphere. Get the house special ramen and its very clean, but still pretty flavor...
+                                <a className="continue-reading u-nowrap">
+                                  Continue reading
+                                </a>
+                              </span>
+                              <span className="u-hidden" >
+                                Been here a few times now and pretty solid. Never have had to wait too long- maybe 15 minutes. Very hip and Japanese atmosphere. Get the house special ramen and its very clean, but still pretty flavorful. No complaints here! Service is good.
+                              </span>
+                            </p>
+                          </div>
+                        </div>
+                        <div className="feed-item_footer">
+                          <div className="arrange arrange--12">
+                            <div className="arrange_unit arrange_unit--fill">
+                              <ul className="ufc-actions">
+                                <li className="ufc-action">
+                                  <a className="ufc-action_link ufc-action_link--useful">
+                                    <span className="show-tooltip">
+                                      <span style={{width: "24px", height: "24px"}} className="icon icon--24-useful-outline icon--size-24 icon--ufc js-icon--ufc">
+                                        <svg className="icon_svg" id="24x24_useful_outline" height="100%" viewBox="0 0 24 24" width="100%">
+                                          <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-19c-4.963 0-9 4.037-9 9s4.037 9 9 9 9-4.037 9-9-4.037-9-9-9zm2 10.704V15h-4v-1.296c-1.35-.72-2.278-2.124-2.278-3.76a4.278 4.278 0 0 1 8.556 0c0 1.636-.93 3.04-2.278 3.76zM11 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 6.5a2 2 0 0 1-4 0V16h4v.5z"></path>
+                                        </svg>
+                                      </span>
+                                    </span>
+                                  </a>
+                                </li>
+                                <li className="ufc-action">
+                                  <a className="ufc-action_link ufc-action_link--funny">
+                                    <span className="show-tooltip">
+                                      <span style={{width: "24px", height: "24px"}} className="icon icon--24-funny-outline icon--size-24 icon--ufc">
+                                        <svg className="icon_svg" id="24x24_funny_outline" height="100%" viewBox="0 0 24 24" width="100%">
+                                          <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-19c-4.963 0-9 4.037-9 9s4.037 9 9 9 9-4.037 9-9-4.037-9-9-9zm0 15a5.5 5.5 0 0 1-5.288-4h10.576A5.5 5.5 0 0 1 12 18zm3.5-7a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm-7 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"></path>
+                                        </svg>
+                                      </span>
+                                    </span>
+                                  </a>
+                                </li>
+                                <li className="ufc-action">
+                                  <a className="ufc-action_link ufc-action_link--cool">
+                                    <span className="show-tooltip">
+                                      <span style={{width: "24px", height: "24px"}} className="icon icon--24-cool-outline icon--size-24 icon--ufc">
+                                        <svg className="icon_svg" id="24x24_cool_outline" height="100%" viewBox="0 0 24 24" width="100%">
+                                          <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-19c-4.963 0-9 4.037-9 9s4.037 9 9 9 9-4.037 9-9-4.037-9-9-9zm7.994 6.765C19.647 11.612 17.97 13 15.96 13h-.002c-1.617 0-3.028-.9-3.67-2.224a.32.32 0 0 0-.575 0C11.07 12.1 9.66 13 8.043 13H8.04c-2.01 0-3.74-1.15-4.035-3.018l-.124-.734c-.07-.305.257-.25.634-.248h14.972c.39 0 .673-.04.632.248l-.124.517zM17 15.143a5.405 5.405 0 0 1-5 3.357 5.405 5.405 0 0 1-5-3.357 8.6 8.6 0 0 0 5 1.6 8.6 8.6 0 0 0 5-1.6z"></path>
+                                        </svg>
+                                      </span>
+                                    </span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div className="arrange_unit">
+                              <div className="arrange">
+                                <div className="arrange_unit">
+                                  <a className="compliment-btn compliment-btn--not-sent feed-item_action-link feed-item_action-link--compliment">
+                                    <span className="show-tooltip">
+                                      <span style={{width: "24px", height: "24px"}} className="icon icon--24-compliment icon--size-24 icon--currentColor icon--compliment">
+                                        <svg className="icon_svg" id="24x24_compliment" height="100%" viewBox="0 0 24 24" width="100%">
+                                          <path d="M19 9A7 7 0 0 0 5 9a6.995 6.995 0 0 0 3.957 6.297L8 21.992 12.005 19 16 21.992l-.957-6.695A6.995 6.995 0 0 0 19 9zm-7 5c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path>
+                                        </svg>
+                                      </span>
+                                    </span>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
                     </div>
 
                     <div className="arrange_unit">
-                      <div className="activity-feed_item activity-feed_item--first-load activity-feed_item--review island island--light" ></div>
-                      <div className="activity-feed_item activity-feed_item--biz_photo activity-feed_item--first-load island island--light" ></div>
-                      <div className="activity-feed_item activity-feed_item--first-load activity-feed_item--review island island--light" ></div>
-                      <div className="activity-feed_item activity-feed_item--biz_photo activity-feed_item--first-load island island--light" ></div>
+
+                      <div className="activity-feed_item activity-feed_item--biz_photo activity-feed_item--first-load island island--light" >
+                        <div className="feed-item_header">
+                          <div className="arrange arrange--12">
+                            <div className="arrange_unit">
+                              <div className="photo-box pb-30s">
+                                <a>
+                                  <img
+                                    alt="alt"
+                                    className="photo-box-img"
+                                    height="30"
+                                    width="30"
+                                    src="https://s3-media1.fl.yelpcdn.com/photo/XJLvFmxlX5jdMfEyC4dG1g/30s.jpg"
+                                  />
+                                </a>
+                              </div>
+                            </div>
+                            <div className="arrange_unit arrange_unit--fill">
+                              <a className="feed-item_user-link"><strong>Zak R.</strong></a><br></br>
+                              <span className="feed-item_action">Added 5 photos</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="feed-item_scrollable-content">
+                          <div className="feed-item_body">
+                            <div className="feed-item_title u-space-b2 u-text-truncate">
+                              <div className="business-link-hovercard business-link-hovercard--strong">
+                                <span className="business-link-hovercard_business-link">
+                                  <a className="biz-name">
+                                    <span>Alexander’s Steakhouse</span>
+                                  </a>
+                                </span>
+                              </div>
+                            </div>
+                            <div className="feed-item_photos">
+                              <div className="arrange arrange--2-units arrange--6 arrange--wrap">
+                                <div className="arrange_unit u-size-full">
+                                  <div style={{backgrounImage: "url(https://s3-media2.fl.yelpcdn.com/bphoto/tSaWNHKlJc4iOuGjvCRMmQ/300s.jpg)"}} className="feed-item_photo feed-item_photo--big feed-item_photo--with-actions">
+                                    <a className="feed-item_link">
+                                      <img
+                                        alt="Filet"
+                                        src="https://s3-media2.fl.yelpcdn.com/bphoto/tSaWNHKlJc4iOuGjvCRMmQ/300s.jpg"
+                                        width="300"
+                                        height="300"
+                                      />
+                                    </a>
+                                  </div>
+                                  <ul className="feed-item_actions feed-item_actions--contained">
+                                    <li className="feed-item_action">
+                                      <a className="feed-item_action-link">
+                                        <span>
+                                          <span>
+                                            <span style={{width: "24", height: "24"}} className="icon icon--24-like-outline icon--size-24 icon--currentColor icon--hover-linked u-space-r-half">
+                                              <svg className="icon_svg" id="24x24_like_outline" height="100%" viewBox="0 0 24 24" width="100%">
+                                                <path d="M21.164 12.236c.05.164.086.334.086.514 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723A1.75 1.75 0 0 1 18 19H7v-9h1c.37 0 1.257-2.37 2.104-3.345.89-1.017 1.234-1.782 1.457-2.513C11.785 3.412 12 2 12 2s2.388.11 2.388 2.9c0 1.39-.758 3.1-.388 4.1h6.25c.966 0 1.75.784 1.75 1.75 0 .63-.336 1.178-.836 1.486zM20.25 10h-6.946l-.242-.653c-.316-.855-.11-1.862.09-2.835.117-.56.236-1.14.236-1.61 0-.844-.283-1.314-.608-1.577-.076.387-.168.797-.262 1.107-.228.748-.604 1.673-1.66 2.88-.336.386-.744 1.166-1.072 1.794C9.146 10.326 8.796 11 8 11v7h10a.75.75 0 0 0 .75-.75.75.75 0 0 0-.07-.308l-.385-.843.812-.45A.74.74 0 0 0 19.5 15a.75.75 0 0 0-.07-.308l-.385-.843.812-.45a.74.74 0 0 0 .393-.65.793.793 0 0 0-.04-.22l-.23-.74.66-.406A.746.746 0 0 0 20.25 10zM2 10h4v10H2V10z"></path>
+                                              </svg>
+                                            </span>
+                                            <span>Like</span>
+                                          </span>
+                                        </span>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div className="arrange_unit">
+                                  <div className="feed-item_photo feed-item_photo--with-actions" style={{backgroundImage: "url(https://s3-media2.fl.yelpcdn.com/bphoto/KVUGoFs40Jt3OdI7vmF-og/168s.jpg)"}}>
+                                    <a className="feed-item_link">
+                                      <image
+                                        alt="T-bone"
+                                        src="https://s3-media2.fl.yelpcdn.com/bphoto/KVUGoFs40Jt3OdI7vmF-og/168s.jpg"
+                                        height="168"
+                                        width="168"
+                                      />
+                                    </a>
+                                  </div>
+                                  <ul className="feed-item_actions feed-item_actions--contained">
+                                    <li className="feed-item_action">
+                                      <a className="feed-item_action-link">
+                                        <span>
+                                          <span>
+                                            <span style={{width: "24", height: "24"}} className="icon icon--24-like-outline icon--size-24 icon--currentColor icon--hover-linked u-space-r-half">
+                                              <svg className="icon_svg" id="24x24_like_outline" height="100%" viewBox="0 0 24 24" width="100%">
+                                                <path d="M21.164 12.236c.05.164.086.334.086.514 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723A1.75 1.75 0 0 1 18 19H7v-9h1c.37 0 1.257-2.37 2.104-3.345.89-1.017 1.234-1.782 1.457-2.513C11.785 3.412 12 2 12 2s2.388.11 2.388 2.9c0 1.39-.758 3.1-.388 4.1h6.25c.966 0 1.75.784 1.75 1.75 0 .63-.336 1.178-.836 1.486zM20.25 10h-6.946l-.242-.653c-.316-.855-.11-1.862.09-2.835.117-.56.236-1.14.236-1.61 0-.844-.283-1.314-.608-1.577-.076.387-.168.797-.262 1.107-.228.748-.604 1.673-1.66 2.88-.336.386-.744 1.166-1.072 1.794C9.146 10.326 8.796 11 8 11v7h10a.75.75 0 0 0 .75-.75.75.75 0 0 0-.07-.308l-.385-.843.812-.45A.74.74 0 0 0 19.5 15a.75.75 0 0 0-.07-.308l-.385-.843.812-.45a.74.74 0 0 0 .393-.65.793.793 0 0 0-.04-.22l-.23-.74.66-.406A.746.746 0 0 0 20.25 10zM2 10h4v10H2V10z"></path>
+                                              </svg>
+                                            </span>
+                                            <span>Like</span>
+                                          </span>
+                                        </span>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div className="arrange_unit">
+                                  <div className="feed-item_photo feed-item_photo--with-actions" style={{backgroundImage: "url(https://s3-media3.fl.yelpcdn.com/bphoto/yj7A_xSnsbbOsxwYzCDGvw/168s.jpg)"}}>
+                                    <a className="feed-item_link">
+                                      <image
+                                        alt="T-bone"
+                                        src="https://s3-media3.fl.yelpcdn.com/bphoto/yj7A_xSnsbbOsxwYzCDGvw/168s.jpg"
+                                        height="168"
+                                        width="168"
+                                      />
+                                    </a>
+                                  </div>
+                                  <ul className="feed-item_actions feed-item_actions--contained">
+                                    <li className="feed-item_action">
+                                      <a className="feed-item_action-link">
+                                        <span>
+                                          <span>
+                                            <span style={{width: "24", height: "24"}} className="icon icon--24-like-outline icon--size-24 icon--currentColor icon--hover-linked u-space-r-half">
+                                              <svg className="icon_svg" id="24x24_like_outline" height="100%" viewBox="0 0 24 24" width="100%">
+                                                <path d="M21.164 12.236c.05.164.086.334.086.514 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723A1.75 1.75 0 0 1 18 19H7v-9h1c.37 0 1.257-2.37 2.104-3.345.89-1.017 1.234-1.782 1.457-2.513C11.785 3.412 12 2 12 2s2.388.11 2.388 2.9c0 1.39-.758 3.1-.388 4.1h6.25c.966 0 1.75.784 1.75 1.75 0 .63-.336 1.178-.836 1.486zM20.25 10h-6.946l-.242-.653c-.316-.855-.11-1.862.09-2.835.117-.56.236-1.14.236-1.61 0-.844-.283-1.314-.608-1.577-.076.387-.168.797-.262 1.107-.228.748-.604 1.673-1.66 2.88-.336.386-.744 1.166-1.072 1.794C9.146 10.326 8.796 11 8 11v7h10a.75.75 0 0 0 .75-.75.75.75 0 0 0-.07-.308l-.385-.843.812-.45A.74.74 0 0 0 19.5 15a.75.75 0 0 0-.07-.308l-.385-.843.812-.45a.74.74 0 0 0 .393-.65.793.793 0 0 0-.04-.22l-.23-.74.66-.406A.746.746 0 0 0 20.25 10zM2 10h4v10H2V10z"></path>
+                                              </svg>
+                                            </span>
+                                            <span>Like</span>
+                                          </span>
+                                        </span>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <p className="feed-item_more">
+                              <a className="show-all-photos">Show all 5 photos</a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* rewiew */}
+                      <div className="activity-feed_item activity-feed_item--first-load activity-feed_item--review island island--light" >
+                        <div className="feed-item_header">
+                          <div className="arrange arrange--12">
+                            <div className="arrange_unit">
+                              <div className="photo-box pb-30s">
+                                <a>
+                                  <img alt="img" className="photo-box-img" src="https://s3-media3.fl.yelpcdn.com/photo/Q1kaby1yAQEUWlsCP1c3Ow/30s.jpg" height="30" width="30"/>
+                                </a>
+                              </div>
+                            </div>
+                            <div className="arrange_unit arrange_unit--fill">
+                              <a className="feed-item_user-link">
+                                <strong>Vivian D.</strong>
+                              </a><br></br>
+                              <span className="feed-item_action">Wrote a review</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="feed-item_scrollable-content">
+                          <div className="feed-item_hero">
+                            <div className="photo-box photo-box--interactive photo-box--background" style={{backgroundImage: "url(https://s3-media4.fl.yelpcdn.com/bphoto/jsDmbW9Eaqgyc0Kbw4TUvg/l.jpg)"}}>
+                              <a className="photo-box_link">
+                                <img alt="img" className="photo-box-img" height="400" width="600" src="https://s3-media4.fl.yelpcdn.com/bphoto/jsDmbW9Eaqgyc0Kbw4TUvg/l.jpg" />
+                              </a>
+                            </div>
+                          </div>
+                          <div className="feed-item_body">
+                            <div className="feed-item_title u-space-b2 u-text-truncate feed-item_title--bordered">
+                              <div className="business-link-hovercard business-link-hovercard--strong">
+                                <span className="business-link-hovercard_business-link">
+                                  <a className="biz-name">
+                                    <span>Hinodeya Ramen Bar</span>
+                                  </a>
+                                </span>
+                              </div>
+                            </div>
+                            <div className="u-space-b2">
+                              <div className="i-stars i-stars--regular-4 rating-large">
+                                <img className="offscreen" height="303" width="84" src="https://s3-media2.fl.yelpcdn.com/assets/srv0/yelp_design_web/9b34e39ccbeb/assets/img/stars/stars.png" alt="4" />
+                              </div>
+                            </div>
+                            <p className="feed-item_review-content u-break-word">
+                              <span>
+                                Been here a few times now and pretty solid. Never have had to wait too long- maybe 15 minutes. Very hip and Japanese atmosphere. Get the house special ramen and its very clean, but still pretty flavor...
+                                <a className="continue-reading u-nowrap">
+                                  Continue reading
+                                </a>
+                              </span>
+                              <span className="u-hidden" >
+                                Been here a few times now and pretty solid. Never have had to wait too long- maybe 15 minutes. Very hip and Japanese atmosphere. Get the house special ramen and its very clean, but still pretty flavorful. No complaints here! Service is good.
+                              </span>
+                            </p>
+                          </div>
+                        </div>
+                        <div className="feed-item_footer">
+                          <div className="arrange arrange--12">
+                            <div className="arrange_unit arrange_unit--fill">
+                              <ul className="ufc-actions">
+                                <li className="ufc-action">
+                                  <a className="ufc-action_link ufc-action_link--useful">
+                                    <span className="show-tooltip">
+                                      <span style={{width: "24px", height: "24px"}} className="icon icon--24-useful-outline icon--size-24 icon--ufc js-icon--ufc">
+                                        <svg className="icon_svg" id="24x24_useful_outline" height="100%" viewBox="0 0 24 24" width="100%">
+                                          <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-19c-4.963 0-9 4.037-9 9s4.037 9 9 9 9-4.037 9-9-4.037-9-9-9zm2 10.704V15h-4v-1.296c-1.35-.72-2.278-2.124-2.278-3.76a4.278 4.278 0 0 1 8.556 0c0 1.636-.93 3.04-2.278 3.76zM11 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 6.5a2 2 0 0 1-4 0V16h4v.5z"></path>
+                                        </svg>
+                                      </span>
+                                    </span>
+                                  </a>
+                                </li>
+                                <li className="ufc-action">
+                                  <a className="ufc-action_link ufc-action_link--funny">
+                                    <span className="show-tooltip">
+                                      <span style={{width: "24px", height: "24px"}} className="icon icon--24-funny-outline icon--size-24 icon--ufc">
+                                        <svg className="icon_svg" id="24x24_funny_outline" height="100%" viewBox="0 0 24 24" width="100%">
+                                          <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-19c-4.963 0-9 4.037-9 9s4.037 9 9 9 9-4.037 9-9-4.037-9-9-9zm0 15a5.5 5.5 0 0 1-5.288-4h10.576A5.5 5.5 0 0 1 12 18zm3.5-7a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm-7 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"></path>
+                                        </svg>
+                                      </span>
+                                    </span>
+                                  </a>
+                                </li>
+                                <li className="ufc-action">
+                                  <a className="ufc-action_link ufc-action_link--cool">
+                                    <span className="show-tooltip">
+                                      <span style={{width: "24px", height: "24px"}} className="icon icon--24-cool-outline icon--size-24 icon--ufc">
+                                        <svg className="icon_svg" id="24x24_cool_outline" height="100%" viewBox="0 0 24 24" width="100%">
+                                          <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-19c-4.963 0-9 4.037-9 9s4.037 9 9 9 9-4.037 9-9-4.037-9-9-9zm7.994 6.765C19.647 11.612 17.97 13 15.96 13h-.002c-1.617 0-3.028-.9-3.67-2.224a.32.32 0 0 0-.575 0C11.07 12.1 9.66 13 8.043 13H8.04c-2.01 0-3.74-1.15-4.035-3.018l-.124-.734c-.07-.305.257-.25.634-.248h14.972c.39 0 .673-.04.632.248l-.124.517zM17 15.143a5.405 5.405 0 0 1-5 3.357 5.405 5.405 0 0 1-5-3.357 8.6 8.6 0 0 0 5 1.6 8.6 8.6 0 0 0 5-1.6z"></path>
+                                        </svg>
+                                      </span>
+                                    </span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div className="arrange_unit">
+                              <div className="arrange">
+                                <div className="arrange_unit">
+                                  <a className="compliment-btn compliment-btn--not-sent feed-item_action-link feed-item_action-link--compliment">
+                                    <span className="show-tooltip">
+                                      <span style={{width: "24px", height: "24px"}} className="icon icon--24-compliment icon--size-24 icon--currentColor icon--compliment">
+                                        <svg className="icon_svg" id="24x24_compliment" height="100%" viewBox="0 0 24 24" width="100%">
+                                          <path d="M19 9A7 7 0 0 0 5 9a6.995 6.995 0 0 0 3.957 6.297L8 21.992 12.005 19 16 21.992l-.957-6.695A6.995 6.995 0 0 0 19 9zm-7 5c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path>
+                                        </svg>
+                                      </span>
+                                    </span>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="activity-feed_item activity-feed_item--biz_photo activity-feed_item--first-load island island--light" >
+                        <div className="feed-item_header">
+                          <div className="arrange arrange--12">
+                            <div className="arrange_unit">
+                              <div className="photo-box pb-30s">
+                                <a>
+                                  <img
+                                    alt="alt"
+                                    className="photo-box-img"
+                                    height="30"
+                                    width="30"
+                                    src="https://s3-media1.fl.yelpcdn.com/photo/XJLvFmxlX5jdMfEyC4dG1g/30s.jpg"
+                                  />
+                                </a>
+                              </div>
+                            </div>
+                            <div className="arrange_unit arrange_unit--fill">
+                              <a className="feed-item_user-link"><strong>Zak R.</strong></a><br></br>
+                              <span className="feed-item_action">Added 5 photos</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="feed-item_scrollable-content">
+                          <div className="feed-item_body">
+                            <div className="feed-item_title u-space-b2 u-text-truncate">
+                              <div className="business-link-hovercard business-link-hovercard--strong">
+                                <span className="business-link-hovercard_business-link">
+                                  <a className="biz-name">
+                                    <span>Alexander’s Steakhouse</span>
+                                  </a>
+                                </span>
+                              </div>
+                            </div>
+                            <div className="feed-item_photos">
+                              <div className="arrange arrange--2-units arrange--6 arrange--wrap">
+                                <div className="arrange_unit u-size-full">
+                                  <div style={{backgrounImage: "url(https://s3-media2.fl.yelpcdn.com/bphoto/tSaWNHKlJc4iOuGjvCRMmQ/300s.jpg)"}} className="feed-item_photo feed-item_photo--big feed-item_photo--with-actions">
+                                    <a className="feed-item_link">
+                                      <img
+                                        alt="Filet"
+                                        src="https://s3-media2.fl.yelpcdn.com/bphoto/tSaWNHKlJc4iOuGjvCRMmQ/300s.jpg"
+                                        width="300"
+                                        height="300"
+                                      />
+                                    </a>
+                                  </div>
+                                  <ul className="feed-item_actions feed-item_actions--contained">
+                                    <li className="feed-item_action">
+                                      <a className="feed-item_action-link">
+                                        <span>
+                                          <span>
+                                            <span style={{width: "24", height: "24"}} className="icon icon--24-like-outline icon--size-24 icon--currentColor icon--hover-linked u-space-r-half">
+                                              <svg className="icon_svg" id="24x24_like_outline" height="100%" viewBox="0 0 24 24" width="100%">
+                                                <path d="M21.164 12.236c.05.164.086.334.086.514 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723A1.75 1.75 0 0 1 18 19H7v-9h1c.37 0 1.257-2.37 2.104-3.345.89-1.017 1.234-1.782 1.457-2.513C11.785 3.412 12 2 12 2s2.388.11 2.388 2.9c0 1.39-.758 3.1-.388 4.1h6.25c.966 0 1.75.784 1.75 1.75 0 .63-.336 1.178-.836 1.486zM20.25 10h-6.946l-.242-.653c-.316-.855-.11-1.862.09-2.835.117-.56.236-1.14.236-1.61 0-.844-.283-1.314-.608-1.577-.076.387-.168.797-.262 1.107-.228.748-.604 1.673-1.66 2.88-.336.386-.744 1.166-1.072 1.794C9.146 10.326 8.796 11 8 11v7h10a.75.75 0 0 0 .75-.75.75.75 0 0 0-.07-.308l-.385-.843.812-.45A.74.74 0 0 0 19.5 15a.75.75 0 0 0-.07-.308l-.385-.843.812-.45a.74.74 0 0 0 .393-.65.793.793 0 0 0-.04-.22l-.23-.74.66-.406A.746.746 0 0 0 20.25 10zM2 10h4v10H2V10z"></path>
+                                              </svg>
+                                            </span>
+                                            <span>Like</span>
+                                          </span>
+                                        </span>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div className="arrange_unit">
+                                  <div className="feed-item_photo feed-item_photo--with-actions" style={{backgroundImage: "url(https://s3-media2.fl.yelpcdn.com/bphoto/KVUGoFs40Jt3OdI7vmF-og/168s.jpg)"}}>
+                                    <a className="feed-item_link">
+                                      <image
+                                        alt="T-bone"
+                                        src="https://s3-media2.fl.yelpcdn.com/bphoto/KVUGoFs40Jt3OdI7vmF-og/168s.jpg"
+                                        height="168"
+                                        width="168"
+                                      />
+                                    </a>
+                                  </div>
+                                  <ul className="feed-item_actions feed-item_actions--contained">
+                                    <li className="feed-item_action">
+                                      <a className="feed-item_action-link">
+                                        <span>
+                                          <span>
+                                            <span style={{width: "24", height: "24"}} className="icon icon--24-like-outline icon--size-24 icon--currentColor icon--hover-linked u-space-r-half">
+                                              <svg className="icon_svg" id="24x24_like_outline" height="100%" viewBox="0 0 24 24" width="100%">
+                                                <path d="M21.164 12.236c.05.164.086.334.086.514 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723A1.75 1.75 0 0 1 18 19H7v-9h1c.37 0 1.257-2.37 2.104-3.345.89-1.017 1.234-1.782 1.457-2.513C11.785 3.412 12 2 12 2s2.388.11 2.388 2.9c0 1.39-.758 3.1-.388 4.1h6.25c.966 0 1.75.784 1.75 1.75 0 .63-.336 1.178-.836 1.486zM20.25 10h-6.946l-.242-.653c-.316-.855-.11-1.862.09-2.835.117-.56.236-1.14.236-1.61 0-.844-.283-1.314-.608-1.577-.076.387-.168.797-.262 1.107-.228.748-.604 1.673-1.66 2.88-.336.386-.744 1.166-1.072 1.794C9.146 10.326 8.796 11 8 11v7h10a.75.75 0 0 0 .75-.75.75.75 0 0 0-.07-.308l-.385-.843.812-.45A.74.74 0 0 0 19.5 15a.75.75 0 0 0-.07-.308l-.385-.843.812-.45a.74.74 0 0 0 .393-.65.793.793 0 0 0-.04-.22l-.23-.74.66-.406A.746.746 0 0 0 20.25 10zM2 10h4v10H2V10z"></path>
+                                              </svg>
+                                            </span>
+                                            <span>Like</span>
+                                          </span>
+                                        </span>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div className="arrange_unit">
+                                  <div className="feed-item_photo feed-item_photo--with-actions" style={{backgroundImage: "url(https://s3-media3.fl.yelpcdn.com/bphoto/yj7A_xSnsbbOsxwYzCDGvw/168s.jpg)"}}>
+                                    <a className="feed-item_link">
+                                      <image
+                                        alt="T-bone"
+                                        src="https://s3-media3.fl.yelpcdn.com/bphoto/yj7A_xSnsbbOsxwYzCDGvw/168s.jpg"
+                                        height="168"
+                                        width="168"
+                                      />
+                                    </a>
+                                  </div>
+                                  <ul className="feed-item_actions feed-item_actions--contained">
+                                    <li className="feed-item_action">
+                                      <a className="feed-item_action-link">
+                                        <span>
+                                          <span>
+                                            <span style={{width: "24", height: "24"}} className="icon icon--24-like-outline icon--size-24 icon--currentColor icon--hover-linked u-space-r-half">
+                                              <svg className="icon_svg" id="24x24_like_outline" height="100%" viewBox="0 0 24 24" width="100%">
+                                                <path d="M21.164 12.236c.05.164.086.334.086.514 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723A1.75 1.75 0 0 1 18 19H7v-9h1c.37 0 1.257-2.37 2.104-3.345.89-1.017 1.234-1.782 1.457-2.513C11.785 3.412 12 2 12 2s2.388.11 2.388 2.9c0 1.39-.758 3.1-.388 4.1h6.25c.966 0 1.75.784 1.75 1.75 0 .63-.336 1.178-.836 1.486zM20.25 10h-6.946l-.242-.653c-.316-.855-.11-1.862.09-2.835.117-.56.236-1.14.236-1.61 0-.844-.283-1.314-.608-1.577-.076.387-.168.797-.262 1.107-.228.748-.604 1.673-1.66 2.88-.336.386-.744 1.166-1.072 1.794C9.146 10.326 8.796 11 8 11v7h10a.75.75 0 0 0 .75-.75.75.75 0 0 0-.07-.308l-.385-.843.812-.45A.74.74 0 0 0 19.5 15a.75.75 0 0 0-.07-.308l-.385-.843.812-.45a.74.74 0 0 0 .393-.65.793.793 0 0 0-.04-.22l-.23-.74.66-.406A.746.746 0 0 0 20.25 10zM2 10h4v10H2V10z"></path>
+                                              </svg>
+                                            </span>
+                                            <span>Like</span>
+                                          </span>
+                                        </span>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <p className="feed-item_more">
+                              <a className="show-all-photos">Show all 5 photos</a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
                     </div>
+
                   </div>
                   <p className="activity-feed_load-more">
                     <a>
