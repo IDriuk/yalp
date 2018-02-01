@@ -760,6 +760,7 @@ class App extends Component {
                               <div className="photo-box pb-30s">
                                 <a>
                                   <img
+                                    alt="alt"
                                     className="photo-box-img"
                                     height="30"
                                     width="30"
@@ -824,6 +825,7 @@ class App extends Component {
                               <div className="photo-box pb-30s">
                                 <a>
                                   <img
+                                    alt="alt"
                                     className="photo-box-img"
                                     height="30"
                                     width="30"
@@ -951,6 +953,7 @@ class App extends Component {
                               <div className="photo-box pb-30s">
                                 <a>
                                   <img
+                                    alt="alt"
                                     className="photo-box-img"
                                     height="30"
                                     width="30"
