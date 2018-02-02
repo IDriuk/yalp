@@ -448,6 +448,280 @@ strong {
     display: block;
 }
 
+/* photos island */
+.arrange {
+    display: table;
+    min-width: 100%;
+    table-layout: auto;
+}
+
+.arrange--6 {
+    margin-left: -6px;
+    margin-right: -6px;
+    border-collapse: separate;
+    border-spacing: 6px 0;
+}
+
+.arrange--6.arrange--equal, .arrange--6.arrange--wrap {
+    margin-left: -3px;
+    margin-right: -3px;
+}
+
+.arrange--wrap {
+    display: block;
+    font-size: 0;
+    line-height: 1;
+    text-align: left;
+}
+
+.arrange--wrap.arrange--6 {
+    margin-top: -6px;
+}
+
+.u-size-full {
+    width: 100%!important;
+    -webkit-box-sizing: border-box!important;
+    box-sizing: border-box!important;
+}
+
+.arrange--6>.arrange_unit, .ie .arrange--6.arrange--equal {
+    border-collapse: collapse;
+    border-spacing: 0 0;
+}
+
+.arrange--wrap>.arrange_unit {
+    display: inline-block;
+    zoom: 1;
+    width: auto;
+    font-size: 14px;
+    line-height: 1.28571em;
+}
+
+.arrange--wrap.arrange--6>.arrange_unit {
+    margin-top: 6px;
+}
+
+.arrange--6.arrange--wrap>.arrange_unit, .ie .arrange--6.arrange--equal>.arrange_unit {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+
+
+.feed-item_photo {
+    height: 132px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+}
+
+.feed-item_photo {
+    height: 132px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+}
+
+.feed-item_photo--with-actions {
+    border-bottom: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.feed-item_link {
+    display: block;
+    height: 100%;
+}
+
+.feed-item_photo>.feed-item_link>img, .feed-item_photo>img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+.arrange--2-units>.arrange_unit {
+    width: 50%;
+}
+
+.feed-item_more {
+    text-align: center;
+    margin: 18px 0 0;
+}
+
+.feed-item_photos {
+    margin: 0 -6px -6px;
+}
+
+.feed-item_photos--single {
+    margin: 0 -11px -11px;
+}
+
+.feed-item_photos--single>.feed-item_photo {
+    border-radius: 0;
+    border: 0;
+    height: 300px;
+}
+
+.feed-item_link {
+    display: block;
+    height: 100%;
+}
+
+.feed-item_photo--with-actions {
+    border-bottom: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.feed-item_actions {
+    border-top: 1px solid #e6e6e6;
+    padding-top: 8px;
+    margin-top: 12px;
+    position: relative;
+}
+
+.feed-item_photo>.feed-item_link>img, .feed-item_photo>img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+.feed-item_actions {
+    border-top: 1px solid #e6e6e6;
+    padding-top: 8px;
+    margin-top: 12px;
+    position: relative;
+}
+
+.feed-item_actions--contained-borderless {
+    padding: 8px 6px;
+    margin-top: 0;
+    border-top-width: 0;
+}
+
+.feed-item_photos--single>.feed-item_actions {
+    margin-top: 0;
+}
+
+.feed-item_actions:after, .feed-item_actions:before {
+    content: " ";
+    display: table;
+}
+
+.feed-item_actions:after {
+    clear: both;
+}
+
+.feed-item_actions--contained {
+    padding: 8px 6px;
+    margin-top: 0;
+    border: 1px solid #e6e6e6;
+    border-top-width: 0;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.feed-item_action-link {
+    color: #999;
+    display: block;
+}
+
+.feed-item_action-link .show-tooltip {
+    display: inline-block;
+}
+
+.feed-item_action {
+    float: left;
+    margin-right: 12px;
+    margin-bottom: -2px;
+}
+
+.feed-item_action-link {
+    color: #999;
+    display: block;
+}
+
+.feed-item_action-link .show-tooltip {
+    display: inline-block;
+}
+
+.show-tooltip {
+    position: relative;
+}
+
+.icon, svg:not(:root) {
+    overflow: hidden;
+}
+
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -.1em;
+    fill: #666;
+}
+
+.icon--currentColor, .icon--hover-currentColor:focus, .icon--hover-currentColor:hover {
+    fill: currentColor;
+}
+
+.u-space-r-half {
+    margin-right: 3px!important;
+}
+
+.icon, svg:not(:root) {
+    overflow: hidden;
+}
+
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -.1em;
+    fill: #666;
+}
+
+.icon:before {
+    position: absolute;
+    display: block;
+    left: 0;
+}
+
+.icon:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.feed-item_photo--big {
+    height: 150px;
+}
+/* photos island end */
+
 /* column alpha and beta */
 /* column beta */
 .layout-a .column-beta {
