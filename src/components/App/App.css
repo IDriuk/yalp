@@ -12,6 +12,80 @@ h4 {
     line-height: 1.28571em;
 }
 
+/* footer */
+.main-content-wrap {
+    min-width: 1020px;
+}
+
+.main-content-wrap--separated {
+    border-top: 1px solid #ccc;
+}
+
+.content-container {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.main-footer {
+    padding: 36px 0 18px;
+    font-size: 14px;
+    line-height: 1.28571em;
+    color: #666;
+}
+
+.main-footer_menu {
+    margin-bottom: 36px;
+}
+
+.main-footer_item {
+    float: left;
+    padding: 0 15px;
+    min-height: 1px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 25%;
+}
+
+.main-footer_item.arrange_unit {
+    float: none;
+}
+
+.footer-menu_header {
+    margin-bottom: 12px;
+}
+
+.footer-menu_item {
+    margin-bottom: 6px;
+}
+
+.main-footer_city-landscape-img {
+    background: url(https://s3-media2.fl.yelpcdn.com/assets/srv0/yelp_styleguide/573fa19c8435/assets/img/structural/footer_cityscape.png) no-repeat bottom;
+    background-size: 660px 140px;
+    margin: 42px auto 18px;
+    height: 140px;
+}
+
+small{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+small {
+    font-size: 12px;
+    line-height: 1.5em;
+}
+
+.main-footer_copyright {
+    display: block;
+    margin-top: 18px;
+    text-align: center;
+}
+
 /* recent activity */
 .y-container {
     background-color: #fff;
