@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.bd22dbb2.css",
-  "main.css.map": "static/css/main.bd22dbb2.css.map",
-  "main.js": "static/js/main.3fb19430.js",
-  "main.js.map": "static/js/main.3fb19430.js.map",
+  "main.css": "static/css/main.85382c92.css",
+  "main.css.map": "static/css/main.85382c92.css.map",
+  "main.js": "static/js/main.c8853e5f.js",
+  "main.js.map": "static/js/main.c8853e5f.js.map",
   "static\\media\\bluestonelane.jpg": "static/media/bluestonelane.6921882a.jpg",
   "static\\media\\dryclean.png": "static/media/dryclean.8f8486bb.png",
   "static\\media\\hotels.png": "static/media/hotels.b9245f29.png",
@@ -14,6 +14,8 @@
   "static\\media\\photo_EiZICTpAxWEmpvhDnduYdw.jpg": "static/media/photo_EiZICTpAxWEmpvhDnduYdw.7b8f72bd.jpg",
   "static\\media\\photo_dLinn6rjkWYrtnMDTvDisQ.jpg": "static/media/photo_dLinn6rjkWYrtnMDTvDisQ.87094256.jpg",
   "static\\media\\photo_tSaWNHKlJc4iOuGjvCRMmQ.jpg": "static/media/photo_tSaWNHKlJc4iOuGjvCRMmQ.596e6c65.jpg",
+  "static\\media\\pitch_android.png": "static/media/pitch_android.a91a4a08.png",
+  "static\\media\\pitch_ios.png": "static/media/pitch_ios.960cce5c.png",
   "static\\media\\stars.png": "static/media/stars.9b34e39c.png",
   "static\\media\\top_photo.jpg": "static/media/top_photo.252051bf.jpg"
 }
