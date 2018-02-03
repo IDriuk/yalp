@@ -17,6 +17,19 @@ import HzFeDvDkWKsugW8ztN4lWg_90s from '../../images/HzFeDvDkWKsugW8ztN4lWg_90s.
 import BR0mnDHZy3j3RI_hRAMBmg from '../../images/BR0mnDHZy3j3RI_hRAMBmg.jpg';
 import yB8_l5v2e4Rs7rjgkm1WQ from '../../images/8yB8_l5v2e4Rs7rjgkm1WQ.jpg';
 
+import photo_0os9VoR2evxRmqt2_Yx8Iw from '../../images/photo_0os9VoR2evxRmqt2_Yx8Iw.jpg';
+import photo_EiZICTpAxWEmpvhDnduYdw from '../../images/photo_EiZICTpAxWEmpvhDnduYdw.jpg';
+import photo_XJLvFmxlX5jdMfEyC4dG1g from '../../images/photo_XJLvFmxlX5jdMfEyC4dG1g.jpg';
+import photo_tSaWNHKlJc4iOuGjvCRMmQ from '../../images/photo_tSaWNHKlJc4iOuGjvCRMmQ.jpg';
+import photo_KVUGoFs40Jt3OdI7vmFog from '../../images/photo_KVUGoFs40Jt3OdI7vmF-og.jpg';
+import photo_yj7A_xSnsbbOsxwYzCDGvw from '../../images/photo_yj7A_xSnsbbOsxwYzCDGvw.jpg';
+import photo_UDkFIThfOLMNO8iCnF0t8A from '../../images/photo_UDkFIThfOLMNO8iCnF0t8A.jpg';
+import photo_dLinn6rjkWYrtnMDTvDisQ from '../../images/photo_dLinn6rjkWYrtnMDTvDisQ.jpg';
+import C921ZGj4qJc_TDk92CM5FA from '../../images/C921ZGj4qJc_TDk92CM5FA.jpg';
+import LV2NNGBzYm166mc8VQ from '../../images/7LV2NNGBzYm166mc8VQ.jpg';
+import Q1kaby1yAQEUWlsCP1c3Ow from '../../images/Q1kaby1yAQEUWlsCP1c3Ow.jpg';
+import jsDmbW9Eaqgyc0Kbw4TUvg from '../../images/jsDmbW9Eaqgyc0Kbw4TUvg.jpg';
+
 class App extends Component {
   render() {
     return (
@@ -764,7 +777,7 @@ class App extends Component {
                                     className="photo-box-img"
                                     height="30"
                                     width="30"
-                                    src="https://s3-media1.fl.yelpcdn.com/photo/0os9VoR2evxRmqt2_Yx8Iw/30s.jpg"
+                                    src={photo_0os9VoR2evxRmqt2_Yx8Iw}
                                   />
                                 </a>
                               </div>
@@ -787,11 +800,11 @@ class App extends Component {
                               </div>
                             </div>
                             <div className="feed-item_photos feed-item_photos--single">
-                              <div style={{backgroundImage: "url(https://s3-media4.fl.yelpcdn.com/bphoto/EiZICTpAxWEmpvhDnduYdw/300s.jpg)"}} className="feed-item_photo feed-item_photo--with-actions">
+                              <div style={{backgroundImage: `url(${photo_EiZICTpAxWEmpvhDnduYdw})`}} className="feed-item_photo feed-item_photo--with-actions">
                                 <a className="feed-item_link ">
                                   <img
                                     alt="New item! Greenpan diamond Evershine!! Quality!"
-                                    src="https://s3-media4.fl.yelpcdn.com/bphoto/EiZICTpAxWEmpvhDnduYdw/300s.jpg"
+                                    src={photo_EiZICTpAxWEmpvhDnduYdw}
                                     width="300"
                                     height="300"
                                   />
@@ -829,7 +842,7 @@ class App extends Component {
                                     className="photo-box-img"
                                     height="30"
                                     width="30"
-                                    src="https://s3-media1.fl.yelpcdn.com/photo/XJLvFmxlX5jdMfEyC4dG1g/30s.jpg"
+                                    src={photo_XJLvFmxlX5jdMfEyC4dG1g}
                                   />
                                 </a>
                               </div>
@@ -854,11 +867,11 @@ class App extends Component {
                             <div className="feed-item_photos">
                               <div className="arrange arrange--2-units arrange--6 arrange--wrap">
                                 <div className="arrange_unit u-size-full">
-                                  <div style={{backgroundImage: "url(https://s3-media2.fl.yelpcdn.com/bphoto/tSaWNHKlJc4iOuGjvCRMmQ/300s.jpg)"}} className="feed-item_photo feed-item_photo--big feed-item_photo--with-actions">
+                                  <div style={{backgroundImage: `url(${photo_tSaWNHKlJc4iOuGjvCRMmQ})`}} className="feed-item_photo feed-item_photo--big feed-item_photo--with-actions">
                                     <a className="feed-item_link">
                                       <img
                                         alt="Filet"
-                                        src="https://s3-media2.fl.yelpcdn.com/bphoto/tSaWNHKlJc4iOuGjvCRMmQ/300s.jpg"
+                                        src={photo_tSaWNHKlJc4iOuGjvCRMmQ}
                                         width="300"
                                         height="300"
                                       />
@@ -882,11 +895,11 @@ class App extends Component {
                                   </ul>
                                 </div>
                                 <div className="arrange_unit">
-                                  <div className="feed-item_photo feed-item_photo--with-actions" style={{backgroundImage: "url(https://s3-media2.fl.yelpcdn.com/bphoto/KVUGoFs40Jt3OdI7vmF-og/168s.jpg)"}}>
+                                  <div className="feed-item_photo feed-item_photo--with-actions" style={{backgroundImage: `url(${photo_KVUGoFs40Jt3OdI7vmFog})`}}>
                                     <a className="feed-item_link">
                                       <img
                                         alt="T-bone"
-                                        src="https://s3-media2.fl.yelpcdn.com/bphoto/KVUGoFs40Jt3OdI7vmF-og/168s.jpg"
+                                        src={photo_KVUGoFs40Jt3OdI7vmFog}
                                         height="168"
                                         width="168"
                                       />
@@ -910,11 +923,11 @@ class App extends Component {
                                   </ul>
                                 </div>
                                 <div className="arrange_unit">
-                                  <div className="feed-item_photo feed-item_photo--with-actions" style={{backgroundImage: "url(https://s3-media3.fl.yelpcdn.com/bphoto/yj7A_xSnsbbOsxwYzCDGvw/168s.jpg)"}}>
+                                  <div className="feed-item_photo feed-item_photo--with-actions" style={{backgroundImage: `url(${photo_yj7A_xSnsbbOsxwYzCDGvw})`}}>
                                     <a className="feed-item_link">
                                       <img
                                         alt="T-bone"
-                                        src="https://s3-media3.fl.yelpcdn.com/bphoto/yj7A_xSnsbbOsxwYzCDGvw/168s.jpg"
+                                        src={photo_yj7A_xSnsbbOsxwYzCDGvw}
                                         height="168"
                                         width="168"
                                       />
@@ -957,7 +970,7 @@ class App extends Component {
                                     className="photo-box-img"
                                     height="30"
                                     width="30"
-                                    src="https://s3-media1.fl.yelpcdn.com/photo/UDkFIThfOLMNO8iCnF0t8A/30s.jpg"
+                                    src={photo_UDkFIThfOLMNO8iCnF0t8A}
                                   />
                                 </a>
                               </div>
@@ -982,11 +995,11 @@ class App extends Component {
                             <div className="feed-item_photos">
                               <div className="arrange arrange--2-units arrange--6 arrange--wrap">
                                 <div className="arrange_unit u-size-full">
-                                  <div style={{backgroundImage: "url(https://s3-media2.fl.yelpcdn.com/bphoto/dLinn6rjkWYrtnMDTvDisQ/300s.jpg)"}} className="feed-item_photo feed-item_photo--big feed-item_photo--with-actions">
+                                  <div style={{backgroundImage: `url(${photo_dLinn6rjkWYrtnMDTvDisQ})`}} className="feed-item_photo feed-item_photo--big feed-item_photo--with-actions">
                                     <a className="feed-item_link">
                                       <img
                                         alt="Filet"
-                                        src="https://s3-media2.fl.yelpcdn.com/bphoto/dLinn6rjkWYrtnMDTvDisQ/300s.jpg"
+                                        src={photo_dLinn6rjkWYrtnMDTvDisQ}
                                         width="300"
                                         height="300"
                                       />
@@ -1010,11 +1023,11 @@ class App extends Component {
                                   </ul>
                                 </div>
                                 <div className="arrange_unit">
-                                  <div className="feed-item_photo feed-item_photo--with-actions" style={{backgroundImage: "url(https://s3-media1.fl.yelpcdn.com/bphoto/C921ZGj4qJc_TDk92CM5FA/168s.jpg)"}}>
+                                  <div className="feed-item_photo feed-item_photo--with-actions" style={{backgroundImage: `url(${C921ZGj4qJc_TDk92CM5FA})`}}>
                                     <a className="feed-item_link">
                                       <img
                                         alt="T-bone"
-                                        src="https://s3-media1.fl.yelpcdn.com/bphoto/C921ZGj4qJc_TDk92CM5FA/168s.jpg"
+                                        src={C921ZGj4qJc_TDk92CM5FA}
                                         height="168"
                                         width="168"
                                       />
@@ -1038,11 +1051,11 @@ class App extends Component {
                                   </ul>
                                 </div>
                                 <div className="arrange_unit">
-                                  <div className="feed-item_photo feed-item_photo--with-actions" style={{backgroundImage: "url(https://s3-media4.fl.yelpcdn.com/bphoto/ZB-7LV2NNGBzYm166mc8VQ/168s.jpg)"}}>
+                                  <div className="feed-item_photo feed-item_photo--with-actions" style={{backgroundImage: `url(${LV2NNGBzYm166mc8VQ})`}}>
                                     <a className="feed-item_link">
                                       <img
                                         alt="T-bone"
-                                        src="https://s3-media4.fl.yelpcdn.com/bphoto/ZB-7LV2NNGBzYm166mc8VQ/168s.jpg"
+                                        src={LV2NNGBzYm166mc8VQ}
                                         height="168"
                                         width="168"
                                       />
@@ -1082,7 +1095,7 @@ class App extends Component {
                             <div className="arrange_unit">
                               <div className="photo-box pb-30s">
                                 <a>
-                                  <img alt="img" className="photo-box-img" src="https://s3-media3.fl.yelpcdn.com/photo/Q1kaby1yAQEUWlsCP1c3Ow/30s.jpg" height="30" width="30"/>
+                                  <img alt="img" className="photo-box-img" src={Q1kaby1yAQEUWlsCP1c3Ow} height="30" width="30"/>
                                 </a>
                               </div>
                             </div>
@@ -1096,9 +1109,9 @@ class App extends Component {
                         </div>
                         <div className="feed-item_scrollable-content">
                           <div className="feed-item_hero">
-                            <div className="photo-box photo-box--interactive photo-box--background" style={{backgroundImage: "url(https://s3-media4.fl.yelpcdn.com/bphoto/jsDmbW9Eaqgyc0Kbw4TUvg/l.jpg)"}}>
+                            <div className="photo-box photo-box--interactive photo-box--background" style={{backgroundImage: `url(${jsDmbW9Eaqgyc0Kbw4TUvg})`}}>
                               <a className="photo-box_link">
-                                <img alt="img" className="photo-box-img" height="400" width="600" src="https://s3-media4.fl.yelpcdn.com/bphoto/jsDmbW9Eaqgyc0Kbw4TUvg/l.jpg" />
+                                <img alt="img" className="photo-box-img" height="400" width="600" src={jsDmbW9Eaqgyc0Kbw4TUvg} />
                               </a>
                             </div>
                           </div>
@@ -1114,7 +1127,7 @@ class App extends Component {
                             </div>
                             <div className="u-space-b2">
                               <div className="i-stars i-stars--regular-4 rating-large">
-                                <img className="offscreen" height="303" width="84" src="https://s3-media2.fl.yelpcdn.com/assets/srv0/yelp_design_web/9b34e39ccbeb/assets/img/stars/stars.png" alt="4" />
+                                <img className="offscreen" height="303" width="84" src={stars} alt="4" />
                               </div>
                             </div>
                             <p className="feed-item_review-content u-break-word">
@@ -1199,7 +1212,7 @@ class App extends Component {
                                     className="photo-box-img"
                                     height="30"
                                     width="30"
-                                    src="https://s3-media1.fl.yelpcdn.com/photo/UDkFIThfOLMNO8iCnF0t8A/30s.jpg"
+                                    src={photo_UDkFIThfOLMNO8iCnF0t8A}
                                   />
                                 </a>
                               </div>
@@ -1224,11 +1237,11 @@ class App extends Component {
                             <div className="feed-item_photos">
                               <div className="arrange arrange--2-units arrange--6 arrange--wrap">
                                 <div className="arrange_unit u-size-full">
-                                  <div style={{backgroundImage: "url(https://s3-media2.fl.yelpcdn.com/bphoto/dLinn6rjkWYrtnMDTvDisQ/300s.jpg)"}} className="feed-item_photo feed-item_photo--big feed-item_photo--with-actions">
+                                  <div style={{backgroundImage: `url(${photo_dLinn6rjkWYrtnMDTvDisQ})`}} className="feed-item_photo feed-item_photo--big feed-item_photo--with-actions">
                                     <a className="feed-item_link">
                                       <img
                                         alt="Filet"
-                                        src="https://s3-media2.fl.yelpcdn.com/bphoto/dLinn6rjkWYrtnMDTvDisQ/300s.jpg"
+                                        src={photo_dLinn6rjkWYrtnMDTvDisQ}
                                         width="300"
                                         height="300"
                                       />
@@ -1252,11 +1265,11 @@ class App extends Component {
                                   </ul>
                                 </div>
                                 <div className="arrange_unit">
-                                  <div className="feed-item_photo feed-item_photo--with-actions" style={{backgroundImage: "url(https://s3-media1.fl.yelpcdn.com/bphoto/C921ZGj4qJc_TDk92CM5FA/168s.jpg)"}}>
+                                  <div className="feed-item_photo feed-item_photo--with-actions" style={{backgroundImage: `url(${C921ZGj4qJc_TDk92CM5FA})`}}>
                                     <a className="feed-item_link">
                                       <img
                                         alt="T-bone"
-                                        src="https://s3-media1.fl.yelpcdn.com/bphoto/C921ZGj4qJc_TDk92CM5FA/168s.jpg"
+                                        src={C921ZGj4qJc_TDk92CM5FA}
                                         height="168"
                                         width="168"
                                       />
@@ -1280,11 +1293,11 @@ class App extends Component {
                                   </ul>
                                 </div>
                                 <div className="arrange_unit">
-                                  <div className="feed-item_photo feed-item_photo--with-actions" style={{backgroundImage: "url(https://s3-media4.fl.yelpcdn.com/bphoto/ZB-7LV2NNGBzYm166mc8VQ/168s.jpg)"}}>
+                                  <div className="feed-item_photo feed-item_photo--with-actions" style={{backgroundImage: `url(${LV2NNGBzYm166mc8VQ})`}}>
                                     <a className="feed-item_link">
                                       <img
                                         alt="T-bone"
-                                        src="https://s3-media4.fl.yelpcdn.com/bphoto/ZB-7LV2NNGBzYm166mc8VQ/168s.jpg"
+                                        src={LV2NNGBzYm166mc8VQ}
                                         height="168"
                                         width="168"
                                       />
@@ -1320,7 +1333,7 @@ class App extends Component {
                             <div className="arrange_unit">
                               <div className="photo-box pb-30s">
                                 <a>
-                                  <img alt="img" className="photo-box-img" src="https://s3-media3.fl.yelpcdn.com/photo/Q1kaby1yAQEUWlsCP1c3Ow/30s.jpg" height="30" width="30"/>
+                                  <img alt="img" className="photo-box-img" src={Q1kaby1yAQEUWlsCP1c3Ow} height="30" width="30"/>
                                 </a>
                               </div>
                             </div>
@@ -1334,9 +1347,9 @@ class App extends Component {
                         </div>
                         <div className="feed-item_scrollable-content">
                           <div className="feed-item_hero">
-                            <div className="photo-box photo-box--interactive photo-box--background" style={{backgroundImage: "url(https://s3-media4.fl.yelpcdn.com/bphoto/jsDmbW9Eaqgyc0Kbw4TUvg/l.jpg)"}}>
+                            <div className="photo-box photo-box--interactive photo-box--background" style={{backgroundImage: `url(${jsDmbW9Eaqgyc0Kbw4TUvg})`}}>
                               <a className="photo-box_link">
-                                <img alt="img" className="photo-box-img" height="400" width="600" src="https://s3-media4.fl.yelpcdn.com/bphoto/jsDmbW9Eaqgyc0Kbw4TUvg/l.jpg" />
+                                <img alt="img" className="photo-box-img" height="400" width="600" src={jsDmbW9Eaqgyc0Kbw4TUvg} />
                               </a>
                             </div>
                           </div>
@@ -1352,7 +1365,7 @@ class App extends Component {
                             </div>
                             <div className="u-space-b2">
                               <div className="i-stars i-stars--regular-4 rating-large">
-                                <img className="offscreen" height="303" width="84" src="https://s3-media2.fl.yelpcdn.com/assets/srv0/yelp_design_web/9b34e39ccbeb/assets/img/stars/stars.png" alt="4" />
+                                <img className="offscreen" height="303" width="84" src={stars} alt="4" />
                               </div>
                             </div>
                             <p className="feed-item_review-content u-break-word">
@@ -1441,7 +1454,7 @@ class App extends Component {
                                     className="photo-box-img"
                                     height="30"
                                     width="30"
-                                    src="https://s3-media1.fl.yelpcdn.com/photo/XJLvFmxlX5jdMfEyC4dG1g/30s.jpg"
+                                    src={photo_XJLvFmxlX5jdMfEyC4dG1g}
                                   />
                                 </a>
                               </div>
@@ -1466,11 +1479,11 @@ class App extends Component {
                             <div className="feed-item_photos">
                               <div className="arrange arrange--2-units arrange--6 arrange--wrap">
                                 <div className="arrange_unit u-size-full">
-                                  <div style={{backgroundImage: "url(https://s3-media2.fl.yelpcdn.com/bphoto/tSaWNHKlJc4iOuGjvCRMmQ/300s.jpg)"}} className="feed-item_photo feed-item_photo--big feed-item_photo--with-actions">
+                                  <div style={{backgroundImage: `url(${photo_tSaWNHKlJc4iOuGjvCRMmQ})`}} className="feed-item_photo feed-item_photo--big feed-item_photo--with-actions">
                                     <a className="feed-item_link">
                                       <img
                                         alt="Filet"
-                                        src="https://s3-media2.fl.yelpcdn.com/bphoto/tSaWNHKlJc4iOuGjvCRMmQ/300s.jpg"
+                                        src={photo_tSaWNHKlJc4iOuGjvCRMmQ}
                                         width="300"
                                         height="300"
                                       />
@@ -1494,11 +1507,11 @@ class App extends Component {
                                   </ul>
                                 </div>
                                 <div className="arrange_unit">
-                                  <div className="feed-item_photo feed-item_photo--with-actions" style={{backgroundImage: "url(https://s3-media2.fl.yelpcdn.com/bphoto/KVUGoFs40Jt3OdI7vmF-og/168s.jpg)"}}>
+                                  <div className="feed-item_photo feed-item_photo--with-actions" style={{backgroundImage: `url(${photo_KVUGoFs40Jt3OdI7vmFog})`}}>
                                     <a className="feed-item_link">
                                       <img
                                         alt="T-bone"
-                                        src="https://s3-media2.fl.yelpcdn.com/bphoto/KVUGoFs40Jt3OdI7vmF-og/168s.jpg"
+                                        src={photo_KVUGoFs40Jt3OdI7vmFog}
                                         height="168"
                                         width="168"
                                       />
@@ -1522,11 +1535,11 @@ class App extends Component {
                                   </ul>
                                 </div>
                                 <div className="arrange_unit">
-                                  <div className="feed-item_photo feed-item_photo--with-actions" style={{backgroundImage: "url(https://s3-media3.fl.yelpcdn.com/bphoto/yj7A_xSnsbbOsxwYzCDGvw/168s.jpg)"}}>
+                                  <div className="feed-item_photo feed-item_photo--with-actions" style={{backgroundImage: `url(${photo_yj7A_xSnsbbOsxwYzCDGvw})`}}>
                                     <a className="feed-item_link">
                                       <img
                                         alt="T-bone"
-                                        src="https://s3-media3.fl.yelpcdn.com/bphoto/yj7A_xSnsbbOsxwYzCDGvw/168s.jpg"
+                                        src={photo_yj7A_xSnsbbOsxwYzCDGvw}
                                         height="168"
                                         width="168"
                                       />
@@ -1565,7 +1578,7 @@ class App extends Component {
                             <div className="arrange_unit">
                               <div className="photo-box pb-30s">
                                 <a>
-                                  <img alt="img" className="photo-box-img" src="https://s3-media3.fl.yelpcdn.com/photo/Q1kaby1yAQEUWlsCP1c3Ow/30s.jpg" height="30" width="30"/>
+                                  <img alt="img" className="photo-box-img" src={Q1kaby1yAQEUWlsCP1c3Ow} height="30" width="30"/>
                                 </a>
                               </div>
                             </div>
@@ -1579,9 +1592,9 @@ class App extends Component {
                         </div>
                         <div className="feed-item_scrollable-content">
                           <div className="feed-item_hero">
-                            <div className="photo-box photo-box--interactive photo-box--background" style={{backgroundImage: "url(https://s3-media4.fl.yelpcdn.com/bphoto/jsDmbW9Eaqgyc0Kbw4TUvg/l.jpg)"}}>
+                            <div className="photo-box photo-box--interactive photo-box--background" style={{backgroundImage: `url(${jsDmbW9Eaqgyc0Kbw4TUvg})`}}>
                               <a className="photo-box_link">
-                                <img alt="img" className="photo-box-img" height="400" width="600" src="https://s3-media4.fl.yelpcdn.com/bphoto/jsDmbW9Eaqgyc0Kbw4TUvg/l.jpg" />
+                                <img alt="img" className="photo-box-img" height="400" width="600" src={jsDmbW9Eaqgyc0Kbw4TUvg} />
                               </a>
                             </div>
                           </div>
@@ -1597,7 +1610,7 @@ class App extends Component {
                             </div>
                             <div className="u-space-b2">
                               <div className="i-stars i-stars--regular-4 rating-large">
-                                <img className="offscreen" height="303" width="84" src="https://s3-media2.fl.yelpcdn.com/assets/srv0/yelp_design_web/9b34e39ccbeb/assets/img/stars/stars.png" alt="4" />
+                                <img className="offscreen" height="303" width="84" src={stars} alt="4" />
                               </div>
                             </div>
                             <p className="feed-item_review-content u-break-word">
@@ -1682,7 +1695,7 @@ class App extends Component {
                                     className="photo-box-img"
                                     height="30"
                                     width="30"
-                                    src="https://s3-media1.fl.yelpcdn.com/photo/XJLvFmxlX5jdMfEyC4dG1g/30s.jpg"
+                                    src={photo_XJLvFmxlX5jdMfEyC4dG1g}
                                   />
                                 </a>
                               </div>
@@ -1707,11 +1720,11 @@ class App extends Component {
                             <div className="feed-item_photos">
                               <div className="arrange arrange--2-units arrange--6 arrange--wrap">
                                 <div className="arrange_unit u-size-full">
-                                  <div style={{backgroundImage: "url(https://s3-media2.fl.yelpcdn.com/bphoto/tSaWNHKlJc4iOuGjvCRMmQ/300s.jpg)"}} className="feed-item_photo feed-item_photo--big feed-item_photo--with-actions">
+                                  <div style={{backgroundImage: `url(${photo_tSaWNHKlJc4iOuGjvCRMmQ})`}} className="feed-item_photo feed-item_photo--big feed-item_photo--with-actions">
                                     <a className="feed-item_link">
                                       <img
                                         alt="Filet"
-                                        src="https://s3-media2.fl.yelpcdn.com/bphoto/tSaWNHKlJc4iOuGjvCRMmQ/300s.jpg"
+                                        src={photo_tSaWNHKlJc4iOuGjvCRMmQ}
                                         width="300"
                                         height="300"
                                       />
@@ -1735,11 +1748,11 @@ class App extends Component {
                                   </ul>
                                 </div>
                                 <div className="arrange_unit">
-                                  <div className="feed-item_photo feed-item_photo--with-actions" style={{backgroundImage: "url(https://s3-media2.fl.yelpcdn.com/bphoto/KVUGoFs40Jt3OdI7vmF-og/168s.jpg)"}}>
+                                  <div className="feed-item_photo feed-item_photo--with-actions" style={{backgroundImage: `url(${photo_KVUGoFs40Jt3OdI7vmFog})`}}>
                                     <a className="feed-item_link">
                                       <img
                                         alt="T-bone"
-                                        src="https://s3-media2.fl.yelpcdn.com/bphoto/KVUGoFs40Jt3OdI7vmF-og/168s.jpg"
+                                        src={photo_KVUGoFs40Jt3OdI7vmFog}
                                         height="168"
                                         width="168"
                                       />
@@ -1763,11 +1776,11 @@ class App extends Component {
                                   </ul>
                                 </div>
                                 <div className="arrange_unit">
-                                  <div className="feed-item_photo feed-item_photo--with-actions" style={{backgroundImage: "url(https://s3-media3.fl.yelpcdn.com/bphoto/yj7A_xSnsbbOsxwYzCDGvw/168s.jpg)"}}>
+                                  <div className="feed-item_photo feed-item_photo--with-actions" style={{backgroundImage: `url(${photo_yj7A_xSnsbbOsxwYzCDGvw})`}}>
                                     <a className="feed-item_link">
                                       <img
                                         alt="T-bone"
-                                        src="https://s3-media3.fl.yelpcdn.com/bphoto/yj7A_xSnsbbOsxwYzCDGvw/168s.jpg"
+                                        src={photo_yj7A_xSnsbbOsxwYzCDGvw}
                                         height="168"
                                         width="168"
                                       />

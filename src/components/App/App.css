@@ -332,7 +332,7 @@ strong {
 }
 
 .i-stars {
-    background: url(https://s3-media2.fl.yelpcdn.com/assets/srv0/yelp_design_web/9b34e39ccbeb/assets/img/stars/stars.png) no-repeat;
+    background: url('../../images/stars.png') no-repeat;
     background-size: 132px 560px;
     display: inline-block;
     vertical-align: middle;
@@ -1456,7 +1456,7 @@ a.ybtn {
 }
 
 .homepage-hero_logo {
-  background-image: url(../../images/yelp_logo.png);
+  background-image: url('../../images/yelp_logo.png');
   background-size: 160px 80px;
   width: 160px;
   height: 80px;
@@ -2410,7 +2410,7 @@ h3 a.biz-name  {
 }
 
 .i-stars {
-    background: url(../../images/stars.png) no-repeat;
+    background: url('../../images/stars.png') no-repeat;
     background-size: 132px 560px;
     display: inline-block;
     vertical-align: middle;
