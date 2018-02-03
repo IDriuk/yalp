@@ -30,6 +30,9 @@ import LV2NNGBzYm166mc8VQ from '../../images/7LV2NNGBzYm166mc8VQ.jpg';
 import Q1kaby1yAQEUWlsCP1c3Ow from '../../images/Q1kaby1yAQEUWlsCP1c3Ow.jpg';
 import jsDmbW9Eaqgyc0Kbw4TUvg from '../../images/jsDmbW9Eaqgyc0Kbw4TUvg.jpg';
 
+import ios from '../../images/pitch_ios.png';
+import android from '../../images/pitch_android.png';
+
 class App extends Component {
   render() {
     return (
@@ -1827,7 +1830,44 @@ class App extends Component {
                   </p>
                 </div>
               </div>
-              <div className="home-container_section home-container_section--top-long"></div>
+              {/* mobile apps */}
+              <div className="home-container_section home-container_section--top-long">
+                <div className="u-text-centered">
+                  <h2 className="u-space-b4">Yelp Mobile Apps</h2>
+                  <div className="app-pitch">
+                    <div className="arrange arrange--equal arrange--30">
+                      <div className="arrange_unit">
+                        <a className="island island-light app-pitch_item app-pitch_item--ios icon--hover-linked icon--active-linked icon">
+                          <h4>iPhone, iPad and
+                            <span
+                              style={{width: 18, height: 18}}
+                              className="icon icon--18-apple icon--size-18 icon--black">
+                                <svg className="icon_svg" id="18x18_apple" height="100%" viewBox="0 0 18 18" width="100%">
+                                  <path d="M13.023 8.44c.02 2.404 1.953 3.2 1.977 3.208a8.305 8.305 0 0 1-1.028 2.256c-.606.976-1.24 1.93-2.25 1.947-.98.027-1.308-.62-2.432-.62-1.133 0-1.484.605-2.424.647-.96.038-1.694-1.042-2.322-2.01-1.255-1.974-2.232-5.564-.922-8.007.635-1.2 1.792-1.97 3.03-1.99.96-.022 1.853.698 2.444.698.58 0 1.682-.862 2.82-.733.475.015 1.83.203 2.703 1.575-.073.045-1.615 1.02-1.598 3.03zM8.98 3.652c-.107-.904.31-1.866.775-2.452.527-.665 1.44-1.175 2.173-1.21.096.94-.25 1.866-.755 2.546-.527.67-1.37 1.183-2.193 1.117z"></path>
+                                </svg>
+                              </span>
+                            Watch</h4>
+                            <img
+                              src={ios}
+                              width="264"
+                              alt="iPhone"
+                            />
+                        </a>
+                      </div>
+                      <div className="arrange_unit">
+                        <a className="island island-light app-pitch_item app-pitch_item--android">
+                          <h4>Android</h4>
+                          <img
+                            src={android}
+                            width="264"
+                            alt="Android"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
