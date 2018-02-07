@@ -1,6 +1,8 @@
 import React, { Component, Fragment } from 'react';
 import './App.css';
 
+import Stars from '../Stars/Stars';
+
 import movers from '../../images/movers.png';
 import hotels from '../../images/hotels.png';
 import dryclean from '../../images/dryclean.png';
@@ -9,7 +11,6 @@ import massage from '../../images/massage.png';
 import bluestonelane from '../../images/bluestonelane.jpg';
 import kaya from '../../images/kaya.jpg';
 import pastapopup from '../../images/pastapopup.jpg';
-import stars from '../../images/stars.png';
 import rotd from '../../images/rotd.png';
 
 import photo_ESeXb2NVPZzYonGbOJzoEw_60s from '../../images/photo_ESeXb2NVPZzYonGbOJzoEw_60s.jpg';
@@ -393,9 +394,7 @@ class App extends Component {
                             </div>
                           </h3>
                           <div className="biz-rating biz-rating-large clearfix">
-                            <div className="i-stars i-stars--regular-4-half rating-large">
-                              <img className="offscreen" height="303" src={stars} width="84" alt="4.5 star rating" />
-                            </div>
+                            <Stars rating="4.5"/>
                             <span className="review-count rating-qualifier">15 reviews</span>
                           </div>
                           <div className="price-category">
@@ -452,9 +451,7 @@ class App extends Component {
                             </div>
                           </h3>
                           <div className="biz-rating biz-rating-large clearfix">
-                            <div className="i-stars i-stars--regular-4-half rating-large">
-                              <img className="offscreen" height="303" src={stars} width="84" alt="4.5 star rating" />
-                            </div>
+                            <Stars rating="4.5"/>
                             <span className="review-count rating-qualifier">11 reviews</span>
                           </div>
                           <div className="price-category">
@@ -514,9 +511,7 @@ class App extends Component {
                             </div>
                           </h3>
                           <div className="biz-rating biz-rating-large clearfix">
-                            <div className="i-stars i-stars--regular-4-half rating-large">
-                              <img className="offscreen" height="303" src={stars} width="84" alt="4.5 star rating" />
-                            </div>
+                            <Stars rating="4.5"/>
                             <span className="review-count rating-qualifier">32 reviews</span>
                           </div>
                           <div className="price-category">
@@ -632,9 +627,7 @@ class App extends Component {
                         <div className="u-space-t3 u-space-b3">
                           <div className="biz-rating biz-rating-large clearfix">
                             <div>
-                              <div className="i-stars i-stars--regular-4 rating-large">
-                                <img className="offscreen" height="303" width="84" alt="4.0 star rating" src={stars} />
-                              </div>
+                              <Stars rating="4.0"/>
                             </div>
                             <span className="rating-qualifier">11/5/2017</span>
                           </div>
@@ -1132,9 +1125,7 @@ class App extends Component {
                               </div>
                             </div>
                             <div className="u-space-b2">
-                              <div className="i-stars i-stars--regular-4 rating-large">
-                                <img className="offscreen" height="303" width="84" src={stars} alt="4" />
-                              </div>
+                              <Stars rating="4.0"/>
                             </div>
                             <p className="feed-item_review-content u-break-word">
                               <span>
@@ -1370,9 +1361,7 @@ class App extends Component {
                               </div>
                             </div>
                             <div className="u-space-b2">
-                              <div className="i-stars i-stars--regular-4 rating-large">
-                                <img className="offscreen" height="303" width="84" src={stars} alt="4" />
-                              </div>
+                              <Stars rating="4.0"/>
                             </div>
                             <p className="feed-item_review-content u-break-word">
                               <span>
@@ -1615,9 +1604,7 @@ class App extends Component {
                               </div>
                             </div>
                             <div className="u-space-b2">
-                              <div className="i-stars i-stars--regular-4 rating-large">
-                                <img className="offscreen" height="303" width="84" src={stars} alt="4" />
-                              </div>
+                              <Stars rating="4.0"/>
                             </div>
                             <p className="feed-item_review-content u-break-word">
                               <span>

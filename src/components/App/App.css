@@ -368,24 +368,6 @@
     font-weight: 700;
 }
 
-.i-stars {
-    background: url('../../images/stars.png') no-repeat;
-    background-size: 132px 560px;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.i-stars--regular-4 {
-    width: 102px;
-    height: 18px;
-    background-position: 0 -366px;
-}
-
-.rating, .rating-large, .rating-very-large {
-    position: relative;
-    overflow: hidden;
-}
-
 .offscreen {
     clip: rect(0 0 0 0);
     position: absolute;
@@ -1220,29 +1202,6 @@
     clear: both;
 }
 
-.i-stars {
-    background: url(../../images/stars.png) no-repeat;
-    background-size: 132px 560px;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.i-stars--regular-4 {
-    width: 102px;
-    height: 18px;
-    background-position: 0 -366px;
-}
-
-.rating, .rating-large, .rating-very-large {
-    position: relative;
-    overflow: hidden;
-}
-
-.biz-rating-large .rating-large {
-    float: left;
-    margin: -1px 6px 0 0;
-}
-
 .offscreen {
     clip: rect(0 0 0 0);
     position: absolute;
@@ -1257,11 +1216,6 @@
     white-space: nowrap;
 }
 
-.i-stars--regular-4-half {
-    width: 102px;
-    height: 18px;
-    background-position: 0 -384px;
-}
 
 /* column alpha and beta end */
 
@@ -2281,36 +2235,6 @@ h3 a.biz-name  {
     font-weight: 400;
 }
 
-.biz-rating-large .rating-large {
-    float: left;
-    margin: -1px 6px 0 0;
-}
-
-.rating, .rating-large, .rating-very-large {
-    position: relative;
-    overflow: hidden;
-}
-
-.i-stars {
-    background: url('../../images/stars.png') no-repeat;
-    background-size: 132px 560px;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-
-.i-stars--regular-5 {
-    width: 102px;
-    height: 18px;
-    background-position: 0 -402px;
-}
-
-.i-stars--regular-4-half {
-    width: 102px;
-    height: 18px;
-    background-position: 0 -384px;
-}
-
 .offscreen {
     clip: rect(0 0 0 0);
     position: absolute;
@@ -2418,12 +2342,6 @@ icon_svg {
 
 .business-passport-card_date-opened {
     color: #f15c00;
-}
-
-.i-stars--regular-4 {
-    width: 102px;
-    height: 18px;
-    background-position: 0 -366px;
 }
 
 .business-search-form_input--find, .yform .business-search-form_input--find {

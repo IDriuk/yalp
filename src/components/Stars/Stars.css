@@ -1,0 +1,34 @@
+.i-stars {
+  background: url('../../images/stars.png') no-repeat;
+  background-size: 132px 560px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.i-stars--regular-4 {
+  width: 102px;
+  height: 18px;
+  background-position: 0 -366px;
+}
+
+.i-stars--regular-4-half {
+  width: 102px;
+  height: 18px;
+  background-position: 0 -384px;
+}
+
+.i-stars--regular-5 {
+  width: 102px;
+  height: 18px;
+  background-position: 0 -402px;
+}
+
+.rating-large {
+  position: relative;
+  overflow: hidden;
+}
+
+.biz-rating .rating-large{
+  float: left;
+  margin: -1px 6px 0 0;
+}
