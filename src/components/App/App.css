@@ -368,16 +368,6 @@
     font-weight: 700;
 }
 
-.offscreen {
-    clip: rect(0 0 0 0);
-    position: absolute;
-    left: -9999px;
-    top: auto;
-    overflow: hidden;
-    width: 1px;
-    height: 1px;
-}
-
 .feed-item_review-content {
     margin-bottom: 0;
 }
@@ -1202,15 +1192,7 @@
     clear: both;
 }
 
-.offscreen {
-    clip: rect(0 0 0 0);
-    position: absolute;
-    left: -9999px;
-    top: auto;
-    overflow: hidden;
-    width: 1px;
-    height: 1px;
-}
+
 
 .rotd_read-more {
     white-space: nowrap;
@@ -2233,16 +2215,6 @@ h3 a.biz-name  {
     float: left;
     color: #666;
     font-weight: 400;
-}
-
-.offscreen {
-    clip: rect(0 0 0 0);
-    position: absolute;
-    left: -9999px;
-    top: auto;
-    overflow: hidden;
-    width: 1px;
-    height: 1px;
 }
 
 .business-passport-card .price-category {
