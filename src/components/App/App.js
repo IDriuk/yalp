@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import './App.css';
 
 import Stars from '../Stars/Stars';
+import Icon from '../Icon/Icon';
 
 import movers from '../../images/movers.png';
 import hotels from '../../images/hotels.png';
@@ -129,17 +130,11 @@ class App extends Component {
                       <div className="arrange_unit">
                         <button className="ybtn ybtn--primary ybtn--small business-search-form_button">
                           <span className="main-search_action-icon-wrap">
-                            <span className="icon icon--24-search icon--size-24 icon--currentColor"
-                              style={{
-                                width: '24px',
-                                height: '24px'
-                              }}
-                              >
-                                <svg id="24x24_search" height="100%" viewBox="0 0 24 24" width="100%">
-                                  <path d="M20.753 19.34l-4.295-4.297A7.46 7.46 0 0 0 18 10.5a7.5 7.5 0 1 0-7.5 7.5 7.46 7.46 0 0 0 4.543-1.542l4.296 4.295a1 1 0 1 0 1.412-1.414zM10.5 16A5.506 5.506 0 0 1 5 10.5C5 7.467 7.467 5 10.5 5S16 7.467 16 10.5 13.533 16 10.5 16z">
-                                  </path>
-                                </svg>
-                            </span>
+                            <Icon
+                              name="search"
+                              size={24}
+                              currentColor
+                            />
                           </span>
                         </button>
                       </div>
@@ -151,72 +146,41 @@ class App extends Component {
               <ul className="homepage-hero_categories text-centered">
                 <li className="homepage-hero_category">
                   <div>
-                    <span
-                      className="icon icon--18-food icon--size-18 icon--inverse icon--fallback-inverted"
-                      style={{
-                        width: '18px',
-                        height: '18px'
-                      }}
-                      >
-                      <svg id="18x18_food" height="100%" viewBox="0 0 18 18" width="100%">
-                        <path d="M13.61 17h-.007a1.39 1.39 0 0 1-1.376-1.587L13 10l-2-1c0-5.373 1.375-8 3.25-8 .497 0 .75.336.75.75v13.86A1.39 1.39 0 0 1 13.61 17zM6.557 9.912l.35 5.59a1.41 1.41 0 1 1-2.813 0l.35-5.59A1.994 1.994 0 0 1 3 8V1.5a.5.5 0 0 1 1 0v5a.5.5 0 0 0 1 0v-5a.5.5 0 0 1 1 0v5a.5.5 0 0 0 1 0v-5a.5.5 0 0 1 1 0V8c0 .91-.61 1.67-1.443 1.912z">
-                        </path>
-                      </svg>
-                    </span>
+                    <Icon
+                      name="food"
+                      size={18}
+                      inverted
+                    />
                     <a className="homepage-hero_link">Restaurants</a>
                   </div>
                 </li>
                 <li className="homepage-hero_category">
                   <div>
-                    <span
-                      className="icon icon--18-nightlife icon--size-18 icon--inverse icon--fallback-inverted"
-                      style={{
-                        width: '18px',
-                        height: '18px'
-                      }}
-                      >
-                      <svg id="18x18_nightlife" height="100%" viewBox="0 0 18 18" width="100%">
-                        <path d="M15.55 3.66c.565-.648.105-1.66-.754-1.66H3.204a1 1 0 0 0-.753 1.66L8 9v5H6a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2h-2V9l5.55-5.34zM11 3a1 1 0 1 1 0 2 1 1 0 0 1 0-2z">
-                        </path>
-                      </svg>
-                    </span>
+                    <Icon
+                      name="nightlife"
+                      size={18}
+                      inverted
+                    />
                     <a className="homepage-hero_link">Nightlife</a>
                   </div>
                 </li>
                 <li className="homepage-hero_category">
                   <div>
-                    <span
-                      className="icon icon--18-tools icon--size-18 icon--inverse icon--fallback-inverted"
-                      style={{
-                        width: '18px',
-                        height: '18px'
-                      }}
-                      >
-                      <svg id="18x18_tools" height="100%" viewBox="0 0 18 18" width="100%">
-                        <path d="M12.772 8.594c-.337 0-.656-.067-.962-.164l-6.99 7.116a1.472 1.472 0 0 1-2.11 0 1.538 1.538 0 0 1 0-2.15L9.697 6.28a3.34 3.34 0 0 1-.16-.98c0-1.82 1.447-3.294 3.234-3.294.338 0 .657.068.963.165L11.93 4.01l2.11 2.15 1.806-1.837c.095.312.162.637.162.98 0 1.82-1.45 3.294-3.236 3.294zM4.955 6.198L3.54 5.21 1.998 3.64l1.565-1.59 1.54 1.57.905 1.508L7.71 6.86 6.658 7.932 4.955 6.198zm10.006 7.198a1.54 1.54 0 0 1 0 2.15 1.475 1.475 0 0 1-2.11 0l-3.314-3.374 2.11-2.15 3.316 3.374z"></path>
-                      </svg>
-                    </span>
+                    <Icon
+                      name="tools"
+                      size={18}
+                      inverted
+                    />
                     <a className="homepage-hero_link">Home Services</a>
                   </div>
                 </li>
                 <li className="homepage-hero_category">
                   <div>
-                    <span
-                      className="icon icon--18-order icon--size-18 icon--inverse icon--fallback-inverted"
-                      style={{
-                        width: '18px',
-                        height: '18px'
-                      }}
-                      >
-                      <svg
-                        className="icon_svg"
-                        id="18x18_order" height="100%" viewBox="0 0 18 18" width="100%">
-                        <g>
-                          <path d="M4 4V3h3v1H4m4-2H3v2H2a1 1 0 0 0-1 1v7h9V5a1 1 0 0 0-1-1H8V2" opacity=".502"></path>
-                          <path d="M17 10.93L15 9.5V4h-5v8H7.49a2.49 2.49 0 0 0-1.99-1 2.49 2.49 0 0 0-1.99 1H1v2h2.05a2.502 2.502 0 0 0 4.9 0h3.1a2.5 2.5 0 0 0 4.9 0H17v-3.07zM5.5 14.75a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zM12 6h1v3h-1V6zm1.5 8.75a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"></path>
-                        </g>
-                      </svg>
-                    </span>
+                    <Icon
+                      name="order"
+                      size={18}
+                      inverted
+                    />
                     <a className="homepage-hero_link">Delivery</a>
                   </div>
                 </li>
@@ -345,14 +309,12 @@ class App extends Component {
                       </li>
                       <li className="tab-nav_item">
                         <a className="tab-link tab-link--nav">
-                          <span
-                            className="icon icon--18-search-small icon--currentColor icon--size-18 tab-link_icon tab-link_icon-wrap"
-                            style={{width: 18, height: 18}}
-                          >
-                            <svg className="icon_svg" id="18x18_search_small" height="100%" viewBox="0 0 18 18" width="100%">
-                              <path d="M15.913 14.224a1.324 1.324 0 0 0-.3-.466h.01l-3.378-3.376a5.49 5.49 0 0 0 .802-2.857 5.523 5.523 0 1 0-5.522 5.52 5.49 5.49 0 0 0 2.856-.8l3.37 3.368.006.003a1.364 1.364 0 0 0 .93.384C15.41 16 16 15.41 16 14.684c0-.163-.032-.317-.086-.46zM7.525 10.94a3.422 3.422 0 0 1-3.418-3.416 3.422 3.422 0 0 1 3.418-3.417 3.422 3.422 0 0 1 3.416 3.417 3.42 3.42 0 0 1-3.413 3.416z"></path>
-                            </svg>
-                          </span>
+                          <Icon
+                            name="search-small"
+                            size={18}
+                            currentColor
+                            tab
+                          />
                           <span className="tab-link_label">More Cities</span>
                         </a>
                       </li>
@@ -407,17 +369,11 @@ class App extends Component {
                             <span className="neighborhood-str-list">Financial District, SoMa</span>
                           </div>
                           <p className="business-passport-card_date-opened">
-                            <span
-                              className="icon icon--18-flame icon--size-18 icon--currentColor"
-                              style={{
-                                width: 18,
-                                height: 18
-                              }}
-                            >
-                              <svg className="icon_svg" id="18x18_flame" height="100%" viewBox="0 0 18 18" width="100%">
-                                <path d="M11.508 3.743c1.173 2.43-.465 2.27-.696 3.88C10.082 2.758 5.947 1.5 5.947 1.5c2.045 2.697-1.9 4.784-3.63 8.33-1.47 3.016 2.533 5.44 4.67 6.67-2.15-2.993-.563-5.02 1.612-6.793-.81 2.448.5 2.934 1.043 3.944.71-.31 1.028-1.3 1.1-1.79.954 1.31 1.465 2.97-.248 4.64 8.302-3.77 5.977-9.743 1.007-12.752z"></path>
-                              </svg>
-                            </span>
+                            <Icon
+                              name="flame"
+                              size={18}
+                              currentColor
+                            />
                             Opened 7 weeks ago
                           </p>
                         </div>
@@ -464,17 +420,11 @@ class App extends Component {
                             <span className="neighborhood-str-list">Civic Center</span>
                           </div>
                           <p className="business-passport-card_date-opened">
-                            <span
-                              className="icon icon--18-flame icon--size-18 icon--currentColor"
-                              style={{
-                                width: 18,
-                                height: 18
-                              }}
-                            >
-                              <svg className="icon_svg" id="18x18_flame" height="100%" viewBox="0 0 18 18" width="100%">
-                                <path d="M11.508 3.743c1.173 2.43-.465 2.27-.696 3.88C10.082 2.758 5.947 1.5 5.947 1.5c2.045 2.697-1.9 4.784-3.63 8.33-1.47 3.016 2.533 5.44 4.67 6.67-2.15-2.993-.563-5.02 1.612-6.793-.81 2.448.5 2.934 1.043 3.944.71-.31 1.028-1.3 1.1-1.79.954 1.31 1.465 2.97-.248 4.64 8.302-3.77 5.977-9.743 1.007-12.752z"></path>
-                              </svg>
-                            </span>
+                            <Icon
+                              name="flame"
+                              size={18}
+                              currentColor
+                            />
                             Opened 2 weeks ago
                           </p>
                         </div>
@@ -524,17 +474,11 @@ class App extends Component {
                             <span className="neighborhood-str-list">North Beach/Telegraph Hill</span>
                           </div>
                           <p className="business-passport-card_date-opened">
-                            <span
-                              className="icon icon--18-flame icon--size-18 icon--currentColor"
-                              style={{
-                                width: 18,
-                                height: 18
-                              }}
-                            >
-                              <svg className="icon_svg" id="18x18_flame" height="100%" viewBox="0 0 18 18" width="100%">
-                                <path d="M11.508 3.743c1.173 2.43-.465 2.27-.696 3.88C10.082 2.758 5.947 1.5 5.947 1.5c2.045 2.697-1.9 4.784-3.63 8.33-1.47 3.016 2.533 5.44 4.67 6.67-2.15-2.993-.563-5.02 1.612-6.793-.81 2.448.5 2.934 1.043 3.944.71-.31 1.028-1.3 1.1-1.79.954 1.31 1.465 2.97-.248 4.64 8.302-3.77 5.977-9.743 1.007-12.752z"></path>
-                              </svg>
-                            </span>
+                            <Icon
+                              name="flame"
+                              size={18}
+                              currentColor
+                            />
                             Opened 6 weeks ago
                           </p>
                         </div>
@@ -577,26 +521,19 @@ class App extends Component {
                             </strong>
                             <ul className="user-passport-stats user-passport-stats--inline" >
                               <li className="friend-count" >
-                                <span
-                                  style={{fill: '#f15c00', width: 18, height: 18}}
-                                  className="icon icon--18-friends icon--size-18">
-                                    <svg className="icon_svg" id="18x18_friends" height="100%" viewBox="0 0 18 18" width="100%">
-                                      <g>
-                                        <path d="M7.904 9.43l-2.098 4.697a.9.9 0 0 1-1.612 0L2.096 9.43a.902.902 0 0 1 .806-1.305h4.196c.67 0 1.105.705.806 1.305zM5 7.375a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"></path>
-                                        <path d="M15.904 9.43l-2.098 4.697a.89.89 0 0 1-.806.498.89.89 0 0 1-.806-.498L10.096 9.43a.902.902 0 0 1 .806-1.305h4.195c.67 0 1.106.705.807 1.305zM13 7.375a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" opacity=".502"></path>
-                                      </g>
-                                    </svg>
-                                  </span>
+                                <Icon
+                                  name="friends"
+                                  size={18}
+                                  count
+                                />
                                 <b>410</b>
                               </li>
                               <li className="review-count" >
-                                <span
-                                  className="icon icon--18-review icon--size-18"
-                                  style={{fill: '#f15c00', width: 18, height: 18}} >
-                                    <svg className="icon_svg" id="18x18_review" height="100%" viewBox="0 0 18 18" width="100%">
-                                      <path d="M13 3H5c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1.505 9.643l-2.526-1.55L6.526 12.7 7 9.934 5 7.977l2.766-.404L8.97 4.7l1.264 2.873L13 7.977l-2 1.957.495 2.71z"></path>
-                                    </svg>
-                                  </span>
+                                <Icon
+                                  name="review"
+                                  size={18}
+                                  count
+                                />
                                 <b>250</b>
                               </li>
                               <li className="is-elite responsive-small-display-inline-block" >
@@ -814,11 +751,13 @@ class App extends Component {
                                   <a className="feed-item_action-link">
                                     <span className="show-tooltip">
                                       <span>
-                                        <span style={{width: "24px", height:"24px"}} className="icon icon--24-like-outline icon--size-24 icon--currentColor icon--hover-linked u-space-r-half">
-                                          <svg className="icon_svg" id="24x24_like_outline" height="100%" viewBox="0 0 24 24" width="100%">
-                                            <path d="M21.164 12.236c.05.164.086.334.086.514 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723A1.75 1.75 0 0 1 18 19H7v-9h1c.37 0 1.257-2.37 2.104-3.345.89-1.017 1.234-1.782 1.457-2.513C11.785 3.412 12 2 12 2s2.388.11 2.388 2.9c0 1.39-.758 3.1-.388 4.1h6.25c.966 0 1.75.784 1.75 1.75 0 .63-.336 1.178-.836 1.486zM20.25 10h-6.946l-.242-.653c-.316-.855-.11-1.862.09-2.835.117-.56.236-1.14.236-1.61 0-.844-.283-1.314-.608-1.577-.076.387-.168.797-.262 1.107-.228.748-.604 1.673-1.66 2.88-.336.386-.744 1.166-1.072 1.794C9.146 10.326 8.796 11 8 11v7h10a.75.75 0 0 0 .75-.75.75.75 0 0 0-.07-.308l-.385-.843.812-.45A.74.74 0 0 0 19.5 15a.75.75 0 0 0-.07-.308l-.385-.843.812-.45a.74.74 0 0 0 .393-.65.793.793 0 0 0-.04-.22l-.23-.74.66-.406A.746.746 0 0 0 20.25 10zM2 10h4v10H2V10z"></path>
-                                          </svg>
-                                        </span>
+                                        <Icon
+                                          name="like-outline"
+                                          size={24}
+                                          currentColor
+                                          half
+                                          linked
+                                        />
                                         <span>Like</span>
                                       </span>
                                     </span>
@@ -881,11 +820,13 @@ class App extends Component {
                                       <a className="feed-item_action-link">
                                         <span>
                                           <span>
-                                            <span style={{width: "24px", height:"24px"}} className="icon icon--24-like-outline icon--size-24 icon--currentColor icon--hover-linked u-space-r-half">
-                                              <svg className="icon_svg" id="24x24_like_outline" height="100%" viewBox="0 0 24 24" width="100%">
-                                                <path d="M21.164 12.236c.05.164.086.334.086.514 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723A1.75 1.75 0 0 1 18 19H7v-9h1c.37 0 1.257-2.37 2.104-3.345.89-1.017 1.234-1.782 1.457-2.513C11.785 3.412 12 2 12 2s2.388.11 2.388 2.9c0 1.39-.758 3.1-.388 4.1h6.25c.966 0 1.75.784 1.75 1.75 0 .63-.336 1.178-.836 1.486zM20.25 10h-6.946l-.242-.653c-.316-.855-.11-1.862.09-2.835.117-.56.236-1.14.236-1.61 0-.844-.283-1.314-.608-1.577-.076.387-.168.797-.262 1.107-.228.748-.604 1.673-1.66 2.88-.336.386-.744 1.166-1.072 1.794C9.146 10.326 8.796 11 8 11v7h10a.75.75 0 0 0 .75-.75.75.75 0 0 0-.07-.308l-.385-.843.812-.45A.74.74 0 0 0 19.5 15a.75.75 0 0 0-.07-.308l-.385-.843.812-.45a.74.74 0 0 0 .393-.65.793.793 0 0 0-.04-.22l-.23-.74.66-.406A.746.746 0 0 0 20.25 10zM2 10h4v10H2V10z"></path>
-                                              </svg>
-                                            </span>
+                                            <Icon
+                                              name="like-outline"
+                                              size={24}
+                                              currentColor
+                                              half
+                                              linked
+                                            />
                                             <span>Like</span>
                                           </span>
                                         </span>
@@ -909,11 +850,13 @@ class App extends Component {
                                       <a className="feed-item_action-link">
                                         <span>
                                           <span>
-                                            <span style={{width: "24px", height:"24px"}} className="icon icon--24-like-outline icon--size-24 icon--currentColor icon--hover-linked u-space-r-half">
-                                              <svg className="icon_svg" id="24x24_like_outline" height="100%" viewBox="0 0 24 24" width="100%">
-                                                <path d="M21.164 12.236c.05.164.086.334.086.514 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723A1.75 1.75 0 0 1 18 19H7v-9h1c.37 0 1.257-2.37 2.104-3.345.89-1.017 1.234-1.782 1.457-2.513C11.785 3.412 12 2 12 2s2.388.11 2.388 2.9c0 1.39-.758 3.1-.388 4.1h6.25c.966 0 1.75.784 1.75 1.75 0 .63-.336 1.178-.836 1.486zM20.25 10h-6.946l-.242-.653c-.316-.855-.11-1.862.09-2.835.117-.56.236-1.14.236-1.61 0-.844-.283-1.314-.608-1.577-.076.387-.168.797-.262 1.107-.228.748-.604 1.673-1.66 2.88-.336.386-.744 1.166-1.072 1.794C9.146 10.326 8.796 11 8 11v7h10a.75.75 0 0 0 .75-.75.75.75 0 0 0-.07-.308l-.385-.843.812-.45A.74.74 0 0 0 19.5 15a.75.75 0 0 0-.07-.308l-.385-.843.812-.45a.74.74 0 0 0 .393-.65.793.793 0 0 0-.04-.22l-.23-.74.66-.406A.746.746 0 0 0 20.25 10zM2 10h4v10H2V10z"></path>
-                                              </svg>
-                                            </span>
+                                            <Icon
+                                              name="like-outline"
+                                              size={24}
+                                              currentColor
+                                              half
+                                              linked
+                                            />
                                             <span>Like</span>
                                           </span>
                                         </span>
@@ -937,11 +880,13 @@ class App extends Component {
                                       <a className="feed-item_action-link">
                                         <span>
                                           <span>
-                                            <span style={{width: "24px", height:"24px"}} className="icon icon--24-like-outline icon--size-24 icon--currentColor icon--hover-linked u-space-r-half">
-                                              <svg className="icon_svg" id="24x24_like_outline" height="100%" viewBox="0 0 24 24" width="100%">
-                                                <path d="M21.164 12.236c.05.164.086.334.086.514 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723A1.75 1.75 0 0 1 18 19H7v-9h1c.37 0 1.257-2.37 2.104-3.345.89-1.017 1.234-1.782 1.457-2.513C11.785 3.412 12 2 12 2s2.388.11 2.388 2.9c0 1.39-.758 3.1-.388 4.1h6.25c.966 0 1.75.784 1.75 1.75 0 .63-.336 1.178-.836 1.486zM20.25 10h-6.946l-.242-.653c-.316-.855-.11-1.862.09-2.835.117-.56.236-1.14.236-1.61 0-.844-.283-1.314-.608-1.577-.076.387-.168.797-.262 1.107-.228.748-.604 1.673-1.66 2.88-.336.386-.744 1.166-1.072 1.794C9.146 10.326 8.796 11 8 11v7h10a.75.75 0 0 0 .75-.75.75.75 0 0 0-.07-.308l-.385-.843.812-.45A.74.74 0 0 0 19.5 15a.75.75 0 0 0-.07-.308l-.385-.843.812-.45a.74.74 0 0 0 .393-.65.793.793 0 0 0-.04-.22l-.23-.74.66-.406A.746.746 0 0 0 20.25 10zM2 10h4v10H2V10z"></path>
-                                              </svg>
-                                            </span>
+                                            <Icon
+                                              name="like-outline"
+                                              size={24}
+                                              currentColor
+                                              half
+                                              linked
+                                            />
                                             <span>Like</span>
                                           </span>
                                         </span>
@@ -1009,11 +954,13 @@ class App extends Component {
                                       <a className="feed-item_action-link">
                                         <span>
                                           <span>
-                                            <span style={{width: "24px", height:"24px"}} className="icon icon--24-like-outline icon--size-24 icon--currentColor icon--hover-linked u-space-r-half">
-                                              <svg className="icon_svg" id="24x24_like_outline" height="100%" viewBox="0 0 24 24" width="100%">
-                                                <path d="M21.164 12.236c.05.164.086.334.086.514 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723A1.75 1.75 0 0 1 18 19H7v-9h1c.37 0 1.257-2.37 2.104-3.345.89-1.017 1.234-1.782 1.457-2.513C11.785 3.412 12 2 12 2s2.388.11 2.388 2.9c0 1.39-.758 3.1-.388 4.1h6.25c.966 0 1.75.784 1.75 1.75 0 .63-.336 1.178-.836 1.486zM20.25 10h-6.946l-.242-.653c-.316-.855-.11-1.862.09-2.835.117-.56.236-1.14.236-1.61 0-.844-.283-1.314-.608-1.577-.076.387-.168.797-.262 1.107-.228.748-.604 1.673-1.66 2.88-.336.386-.744 1.166-1.072 1.794C9.146 10.326 8.796 11 8 11v7h10a.75.75 0 0 0 .75-.75.75.75 0 0 0-.07-.308l-.385-.843.812-.45A.74.74 0 0 0 19.5 15a.75.75 0 0 0-.07-.308l-.385-.843.812-.45a.74.74 0 0 0 .393-.65.793.793 0 0 0-.04-.22l-.23-.74.66-.406A.746.746 0 0 0 20.25 10zM2 10h4v10H2V10z"></path>
-                                              </svg>
-                                            </span>
+                                            <Icon
+                                              name="like-outline"
+                                              size={24}
+                                              currentColor
+                                              half
+                                              linked
+                                            />
                                             <span>1 Like</span>
                                           </span>
                                         </span>
@@ -1037,11 +984,13 @@ class App extends Component {
                                       <a className="feed-item_action-link">
                                         <span>
                                           <span>
-                                            <span style={{width: "24px", height:"24px"}} className="icon icon--24-like-outline icon--size-24 icon--currentColor icon--hover-linked u-space-r-half">
-                                              <svg className="icon_svg" id="24x24_like_outline" height="100%" viewBox="0 0 24 24" width="100%">
-                                                <path d="M21.164 12.236c.05.164.086.334.086.514 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723A1.75 1.75 0 0 1 18 19H7v-9h1c.37 0 1.257-2.37 2.104-3.345.89-1.017 1.234-1.782 1.457-2.513C11.785 3.412 12 2 12 2s2.388.11 2.388 2.9c0 1.39-.758 3.1-.388 4.1h6.25c.966 0 1.75.784 1.75 1.75 0 .63-.336 1.178-.836 1.486zM20.25 10h-6.946l-.242-.653c-.316-.855-.11-1.862.09-2.835.117-.56.236-1.14.236-1.61 0-.844-.283-1.314-.608-1.577-.076.387-.168.797-.262 1.107-.228.748-.604 1.673-1.66 2.88-.336.386-.744 1.166-1.072 1.794C9.146 10.326 8.796 11 8 11v7h10a.75.75 0 0 0 .75-.75.75.75 0 0 0-.07-.308l-.385-.843.812-.45A.74.74 0 0 0 19.5 15a.75.75 0 0 0-.07-.308l-.385-.843.812-.45a.74.74 0 0 0 .393-.65.793.793 0 0 0-.04-.22l-.23-.74.66-.406A.746.746 0 0 0 20.25 10zM2 10h4v10H2V10z"></path>
-                                              </svg>
-                                            </span>
+                                            <Icon
+                                              name="like-outline"
+                                              size={24}
+                                              currentColor
+                                              half
+                                              linked
+                                            />
                                             <span>1 Like</span>
                                           </span>
                                         </span>
@@ -1065,11 +1014,13 @@ class App extends Component {
                                       <a className="feed-item_action-link">
                                         <span>
                                           <span>
-                                            <span style={{width: "24px", height:"24px"}} className="icon icon--24-like-outline icon--size-24 icon--currentColor icon--hover-linked u-space-r-half">
-                                              <svg className="icon_svg" id="24x24_like_outline" height="100%" viewBox="0 0 24 24" width="100%">
-                                                <path d="M21.164 12.236c.05.164.086.334.086.514 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723A1.75 1.75 0 0 1 18 19H7v-9h1c.37 0 1.257-2.37 2.104-3.345.89-1.017 1.234-1.782 1.457-2.513C11.785 3.412 12 2 12 2s2.388.11 2.388 2.9c0 1.39-.758 3.1-.388 4.1h6.25c.966 0 1.75.784 1.75 1.75 0 .63-.336 1.178-.836 1.486zM20.25 10h-6.946l-.242-.653c-.316-.855-.11-1.862.09-2.835.117-.56.236-1.14.236-1.61 0-.844-.283-1.314-.608-1.577-.076.387-.168.797-.262 1.107-.228.748-.604 1.673-1.66 2.88-.336.386-.744 1.166-1.072 1.794C9.146 10.326 8.796 11 8 11v7h10a.75.75 0 0 0 .75-.75.75.75 0 0 0-.07-.308l-.385-.843.812-.45A.74.74 0 0 0 19.5 15a.75.75 0 0 0-.07-.308l-.385-.843.812-.45a.74.74 0 0 0 .393-.65.793.793 0 0 0-.04-.22l-.23-.74.66-.406A.746.746 0 0 0 20.25 10zM2 10h4v10H2V10z"></path>
-                                              </svg>
-                                            </span>
+                                            <Icon
+                                              name="like-outline"
+                                              size={24}
+                                              currentColor
+                                              half
+                                              linked
+                                            />
                                             <span>Like</span>
                                           </span>
                                         </span>
@@ -1147,33 +1098,33 @@ class App extends Component {
                                 <li className="ufc-action">
                                   <a className="ufc-action_link ufc-action_link--useful">
                                     <span className="show-tooltip">
-                                      <span style={{width: "24px", height: "24px"}} className="icon icon--24-useful-outline icon--size-24 icon--ufc js-icon--ufc">
-                                        <svg className="icon_svg" id="24x24_useful_outline" height="100%" viewBox="0 0 24 24" width="100%">
-                                          <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-19c-4.963 0-9 4.037-9 9s4.037 9 9 9 9-4.037 9-9-4.037-9-9-9zm2 10.704V15h-4v-1.296c-1.35-.72-2.278-2.124-2.278-3.76a4.278 4.278 0 0 1 8.556 0c0 1.636-.93 3.04-2.278 3.76zM11 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 6.5a2 2 0 0 1-4 0V16h4v.5z"></path>
-                                        </svg>
-                                      </span>
+                                      <Icon
+                                        name="useful-outline"
+                                        size={24}
+                                        ufc
+                                      />
                                     </span>
                                   </a>
                                 </li>
                                 <li className="ufc-action">
                                   <a className="ufc-action_link ufc-action_link--funny">
                                     <span className="show-tooltip">
-                                      <span style={{width: "24px", height: "24px"}} className="icon icon--24-funny-outline icon--size-24 icon--ufc">
-                                        <svg className="icon_svg" id="24x24_funny_outline" height="100%" viewBox="0 0 24 24" width="100%">
-                                          <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-19c-4.963 0-9 4.037-9 9s4.037 9 9 9 9-4.037 9-9-4.037-9-9-9zm0 15a5.5 5.5 0 0 1-5.288-4h10.576A5.5 5.5 0 0 1 12 18zm3.5-7a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm-7 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"></path>
-                                        </svg>
-                                      </span>
+                                      <Icon
+                                        name="funny-outline"
+                                        size={24}
+                                        ufc
+                                      />
                                     </span>
                                   </a>
                                 </li>
                                 <li className="ufc-action">
                                   <a className="ufc-action_link ufc-action_link--cool">
                                     <span className="show-tooltip">
-                                      <span style={{width: "24px", height: "24px"}} className="icon icon--24-cool-outline icon--size-24 icon--ufc">
-                                        <svg className="icon_svg" id="24x24_cool_outline" height="100%" viewBox="0 0 24 24" width="100%">
-                                          <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-19c-4.963 0-9 4.037-9 9s4.037 9 9 9 9-4.037 9-9-4.037-9-9-9zm7.994 6.765C19.647 11.612 17.97 13 15.96 13h-.002c-1.617 0-3.028-.9-3.67-2.224a.32.32 0 0 0-.575 0C11.07 12.1 9.66 13 8.043 13H8.04c-2.01 0-3.74-1.15-4.035-3.018l-.124-.734c-.07-.305.257-.25.634-.248h14.972c.39 0 .673-.04.632.248l-.124.517zM17 15.143a5.405 5.405 0 0 1-5 3.357 5.405 5.405 0 0 1-5-3.357 8.6 8.6 0 0 0 5 1.6 8.6 8.6 0 0 0 5-1.6z"></path>
-                                        </svg>
-                                      </span>
+                                      <Icon
+                                        name="cool-outline"
+                                        size={24}
+                                        ufc
+                                      />
                                     </span>
                                   </a>
                                 </li>
@@ -1184,11 +1135,11 @@ class App extends Component {
                                 <div className="arrange_unit">
                                   <a className="compliment-btn compliment-btn--not-sent feed-item_action-link feed-item_action-link--compliment">
                                     <span className="show-tooltip">
-                                      <span style={{width: "24px", height: "24px"}} className="icon icon--24-compliment icon--size-24 icon--currentColor icon--compliment">
-                                        <svg className="icon_svg" id="24x24_compliment" height="100%" viewBox="0 0 24 24" width="100%">
-                                          <path d="M19 9A7 7 0 0 0 5 9a6.995 6.995 0 0 0 3.957 6.297L8 21.992 12.005 19 16 21.992l-.957-6.695A6.995 6.995 0 0 0 19 9zm-7 5c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path>
-                                        </svg>
-                                      </span>
+                                      <Icon
+                                        name="compliment"
+                                        size={24}
+                                        currentColor
+                                      />
                                     </span>
                                   </a>
                                 </div>
@@ -1249,11 +1200,13 @@ class App extends Component {
                                       <a className="feed-item_action-link">
                                         <span>
                                           <span>
-                                            <span style={{width: "24px", height:"24px"}} className="icon icon--24-like-outline icon--size-24 icon--currentColor icon--hover-linked u-space-r-half">
-                                              <svg className="icon_svg" id="24x24_like_outline" height="100%" viewBox="0 0 24 24" width="100%">
-                                                <path d="M21.164 12.236c.05.164.086.334.086.514 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723A1.75 1.75 0 0 1 18 19H7v-9h1c.37 0 1.257-2.37 2.104-3.345.89-1.017 1.234-1.782 1.457-2.513C11.785 3.412 12 2 12 2s2.388.11 2.388 2.9c0 1.39-.758 3.1-.388 4.1h6.25c.966 0 1.75.784 1.75 1.75 0 .63-.336 1.178-.836 1.486zM20.25 10h-6.946l-.242-.653c-.316-.855-.11-1.862.09-2.835.117-.56.236-1.14.236-1.61 0-.844-.283-1.314-.608-1.577-.076.387-.168.797-.262 1.107-.228.748-.604 1.673-1.66 2.88-.336.386-.744 1.166-1.072 1.794C9.146 10.326 8.796 11 8 11v7h10a.75.75 0 0 0 .75-.75.75.75 0 0 0-.07-.308l-.385-.843.812-.45A.74.74 0 0 0 19.5 15a.75.75 0 0 0-.07-.308l-.385-.843.812-.45a.74.74 0 0 0 .393-.65.793.793 0 0 0-.04-.22l-.23-.74.66-.406A.746.746 0 0 0 20.25 10zM2 10h4v10H2V10z"></path>
-                                              </svg>
-                                            </span>
+                                            <Icon
+                                              name="like-outline"
+                                              size={24}
+                                              currentColor
+                                              half
+                                              linked
+                                            />
                                             <span>1 Like</span>
                                           </span>
                                         </span>
@@ -1277,11 +1230,13 @@ class App extends Component {
                                       <a className="feed-item_action-link">
                                         <span>
                                           <span>
-                                            <span style={{width: "24px", height:"24px"}} className="icon icon--24-like-outline icon--size-24 icon--currentColor icon--hover-linked u-space-r-half">
-                                              <svg className="icon_svg" id="24x24_like_outline" height="100%" viewBox="0 0 24 24" width="100%">
-                                                <path d="M21.164 12.236c.05.164.086.334.086.514 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723A1.75 1.75 0 0 1 18 19H7v-9h1c.37 0 1.257-2.37 2.104-3.345.89-1.017 1.234-1.782 1.457-2.513C11.785 3.412 12 2 12 2s2.388.11 2.388 2.9c0 1.39-.758 3.1-.388 4.1h6.25c.966 0 1.75.784 1.75 1.75 0 .63-.336 1.178-.836 1.486zM20.25 10h-6.946l-.242-.653c-.316-.855-.11-1.862.09-2.835.117-.56.236-1.14.236-1.61 0-.844-.283-1.314-.608-1.577-.076.387-.168.797-.262 1.107-.228.748-.604 1.673-1.66 2.88-.336.386-.744 1.166-1.072 1.794C9.146 10.326 8.796 11 8 11v7h10a.75.75 0 0 0 .75-.75.75.75 0 0 0-.07-.308l-.385-.843.812-.45A.74.74 0 0 0 19.5 15a.75.75 0 0 0-.07-.308l-.385-.843.812-.45a.74.74 0 0 0 .393-.65.793.793 0 0 0-.04-.22l-.23-.74.66-.406A.746.746 0 0 0 20.25 10zM2 10h4v10H2V10z"></path>
-                                              </svg>
-                                            </span>
+                                            <Icon
+                                              name="like-outline"
+                                              size={24}
+                                              currentColor
+                                              half
+                                              linked
+                                            />
                                             <span>1 Like</span>
                                           </span>
                                         </span>
@@ -1305,11 +1260,13 @@ class App extends Component {
                                       <a className="feed-item_action-link">
                                         <span>
                                           <span>
-                                            <span style={{width: "24px", height:"24px"}} className="icon icon--24-like-outline icon--size-24 icon--currentColor icon--hover-linked u-space-r-half">
-                                              <svg className="icon_svg" id="24x24_like_outline" height="100%" viewBox="0 0 24 24" width="100%">
-                                                <path d="M21.164 12.236c.05.164.086.334.086.514 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723A1.75 1.75 0 0 1 18 19H7v-9h1c.37 0 1.257-2.37 2.104-3.345.89-1.017 1.234-1.782 1.457-2.513C11.785 3.412 12 2 12 2s2.388.11 2.388 2.9c0 1.39-.758 3.1-.388 4.1h6.25c.966 0 1.75.784 1.75 1.75 0 .63-.336 1.178-.836 1.486zM20.25 10h-6.946l-.242-.653c-.316-.855-.11-1.862.09-2.835.117-.56.236-1.14.236-1.61 0-.844-.283-1.314-.608-1.577-.076.387-.168.797-.262 1.107-.228.748-.604 1.673-1.66 2.88-.336.386-.744 1.166-1.072 1.794C9.146 10.326 8.796 11 8 11v7h10a.75.75 0 0 0 .75-.75.75.75 0 0 0-.07-.308l-.385-.843.812-.45A.74.74 0 0 0 19.5 15a.75.75 0 0 0-.07-.308l-.385-.843.812-.45a.74.74 0 0 0 .393-.65.793.793 0 0 0-.04-.22l-.23-.74.66-.406A.746.746 0 0 0 20.25 10zM2 10h4v10H2V10z"></path>
-                                              </svg>
-                                            </span>
+                                            <Icon
+                                              name="like-outline"
+                                              size={24}
+                                              currentColor
+                                              half
+                                              linked
+                                            />
                                             <span>Like</span>
                                           </span>
                                         </span>
@@ -1383,33 +1340,33 @@ class App extends Component {
                                 <li className="ufc-action">
                                   <a className="ufc-action_link ufc-action_link--useful">
                                     <span className="show-tooltip">
-                                      <span style={{width: "24px", height: "24px"}} className="icon icon--24-useful-outline icon--size-24 icon--ufc js-icon--ufc">
-                                        <svg className="icon_svg" id="24x24_useful_outline" height="100%" viewBox="0 0 24 24" width="100%">
-                                          <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-19c-4.963 0-9 4.037-9 9s4.037 9 9 9 9-4.037 9-9-4.037-9-9-9zm2 10.704V15h-4v-1.296c-1.35-.72-2.278-2.124-2.278-3.76a4.278 4.278 0 0 1 8.556 0c0 1.636-.93 3.04-2.278 3.76zM11 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 6.5a2 2 0 0 1-4 0V16h4v.5z"></path>
-                                        </svg>
-                                      </span>
+                                      <Icon
+                                        name="useful-outline"
+                                        size={24}
+                                        ufc
+                                      />
                                     </span>
                                   </a>
                                 </li>
                                 <li className="ufc-action">
                                   <a className="ufc-action_link ufc-action_link--funny">
                                     <span className="show-tooltip">
-                                      <span style={{width: "24px", height: "24px"}} className="icon icon--24-funny-outline icon--size-24 icon--ufc">
-                                        <svg className="icon_svg" id="24x24_funny_outline" height="100%" viewBox="0 0 24 24" width="100%">
-                                          <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-19c-4.963 0-9 4.037-9 9s4.037 9 9 9 9-4.037 9-9-4.037-9-9-9zm0 15a5.5 5.5 0 0 1-5.288-4h10.576A5.5 5.5 0 0 1 12 18zm3.5-7a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm-7 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"></path>
-                                        </svg>
-                                      </span>
+                                      <Icon
+                                        name="funny-outline"
+                                        size={24}
+                                        ufc
+                                      />
                                     </span>
                                   </a>
                                 </li>
                                 <li className="ufc-action">
                                   <a className="ufc-action_link ufc-action_link--cool">
                                     <span className="show-tooltip">
-                                      <span style={{width: "24px", height: "24px"}} className="icon icon--24-cool-outline icon--size-24 icon--ufc">
-                                        <svg className="icon_svg" id="24x24_cool_outline" height="100%" viewBox="0 0 24 24" width="100%">
-                                          <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-19c-4.963 0-9 4.037-9 9s4.037 9 9 9 9-4.037 9-9-4.037-9-9-9zm7.994 6.765C19.647 11.612 17.97 13 15.96 13h-.002c-1.617 0-3.028-.9-3.67-2.224a.32.32 0 0 0-.575 0C11.07 12.1 9.66 13 8.043 13H8.04c-2.01 0-3.74-1.15-4.035-3.018l-.124-.734c-.07-.305.257-.25.634-.248h14.972c.39 0 .673-.04.632.248l-.124.517zM17 15.143a5.405 5.405 0 0 1-5 3.357 5.405 5.405 0 0 1-5-3.357 8.6 8.6 0 0 0 5 1.6 8.6 8.6 0 0 0 5-1.6z"></path>
-                                        </svg>
-                                      </span>
+                                      <Icon
+                                        name="cool-outline"
+                                        size={24}
+                                        ufc
+                                      />
                                     </span>
                                   </a>
                                 </li>
@@ -1420,11 +1377,11 @@ class App extends Component {
                                 <div className="arrange_unit">
                                   <a className="compliment-btn compliment-btn--not-sent feed-item_action-link feed-item_action-link--compliment">
                                     <span className="show-tooltip">
-                                      <span style={{width: "24px", height: "24px"}} className="icon icon--24-compliment icon--size-24 icon--currentColor icon--compliment">
-                                        <svg className="icon_svg" id="24x24_compliment" height="100%" viewBox="0 0 24 24" width="100%">
-                                          <path d="M19 9A7 7 0 0 0 5 9a6.995 6.995 0 0 0 3.957 6.297L8 21.992 12.005 19 16 21.992l-.957-6.695A6.995 6.995 0 0 0 19 9zm-7 5c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path>
-                                        </svg>
-                                      </span>
+                                      <Icon
+                                        name="compliment"
+                                        size={24}
+                                        currentColor
+                                      />
                                     </span>
                                   </a>
                                 </div>
@@ -1489,11 +1446,13 @@ class App extends Component {
                                       <a className="feed-item_action-link">
                                         <span>
                                           <span>
-                                            <span style={{width: "24px", height:"24px"}} className="icon icon--24-like-outline icon--size-24 icon--currentColor icon--hover-linked u-space-r-half">
-                                              <svg className="icon_svg" id="24x24_like_outline" height="100%" viewBox="0 0 24 24" width="100%">
-                                                <path d="M21.164 12.236c.05.164.086.334.086.514 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723A1.75 1.75 0 0 1 18 19H7v-9h1c.37 0 1.257-2.37 2.104-3.345.89-1.017 1.234-1.782 1.457-2.513C11.785 3.412 12 2 12 2s2.388.11 2.388 2.9c0 1.39-.758 3.1-.388 4.1h6.25c.966 0 1.75.784 1.75 1.75 0 .63-.336 1.178-.836 1.486zM20.25 10h-6.946l-.242-.653c-.316-.855-.11-1.862.09-2.835.117-.56.236-1.14.236-1.61 0-.844-.283-1.314-.608-1.577-.076.387-.168.797-.262 1.107-.228.748-.604 1.673-1.66 2.88-.336.386-.744 1.166-1.072 1.794C9.146 10.326 8.796 11 8 11v7h10a.75.75 0 0 0 .75-.75.75.75 0 0 0-.07-.308l-.385-.843.812-.45A.74.74 0 0 0 19.5 15a.75.75 0 0 0-.07-.308l-.385-.843.812-.45a.74.74 0 0 0 .393-.65.793.793 0 0 0-.04-.22l-.23-.74.66-.406A.746.746 0 0 0 20.25 10zM2 10h4v10H2V10z"></path>
-                                              </svg>
-                                            </span>
+                                            <Icon
+                                              name="like-outline"
+                                              size={24}
+                                              currentColor
+                                              half
+                                              linked
+                                            />
                                             <span>Like</span>
                                           </span>
                                         </span>
@@ -1517,11 +1476,13 @@ class App extends Component {
                                       <a className="feed-item_action-link">
                                         <span>
                                           <span>
-                                            <span style={{width: "24px", height:"24px"}} className="icon icon--24-like-outline icon--size-24 icon--currentColor icon--hover-linked u-space-r-half">
-                                              <svg className="icon_svg" id="24x24_like_outline" height="100%" viewBox="0 0 24 24" width="100%">
-                                                <path d="M21.164 12.236c.05.164.086.334.086.514 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723A1.75 1.75 0 0 1 18 19H7v-9h1c.37 0 1.257-2.37 2.104-3.345.89-1.017 1.234-1.782 1.457-2.513C11.785 3.412 12 2 12 2s2.388.11 2.388 2.9c0 1.39-.758 3.1-.388 4.1h6.25c.966 0 1.75.784 1.75 1.75 0 .63-.336 1.178-.836 1.486zM20.25 10h-6.946l-.242-.653c-.316-.855-.11-1.862.09-2.835.117-.56.236-1.14.236-1.61 0-.844-.283-1.314-.608-1.577-.076.387-.168.797-.262 1.107-.228.748-.604 1.673-1.66 2.88-.336.386-.744 1.166-1.072 1.794C9.146 10.326 8.796 11 8 11v7h10a.75.75 0 0 0 .75-.75.75.75 0 0 0-.07-.308l-.385-.843.812-.45A.74.74 0 0 0 19.5 15a.75.75 0 0 0-.07-.308l-.385-.843.812-.45a.74.74 0 0 0 .393-.65.793.793 0 0 0-.04-.22l-.23-.74.66-.406A.746.746 0 0 0 20.25 10zM2 10h4v10H2V10z"></path>
-                                              </svg>
-                                            </span>
+                                            <Icon
+                                              name="like-outline"
+                                              size={24}
+                                              currentColor
+                                              half
+                                              linked
+                                            />
                                             <span>Like</span>
                                           </span>
                                         </span>
@@ -1545,11 +1506,13 @@ class App extends Component {
                                       <a className="feed-item_action-link">
                                         <span>
                                           <span>
-                                            <span style={{width: "24px", height:"24px"}} className="icon icon--24-like-outline icon--size-24 icon--currentColor icon--hover-linked u-space-r-half">
-                                              <svg className="icon_svg" id="24x24_like_outline" height="100%" viewBox="0 0 24 24" width="100%">
-                                                <path d="M21.164 12.236c.05.164.086.334.086.514 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723A1.75 1.75 0 0 1 18 19H7v-9h1c.37 0 1.257-2.37 2.104-3.345.89-1.017 1.234-1.782 1.457-2.513C11.785 3.412 12 2 12 2s2.388.11 2.388 2.9c0 1.39-.758 3.1-.388 4.1h6.25c.966 0 1.75.784 1.75 1.75 0 .63-.336 1.178-.836 1.486zM20.25 10h-6.946l-.242-.653c-.316-.855-.11-1.862.09-2.835.117-.56.236-1.14.236-1.61 0-.844-.283-1.314-.608-1.577-.076.387-.168.797-.262 1.107-.228.748-.604 1.673-1.66 2.88-.336.386-.744 1.166-1.072 1.794C9.146 10.326 8.796 11 8 11v7h10a.75.75 0 0 0 .75-.75.75.75 0 0 0-.07-.308l-.385-.843.812-.45A.74.74 0 0 0 19.5 15a.75.75 0 0 0-.07-.308l-.385-.843.812-.45a.74.74 0 0 0 .393-.65.793.793 0 0 0-.04-.22l-.23-.74.66-.406A.746.746 0 0 0 20.25 10zM2 10h4v10H2V10z"></path>
-                                              </svg>
-                                            </span>
+                                            <Icon
+                                              name="like-outline"
+                                              size={24}
+                                              currentColor
+                                              half
+                                              linked
+                                            />
                                             <span>Like</span>
                                           </span>
                                         </span>
@@ -1626,33 +1589,33 @@ class App extends Component {
                                 <li className="ufc-action">
                                   <a className="ufc-action_link ufc-action_link--useful">
                                     <span className="show-tooltip">
-                                      <span style={{width: "24px", height: "24px"}} className="icon icon--24-useful-outline icon--size-24 icon--ufc js-icon--ufc">
-                                        <svg className="icon_svg" id="24x24_useful_outline" height="100%" viewBox="0 0 24 24" width="100%">
-                                          <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-19c-4.963 0-9 4.037-9 9s4.037 9 9 9 9-4.037 9-9-4.037-9-9-9zm2 10.704V15h-4v-1.296c-1.35-.72-2.278-2.124-2.278-3.76a4.278 4.278 0 0 1 8.556 0c0 1.636-.93 3.04-2.278 3.76zM11 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 6.5a2 2 0 0 1-4 0V16h4v.5z"></path>
-                                        </svg>
-                                      </span>
+                                      <Icon
+                                        name="useful-outline"
+                                        size={24}
+                                        ufc
+                                      />
                                     </span>
                                   </a>
                                 </li>
                                 <li className="ufc-action">
                                   <a className="ufc-action_link ufc-action_link--funny">
                                     <span className="show-tooltip">
-                                      <span style={{width: "24px", height: "24px"}} className="icon icon--24-funny-outline icon--size-24 icon--ufc">
-                                        <svg className="icon_svg" id="24x24_funny_outline" height="100%" viewBox="0 0 24 24" width="100%">
-                                          <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-19c-4.963 0-9 4.037-9 9s4.037 9 9 9 9-4.037 9-9-4.037-9-9-9zm0 15a5.5 5.5 0 0 1-5.288-4h10.576A5.5 5.5 0 0 1 12 18zm3.5-7a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm-7 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"></path>
-                                        </svg>
-                                      </span>
+                                      <Icon
+                                        name="funny-outline"
+                                        size={24}
+                                        ufc
+                                      />
                                     </span>
                                   </a>
                                 </li>
                                 <li className="ufc-action">
                                   <a className="ufc-action_link ufc-action_link--cool">
                                     <span className="show-tooltip">
-                                      <span style={{width: "24px", height: "24px"}} className="icon icon--24-cool-outline icon--size-24 icon--ufc">
-                                        <svg className="icon_svg" id="24x24_cool_outline" height="100%" viewBox="0 0 24 24" width="100%">
-                                          <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-19c-4.963 0-9 4.037-9 9s4.037 9 9 9 9-4.037 9-9-4.037-9-9-9zm7.994 6.765C19.647 11.612 17.97 13 15.96 13h-.002c-1.617 0-3.028-.9-3.67-2.224a.32.32 0 0 0-.575 0C11.07 12.1 9.66 13 8.043 13H8.04c-2.01 0-3.74-1.15-4.035-3.018l-.124-.734c-.07-.305.257-.25.634-.248h14.972c.39 0 .673-.04.632.248l-.124.517zM17 15.143a5.405 5.405 0 0 1-5 3.357 5.405 5.405 0 0 1-5-3.357 8.6 8.6 0 0 0 5 1.6 8.6 8.6 0 0 0 5-1.6z"></path>
-                                        </svg>
-                                      </span>
+                                      <Icon
+                                        name="cool-outline"
+                                        size={24}
+                                        ufc
+                                      />
                                     </span>
                                   </a>
                                 </li>
@@ -1663,11 +1626,11 @@ class App extends Component {
                                 <div className="arrange_unit">
                                   <a className="compliment-btn compliment-btn--not-sent feed-item_action-link feed-item_action-link--compliment">
                                     <span className="show-tooltip">
-                                      <span style={{width: "24px", height: "24px"}} className="icon icon--24-compliment icon--size-24 icon--currentColor icon--compliment">
-                                        <svg className="icon_svg" id="24x24_compliment" height="100%" viewBox="0 0 24 24" width="100%">
-                                          <path d="M19 9A7 7 0 0 0 5 9a6.995 6.995 0 0 0 3.957 6.297L8 21.992 12.005 19 16 21.992l-.957-6.695A6.995 6.995 0 0 0 19 9zm-7 5c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path>
-                                        </svg>
-                                      </span>
+                                      <Icon
+                                        name="compliment"
+                                        size={24}
+                                        currentColor
+                                      />
                                     </span>
                                   </a>
                                 </div>
@@ -1728,11 +1691,13 @@ class App extends Component {
                                       <a className="feed-item_action-link">
                                         <span>
                                           <span>
-                                            <span style={{width: "24px", height:"24px"}} className="icon icon--24-like-outline icon--size-24 icon--currentColor icon--hover-linked u-space-r-half">
-                                              <svg className="icon_svg" id="24x24_like_outline" height="100%" viewBox="0 0 24 24" width="100%">
-                                                <path d="M21.164 12.236c.05.164.086.334.086.514 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723A1.75 1.75 0 0 1 18 19H7v-9h1c.37 0 1.257-2.37 2.104-3.345.89-1.017 1.234-1.782 1.457-2.513C11.785 3.412 12 2 12 2s2.388.11 2.388 2.9c0 1.39-.758 3.1-.388 4.1h6.25c.966 0 1.75.784 1.75 1.75 0 .63-.336 1.178-.836 1.486zM20.25 10h-6.946l-.242-.653c-.316-.855-.11-1.862.09-2.835.117-.56.236-1.14.236-1.61 0-.844-.283-1.314-.608-1.577-.076.387-.168.797-.262 1.107-.228.748-.604 1.673-1.66 2.88-.336.386-.744 1.166-1.072 1.794C9.146 10.326 8.796 11 8 11v7h10a.75.75 0 0 0 .75-.75.75.75 0 0 0-.07-.308l-.385-.843.812-.45A.74.74 0 0 0 19.5 15a.75.75 0 0 0-.07-.308l-.385-.843.812-.45a.74.74 0 0 0 .393-.65.793.793 0 0 0-.04-.22l-.23-.74.66-.406A.746.746 0 0 0 20.25 10zM2 10h4v10H2V10z"></path>
-                                              </svg>
-                                            </span>
+                                            <Icon
+                                              name="like-outline"
+                                              size={24}
+                                              currentColor
+                                              half
+                                              linked
+                                            />
                                             <span>Like</span>
                                           </span>
                                         </span>
@@ -1756,11 +1721,13 @@ class App extends Component {
                                       <a className="feed-item_action-link">
                                         <span>
                                           <span>
-                                            <span style={{width: "24px", height:"24px"}} className="icon icon--24-like-outline icon--size-24 icon--currentColor icon--hover-linked u-space-r-half">
-                                              <svg className="icon_svg" id="24x24_like_outline" height="100%" viewBox="0 0 24 24" width="100%">
-                                                <path d="M21.164 12.236c.05.164.086.334.086.514 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723A1.75 1.75 0 0 1 18 19H7v-9h1c.37 0 1.257-2.37 2.104-3.345.89-1.017 1.234-1.782 1.457-2.513C11.785 3.412 12 2 12 2s2.388.11 2.388 2.9c0 1.39-.758 3.1-.388 4.1h6.25c.966 0 1.75.784 1.75 1.75 0 .63-.336 1.178-.836 1.486zM20.25 10h-6.946l-.242-.653c-.316-.855-.11-1.862.09-2.835.117-.56.236-1.14.236-1.61 0-.844-.283-1.314-.608-1.577-.076.387-.168.797-.262 1.107-.228.748-.604 1.673-1.66 2.88-.336.386-.744 1.166-1.072 1.794C9.146 10.326 8.796 11 8 11v7h10a.75.75 0 0 0 .75-.75.75.75 0 0 0-.07-.308l-.385-.843.812-.45A.74.74 0 0 0 19.5 15a.75.75 0 0 0-.07-.308l-.385-.843.812-.45a.74.74 0 0 0 .393-.65.793.793 0 0 0-.04-.22l-.23-.74.66-.406A.746.746 0 0 0 20.25 10zM2 10h4v10H2V10z"></path>
-                                              </svg>
-                                            </span>
+                                            <Icon
+                                              name="like-outline"
+                                              size={24}
+                                              currentColor
+                                              half
+                                              linked
+                                            />
                                             <span>Like</span>
                                           </span>
                                         </span>
@@ -1784,11 +1751,13 @@ class App extends Component {
                                       <a className="feed-item_action-link">
                                         <span>
                                           <span>
-                                            <span style={{width: "24px", height:"24px"}} className="icon icon--24-like-outline icon--size-24 icon--currentColor icon--hover-linked u-space-r-half">
-                                              <svg className="icon_svg" id="24x24_like_outline" height="100%" viewBox="0 0 24 24" width="100%">
-                                                <path d="M21.164 12.236c.05.164.086.334.086.514 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723 0 .66-.37 1.23-.91 1.527.1.22.16.464.16.723A1.75 1.75 0 0 1 18 19H7v-9h1c.37 0 1.257-2.37 2.104-3.345.89-1.017 1.234-1.782 1.457-2.513C11.785 3.412 12 2 12 2s2.388.11 2.388 2.9c0 1.39-.758 3.1-.388 4.1h6.25c.966 0 1.75.784 1.75 1.75 0 .63-.336 1.178-.836 1.486zM20.25 10h-6.946l-.242-.653c-.316-.855-.11-1.862.09-2.835.117-.56.236-1.14.236-1.61 0-.844-.283-1.314-.608-1.577-.076.387-.168.797-.262 1.107-.228.748-.604 1.673-1.66 2.88-.336.386-.744 1.166-1.072 1.794C9.146 10.326 8.796 11 8 11v7h10a.75.75 0 0 0 .75-.75.75.75 0 0 0-.07-.308l-.385-.843.812-.45A.74.74 0 0 0 19.5 15a.75.75 0 0 0-.07-.308l-.385-.843.812-.45a.74.74 0 0 0 .393-.65.793.793 0 0 0-.04-.22l-.23-.74.66-.406A.746.746 0 0 0 20.25 10zM2 10h4v10H2V10z"></path>
-                                              </svg>
-                                            </span>
+                                            <Icon
+                                              name="like-outline"
+                                              size={24}
+                                              currentColor
+                                              half
+                                              linked
+                                            />
                                             <span>Like</span>
                                           </span>
                                         </span>
@@ -1810,11 +1779,12 @@ class App extends Component {
                   </div>
                   <p className="activity-feed_load-more">
                     <a>
-                      <span style={{width: "24px", height: "24px"}} className="icon icon--24-chevron-down icon--size-24 icon--currentColor u-space-r-half" >
-                        <svg className="icon_svg" id="24x24_chevron_down" height="100%" viewBox="0 0 24 24" width="100%">
-                          <path d="M18.364 9.525L16.95 8.11 12 13.06 7.05 8.11 5.636 9.526 12 15.89l6.364-6.365z"></path>
-                        </svg>
-                      </span>
+                      <Icon
+                        name="chevron-down"
+                        size={24}
+                        currentColor
+                        half
+                      />
                       <span>Show more activity in San Francisco</span>
                     </a>
                   </p>
@@ -1829,13 +1799,11 @@ class App extends Component {
                       <div className="arrange_unit">
                         <a className="island island-light app-pitch_item app-pitch_item--ios icon--hover-linked icon--active-linked icon">
                           <h4>iPhone, iPad and
-                            <span
-                              style={{width: 18, height: 18}}
-                              className="icon icon--18-apple icon--size-18 icon--black">
-                                <svg className="icon_svg" id="18x18_apple" height="100%" viewBox="0 0 18 18" width="100%">
-                                  <path d="M13.023 8.44c.02 2.404 1.953 3.2 1.977 3.208a8.305 8.305 0 0 1-1.028 2.256c-.606.976-1.24 1.93-2.25 1.947-.98.027-1.308-.62-2.432-.62-1.133 0-1.484.605-2.424.647-.96.038-1.694-1.042-2.322-2.01-1.255-1.974-2.232-5.564-.922-8.007.635-1.2 1.792-1.97 3.03-1.99.96-.022 1.853.698 2.444.698.58 0 1.682-.862 2.82-.733.475.015 1.83.203 2.703 1.575-.073.045-1.615 1.02-1.598 3.03zM8.98 3.652c-.107-.904.31-1.866.775-2.452.527-.665 1.44-1.175 2.173-1.21.096.94-.25 1.866-.755 2.546-.527.67-1.37 1.183-2.193 1.117z"></path>
-                                </svg>
-                              </span>
+                            <Icon
+                              name="apple"
+                              size={18}
+                              black
+                            />
                             Watch</h4>
                             <img
                               src={ios}
@@ -1960,9 +1928,12 @@ class App extends Component {
                           <div>
                             <a>
                               <span>English</span>
-                              <span style={{width: "14px", height: "14px"}} className="icon icon--14-triangle-down icon--size-14 icon--currentColor u-triangle-direction-down dropdown_arrow">
-                                <svg className="icon_svg" id="14x14_triangle_down" height="100%" viewBox="0 0 14 14" width="100%"><path d="M7 9L3.5 5h7L7 9z"></path></svg>
-                              </span>
+                              <Icon
+                                name="triangle-down"
+                                size={14}
+                                currentColor
+                                dropdown
+                              />
                             </a>
                           </div>
                         </div>
@@ -1975,9 +1946,12 @@ class App extends Component {
                           <div>
                             <a>
                               <span>United States</span>
-                              <span style={{width: "14px", height: "14px"}} className="icon icon--14-triangle-down icon--size-14 icon--currentColor u-triangle-direction-down dropdown_arrow">
-                                <svg className="icon_svg" id="14x14_triangle_down" height="100%" viewBox="0 0 14 14" width="100%"><path d="M7 9L3.5 5h7L7 9z"></path></svg>
-                              </span>
+                              <Icon
+                                name="triangle-down"
+                                size={14}
+                                currentColor
+                                dropdown
+                              />
                             </a>
                           </div>
                         </div>
