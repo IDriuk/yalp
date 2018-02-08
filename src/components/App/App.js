@@ -3,6 +3,7 @@ import './App.css';
 
 import Stars from '../Stars/Stars';
 import Icon from '../Icon/Icon';
+import Photo from '../Photo/Photo';
 
 import movers from '../../images/movers.png';
 import hotels from '../../images/hotels.png';
@@ -42,7 +43,6 @@ class App extends Component {
   render() {
     return (
       <Fragment>
-
         {/* homepage hero */}
         <div className="y-container homepage-hero">
           <div className="y-container_content">
@@ -221,44 +221,32 @@ class App extends Component {
                 <div className="browse-businesses_initial-categories">
                   <div className="arrange arrange--30 arrange--equal u-space-b5 u-text-centered">
                     <div className="arrange_unit">
-                      <a className="browse-businesses_category island island-light browse-businesses_category--full-width-island">
-                        <img
-                          className="browse-businesses_category-img"
-                          src={movers}
-                          alt="Movers"
-                        />
-                        <h3 className="browse-businesses_category-title u-text-truncate h4">Movers</h3>
-                      </a>
+                      <Photo
+                        type="businesses_category"
+                        src={movers}
+                        title="Movers"
+                      />
                     </div>
                     <div className="arrange_unit">
-                      <a className="browse-businesses_category island island-light browse-businesses_category--full-width-island">
-                        <img
-                          className="browse-businesses_category-img"
-                          src={hotels}
-                          alt="Hotels"
-                        />
-                        <h3 className="browse-businesses_category-title u-text-truncate h4">Hotels</h3>
-                      </a>
+                      <Photo
+                        type="businesses_category"
+                        src={hotels}
+                        title="Hotels"
+                      />
                     </div>
                     <div className="arrange_unit">
-                      <a className="browse-businesses_category island island-light browse-businesses_category--full-width-island">
-                        <img
-                          className="browse-businesses_category-img"
-                          src={dryclean}
-                          alt="Dry Cleaning"
-                        />
-                        <h3 className="browse-businesses_category-title u-text-truncate h4">Dry Cleaning</h3>
-                      </a>
+                      <Photo
+                        type="businesses_category"
+                        src={dryclean}
+                        title="Dry Cleaning"
+                      />
                     </div>
                     <div className="arrange_unit">
-                      <a className="browse-businesses_category island island-light browse-businesses_category--full-width-island">
-                        <img
-                          className="browse-businesses_category-img"
-                          src={massage}
-                          alt="Massage"
-                        />
-                        <h3 className="browse-businesses_category-title u-text-truncate h4">Massage</h3>
-                      </a>
+                      <Photo
+                        type="businesses_category"
+                        src={massage}
+                        title="Massage"
+                      />
                     </div>
                   </div>
                 </div>
@@ -328,22 +316,10 @@ class App extends Component {
                 <div className="arrange arrange--3-units arrange--30 arrange--wrap">
                   <div className="arrange_unit">
                     <div className="card business-passport-card">
-                      <div className="card_photo">
-                        <div
-                          className="photo-box photo-box--interactive photo-box--background"
-                          style={{backgroundImage: `url(${bluestonelane})`}}
-                        >
-                          <a className="photo-box_link">
-                            <img
-                              className="photo-box-img"
-                              alt="Bluestone Lane"
-                              height="400"
-                              width="600"
-                              src={bluestonelane}
-                            />
-                          </a>
-                        </div>
-                      </div>
+                      <Photo
+                        type="card_photo"
+                        src={bluestonelane}
+                      />
                       <div className="card_body">
                         <div className="card_content">
                           <h3 className="card_content-title--linked u-text-truncate">
@@ -382,19 +358,10 @@ class App extends Component {
                   </div>
                   <div className="arrange_unit">
                     <div className="card business-passport-card">
-                      <div className="card_photo">
-                        <div className="photo-box photo-box--interactive photo-box--background" style={{backgroundImage: `url(${kaya})`}} >
-                          <a className="photo-box_link">
-                            <img
-                              className="photo-box-img"
-                              alt="Kaya"
-                              height="400"
-                              width="600"
-                              src={kaya}
-                            />
-                          </a>
-                        </div>
-                      </div>
+                      <Photo
+                        type="card_photo"
+                        src={kaya}
+                      />
                       <div className="card_body">
                         <div className="card_content">
                           <h3 className="card_content-title--linked u-text-truncate">
@@ -433,22 +400,10 @@ class App extends Component {
                   </div>
                   <div className="arrange_unit">
                     <div className="card business-passport-card">
-                      <div className="card_photo">
-                        <div
-                          className="photo-box photo-box--interactive photo-box--background"
-                          style={{backgroundImage: `url(${pastapopup})`}}
-                        >
-                          <a className="photo-box_link">
-                            <img
-                              className="photo-box-img"
-                              alt="Pasta Pop-Up"
-                              height="400"
-                              width="600"
-                              src={pastapopup}
-                            />
-                          </a>
-                        </div>
-                      </div>
+                      <Photo
+                        type="card_photo"
+                        src={pastapopup}
+                      />
                       <div className="card_body">
                         <div className="card_content">
                           <h3 className="card_content-title--linked u-text-truncate">
@@ -509,11 +464,11 @@ class App extends Component {
                       <div className="island island--light rotd">
                         <div className="ypassport arrange arrange--12 u-space-b3">
                           <div className="arrange_unit">
-                            <div className="photo-box pb-60s">
-                              <a>
-                                <img alt="Emily T." className="photo-box-img" height="60" width="60" src={photo_ESeXb2NVPZzYonGbOJzoEw_60s} />
-                              </a>
-                            </div>
+                            <Photo
+                              type="avatar_60"
+                              src={photo_ESeXb2NVPZzYonGbOJzoEw_60s}
+                              title="Emily T."
+                            />
                           </div>
                           <div className="arrange_unit arrange_unit--fill">
                             <strong>
@@ -554,12 +509,7 @@ class App extends Component {
                         </div>
                         <div className="badge-banner badge-banner--blue">
                           Review of the Day
-                          <img
-                            alt="badge"
-                            src={rotd}
-                            className="badge-banner_img"
-                            width="40"
-                          />
+                          <img alt="badge" src={rotd} className="badge-banner_img" width="40" />
                         </div>
                         <div className="u-space-t3 u-space-b3">
                           <div className="biz-rating biz-rating-large clearfix">
@@ -590,21 +540,10 @@ class App extends Component {
                             <ul className="list-island_set">
                               <li className="list-island_item">
                                 <div className="media-block media-block--12">
-                                  <div className="media-avatar">
-                                    <div className="list-island_item-avatar">
-                                      <div style={{backgroundImage: `url(${HzFeDvDkWKsugW8ztN4lWg_90s})`}} className="photo-box photo-box--interactive photo-box--background">
-                                        <a className="photo-box_link">
-                                          <img
-                                            alt="img"
-                                            className="photo-box-img"
-                                            height="90"
-                                            width="90"
-                                            src={HzFeDvDkWKsugW8ztN4lWg_90s}
-                                          />
-                                        </a>
-                                      </div>
-                                    </div>
-                                  </div>
+                                  <Photo
+                                    type="avatar_media"
+                                    src={HzFeDvDkWKsugW8ztN4lWg_90s}
+                                  />
                                   <div className="media-story">
                                     <p className="list-island_item-title u-text-truncate media-title">
                                       <a>Not-Good-For-Retirement Stars</a>
@@ -621,21 +560,10 @@ class App extends Component {
                               </li>
                               <li className="list-island_item">
                                 <div className="media-block media-block--12">
-                                  <div className="media-avatar">
-                                    <div className="list-island_item-avatar">
-                                      <div style={{backgroundImage: `url(${BR0mnDHZy3j3RI_hRAMBmg})`}} className="photo-box photo-box--interactive photo-box--background">
-                                        <a className="photo-box_link">
-                                          <img
-                                            alt="img"
-                                            className="photo-box-img"
-                                            height="90"
-                                            width="90"
-                                            src={BR0mnDHZy3j3RI_hRAMBmg}
-                                          />
-                                        </a>
-                                      </div>
-                                    </div>
-                                  </div>
+                                  <Photo
+                                    type="avatar_media"
+                                    src={BR0mnDHZy3j3RI_hRAMBmg}
+                                  />
                                   <div className="media-story">
                                     <p className="list-island_item-title u-text-truncate media-title">
                                       <a>2018 AudVentures</a>
@@ -652,21 +580,10 @@ class App extends Component {
                               </li>
                               <li className="list-island_item">
                                 <div className="media-block media-block--12">
-                                  <div className="media-avatar">
-                                    <div className="list-island_item-avatar">
-                                      <div style={{backgroundImage: `url(${yB8_l5v2e4Rs7rjgkm1WQ})`}} className="photo-box photo-box--interactive photo-box--background">
-                                        <a className="photo-box_link">
-                                          <img
-                                            alt="img"
-                                            className="photo-box-img"
-                                            height="90"
-                                            width="90"
-                                            src={yB8_l5v2e4Rs7rjgkm1WQ}
-                                          />
-                                        </a>
-                                      </div>
-                                    </div>
-                                  </div>
+                                  <Photo
+                                    type="avatar_media"
+                                    src={yB8_l5v2e4Rs7rjgkm1WQ}
+                                  />
                                   <div className="media-story">
                                     <p className="list-island_item-title u-text-truncate media-title">
                                       <a>My reviews for 2014</a>
@@ -706,17 +623,10 @@ class App extends Component {
                         <div className="feed-item_header">
                           <div className="arrange arrange--12">
                             <div className="arrange_unit">
-                              <div className="photo-box pb-30s">
-                                <a>
-                                  <img
-                                    alt="alt"
-                                    className="photo-box-img"
-                                    height="30"
-                                    width="30"
-                                    src={photo_0os9VoR2evxRmqt2_Yx8Iw}
-                                  />
-                                </a>
-                              </div>
+                              <Photo
+                                type="avatar_30"
+                                src={photo_0os9VoR2evxRmqt2_Yx8Iw}
+                              />
                             </div>
                             <div className="arrange_unit arrange_unit--fill">
                               <a className="feed-item_user-link"><strong>S N.</strong></a><br></br>
@@ -736,16 +646,11 @@ class App extends Component {
                               </div>
                             </div>
                             <div className="feed-item_photos feed-item_photos--single">
-                              <div style={{backgroundImage: `url(${photo_EiZICTpAxWEmpvhDnduYdw})`}} className="feed-item_photo feed-item_photo--with-actions">
-                                <a className="feed-item_link ">
-                                  <img
-                                    alt="New item! Greenpan diamond Evershine!! Quality!"
-                                    src={photo_EiZICTpAxWEmpvhDnduYdw}
-                                    width="300"
-                                    height="300"
-                                  />
-                                </a>
-                              </div>
+                              <Photo
+                                type="feed_single"
+                                src={photo_EiZICTpAxWEmpvhDnduYdw}
+                                title="New item! Greenpan diamond Evershine!! Quality!"
+                              />
                               <ul className="feed-item_actions feed-item_actions--contained-borderless">
                                 <li className="feed-item_action">
                                   <a className="feed-item_action-link">
@@ -773,17 +678,10 @@ class App extends Component {
                         <div className="feed-item_header">
                           <div className="arrange arrange--12">
                             <div className="arrange_unit">
-                              <div className="photo-box pb-30s">
-                                <a>
-                                  <img
-                                    alt="alt"
-                                    className="photo-box-img"
-                                    height="30"
-                                    width="30"
-                                    src={photo_XJLvFmxlX5jdMfEyC4dG1g}
-                                  />
-                                </a>
-                              </div>
+                              <Photo
+                                type="avatar_30"
+                                src={photo_XJLvFmxlX5jdMfEyC4dG1g}
+                              />
                             </div>
                             <div className="arrange_unit arrange_unit--fill">
                               <a className="feed-item_user-link"><strong>Zak R.</strong></a><br></br>
@@ -805,16 +703,11 @@ class App extends Component {
                             <div className="feed-item_photos">
                               <div className="arrange arrange--2-units arrange--6 arrange--wrap">
                                 <div className="arrange_unit u-size-full">
-                                  <div style={{backgroundImage: `url(${photo_tSaWNHKlJc4iOuGjvCRMmQ})`}} className="feed-item_photo feed-item_photo--big feed-item_photo--with-actions">
-                                    <a className="feed-item_link">
-                                      <img
-                                        alt="Filet"
-                                        src={photo_tSaWNHKlJc4iOuGjvCRMmQ}
-                                        width="300"
-                                        height="300"
-                                      />
-                                    </a>
-                                  </div>
+                                  <Photo
+                                    type="feed_big"
+                                    src={photo_tSaWNHKlJc4iOuGjvCRMmQ}
+                                    title="Filet"
+                                  />
                                   <ul className="feed-item_actions feed-item_actions--contained">
                                     <li className="feed-item_action">
                                       <a className="feed-item_action-link">
@@ -835,16 +728,11 @@ class App extends Component {
                                   </ul>
                                 </div>
                                 <div className="arrange_unit">
-                                  <div className="feed-item_photo feed-item_photo--with-actions" style={{backgroundImage: `url(${photo_KVUGoFs40Jt3OdI7vmFog})`}}>
-                                    <a className="feed-item_link">
-                                      <img
-                                        alt="T-bone"
-                                        src={photo_KVUGoFs40Jt3OdI7vmFog}
-                                        height="168"
-                                        width="168"
-                                      />
-                                    </a>
-                                  </div>
+                                  <Photo
+                                    type="feed"
+                                    src={photo_KVUGoFs40Jt3OdI7vmFog}
+                                    title="T-bone"
+                                  />
                                   <ul className="feed-item_actions feed-item_actions--contained">
                                     <li className="feed-item_action">
                                       <a className="feed-item_action-link">
@@ -865,16 +753,11 @@ class App extends Component {
                                   </ul>
                                 </div>
                                 <div className="arrange_unit">
-                                  <div className="feed-item_photo feed-item_photo--with-actions" style={{backgroundImage: `url(${photo_yj7A_xSnsbbOsxwYzCDGvw})`}}>
-                                    <a className="feed-item_link">
-                                      <img
-                                        alt="T-bone"
-                                        src={photo_yj7A_xSnsbbOsxwYzCDGvw}
-                                        height="168"
-                                        width="168"
-                                      />
-                                    </a>
-                                  </div>
+                                  <Photo
+                                    type="feed"
+                                    src={photo_yj7A_xSnsbbOsxwYzCDGvw}
+                                    title="T-bone"
+                                  />
                                   <ul className="feed-item_actions feed-item_actions--contained">
                                     <li className="feed-item_action">
                                       <a className="feed-item_action-link">
@@ -907,17 +790,10 @@ class App extends Component {
                         <div className="feed-item_header">
                           <div className="arrange arrange--12">
                             <div className="arrange_unit">
-                              <div className="photo-box pb-30s">
-                                <a>
-                                  <img
-                                    alt="alt"
-                                    className="photo-box-img"
-                                    height="30"
-                                    width="30"
-                                    src={photo_UDkFIThfOLMNO8iCnF0t8A}
-                                  />
-                                </a>
-                              </div>
+                              <Photo
+                                type="avatar_30"
+                                src={photo_UDkFIThfOLMNO8iCnF0t8A}
+                              />
                             </div>
                             <div className="arrange_unit arrange_unit--fill">
                               <a className="feed-item_user-link"><strong>Cali G.</strong></a><br></br>
@@ -939,16 +815,11 @@ class App extends Component {
                             <div className="feed-item_photos">
                               <div className="arrange arrange--2-units arrange--6 arrange--wrap">
                                 <div className="arrange_unit u-size-full">
-                                  <div style={{backgroundImage: `url(${photo_dLinn6rjkWYrtnMDTvDisQ})`}} className="feed-item_photo feed-item_photo--big feed-item_photo--with-actions">
-                                    <a className="feed-item_link">
-                                      <img
-                                        alt="Filet"
-                                        src={photo_dLinn6rjkWYrtnMDTvDisQ}
-                                        width="300"
-                                        height="300"
-                                      />
-                                    </a>
-                                  </div>
+                                  <Photo
+                                    type="feed_big"
+                                    src={photo_dLinn6rjkWYrtnMDTvDisQ}
+                                    title="Filet"
+                                  />
                                   <ul className="feed-item_actions feed-item_actions--contained">
                                     <li className="feed-item_action">
                                       <a className="feed-item_action-link">
@@ -969,16 +840,11 @@ class App extends Component {
                                   </ul>
                                 </div>
                                 <div className="arrange_unit">
-                                  <div className="feed-item_photo feed-item_photo--with-actions" style={{backgroundImage: `url(${C921ZGj4qJc_TDk92CM5FA})`}}>
-                                    <a className="feed-item_link">
-                                      <img
-                                        alt="T-bone"
-                                        src={C921ZGj4qJc_TDk92CM5FA}
-                                        height="168"
-                                        width="168"
-                                      />
-                                    </a>
-                                  </div>
+                                  <Photo
+                                    type="feed"
+                                    src={C921ZGj4qJc_TDk92CM5FA}
+                                    title="T-bone"
+                                  />
                                   <ul className="feed-item_actions feed-item_actions--contained">
                                     <li className="feed-item_action">
                                       <a className="feed-item_action-link">
@@ -999,16 +865,11 @@ class App extends Component {
                                   </ul>
                                 </div>
                                 <div className="arrange_unit">
-                                  <div className="feed-item_photo feed-item_photo--with-actions" style={{backgroundImage: `url(${LV2NNGBzYm166mc8VQ})`}}>
-                                    <a className="feed-item_link">
-                                      <img
-                                        alt="T-bone"
-                                        src={LV2NNGBzYm166mc8VQ}
-                                        height="168"
-                                        width="168"
-                                      />
-                                    </a>
-                                  </div>
+                                  <Photo
+                                    type="feed"
+                                    src={LV2NNGBzYm166mc8VQ}
+                                    title="T-bone"
+                                  />
                                   <ul className="feed-item_actions feed-item_actions--contained">
                                     <li className="feed-item_action">
                                       <a className="feed-item_action-link">
@@ -1043,11 +904,10 @@ class App extends Component {
                         <div className="feed-item_header">
                           <div className="arrange arrange--12">
                             <div className="arrange_unit">
-                              <div className="photo-box pb-30s">
-                                <a>
-                                  <img alt="img" className="photo-box-img" src={Q1kaby1yAQEUWlsCP1c3Ow} height="30" width="30"/>
-                                </a>
-                              </div>
+                              <Photo
+                                type="avatar_30"
+                                src={Q1kaby1yAQEUWlsCP1c3Ow}
+                              />
                             </div>
                             <div className="arrange_unit arrange_unit--fill">
                               <a className="feed-item_user-link">
@@ -1058,13 +918,11 @@ class App extends Component {
                           </div>
                         </div>
                         <div className="feed-item_scrollable-content">
-                          <div className="feed-item_hero">
-                            <div className="photo-box photo-box--interactive photo-box--background" style={{backgroundImage: `url(${jsDmbW9Eaqgyc0Kbw4TUvg})`}}>
-                              <a className="photo-box_link">
-                                <img alt="img" className="photo-box-img" height="400" width="600" src={jsDmbW9Eaqgyc0Kbw4TUvg} />
-                              </a>
-                            </div>
-                          </div>
+                          <Photo
+                            type="feed_hero"
+                            src={jsDmbW9Eaqgyc0Kbw4TUvg}
+                            title="bar"
+                          />
                           <div className="feed-item_body">
                             <div className="feed-item_title u-space-b2 u-text-truncate feed-item_title--bordered">
                               <div className="business-link-hovercard business-link-hovercard--strong">
@@ -1153,17 +1011,10 @@ class App extends Component {
                         <div className="feed-item_header">
                           <div className="arrange arrange--12">
                             <div className="arrange_unit">
-                              <div className="photo-box pb-30s">
-                                <a>
-                                  <img
-                                    alt="alt"
-                                    className="photo-box-img"
-                                    height="30"
-                                    width="30"
-                                    src={photo_UDkFIThfOLMNO8iCnF0t8A}
-                                  />
-                                </a>
-                              </div>
+                              <Photo
+                                type="avatar_30"
+                                src={photo_UDkFIThfOLMNO8iCnF0t8A}
+                              />
                             </div>
                             <div className="arrange_unit arrange_unit--fill">
                               <a className="feed-item_user-link"><strong>Cali G.</strong></a><br></br>
@@ -1185,16 +1036,11 @@ class App extends Component {
                             <div className="feed-item_photos">
                               <div className="arrange arrange--2-units arrange--6 arrange--wrap">
                                 <div className="arrange_unit u-size-full">
-                                  <div style={{backgroundImage: `url(${photo_dLinn6rjkWYrtnMDTvDisQ})`}} className="feed-item_photo feed-item_photo--big feed-item_photo--with-actions">
-                                    <a className="feed-item_link">
-                                      <img
-                                        alt="Filet"
-                                        src={photo_dLinn6rjkWYrtnMDTvDisQ}
-                                        width="300"
-                                        height="300"
-                                      />
-                                    </a>
-                                  </div>
+                                  <Photo
+                                    type="feed_big"
+                                    src={photo_dLinn6rjkWYrtnMDTvDisQ}
+                                    title="Filet"
+                                  />
                                   <ul className="feed-item_actions feed-item_actions--contained">
                                     <li className="feed-item_action">
                                       <a className="feed-item_action-link">
@@ -1215,16 +1061,11 @@ class App extends Component {
                                   </ul>
                                 </div>
                                 <div className="arrange_unit">
-                                  <div className="feed-item_photo feed-item_photo--with-actions" style={{backgroundImage: `url(${C921ZGj4qJc_TDk92CM5FA})`}}>
-                                    <a className="feed-item_link">
-                                      <img
-                                        alt="T-bone"
-                                        src={C921ZGj4qJc_TDk92CM5FA}
-                                        height="168"
-                                        width="168"
-                                      />
-                                    </a>
-                                  </div>
+                                  <Photo
+                                    type="feed"
+                                    src={C921ZGj4qJc_TDk92CM5FA}
+                                    title="T-bone"
+                                  />
                                   <ul className="feed-item_actions feed-item_actions--contained">
                                     <li className="feed-item_action">
                                       <a className="feed-item_action-link">
@@ -1245,16 +1086,11 @@ class App extends Component {
                                   </ul>
                                 </div>
                                 <div className="arrange_unit">
-                                  <div className="feed-item_photo feed-item_photo--with-actions" style={{backgroundImage: `url(${LV2NNGBzYm166mc8VQ})`}}>
-                                    <a className="feed-item_link">
-                                      <img
-                                        alt="T-bone"
-                                        src={LV2NNGBzYm166mc8VQ}
-                                        height="168"
-                                        width="168"
-                                      />
-                                    </a>
-                                  </div>
+                                  <Photo
+                                    type="feed"
+                                    src={LV2NNGBzYm166mc8VQ}
+                                    title="T-bone"
+                                  />
                                   <ul className="feed-item_actions feed-item_actions--contained">
                                     <li className="feed-item_action">
                                       <a className="feed-item_action-link">
@@ -1285,11 +1121,10 @@ class App extends Component {
                         <div className="feed-item_header">
                           <div className="arrange arrange--12">
                             <div className="arrange_unit">
-                              <div className="photo-box pb-30s">
-                                <a>
-                                  <img alt="img" className="photo-box-img" src={Q1kaby1yAQEUWlsCP1c3Ow} height="30" width="30"/>
-                                </a>
-                              </div>
+                              <Photo
+                                type="avatar_30"
+                                src={Q1kaby1yAQEUWlsCP1c3Ow}
+                              />
                             </div>
                             <div className="arrange_unit arrange_unit--fill">
                               <a className="feed-item_user-link">
@@ -1300,13 +1135,11 @@ class App extends Component {
                           </div>
                         </div>
                         <div className="feed-item_scrollable-content">
-                          <div className="feed-item_hero">
-                            <div className="photo-box photo-box--interactive photo-box--background" style={{backgroundImage: `url(${jsDmbW9Eaqgyc0Kbw4TUvg})`}}>
-                              <a className="photo-box_link">
-                                <img alt="img" className="photo-box-img" height="400" width="600" src={jsDmbW9Eaqgyc0Kbw4TUvg} />
-                              </a>
-                            </div>
-                          </div>
+                          <Photo
+                            type="feed_hero"
+                            src={jsDmbW9Eaqgyc0Kbw4TUvg}
+                            title="bar"
+                          />
                           <div className="feed-item_body">
                             <div className="feed-item_title u-space-b2 u-text-truncate feed-item_title--bordered">
                               <div className="business-link-hovercard business-link-hovercard--strong">
@@ -1399,17 +1232,10 @@ class App extends Component {
                         <div className="feed-item_header">
                           <div className="arrange arrange--12">
                             <div className="arrange_unit">
-                              <div className="photo-box pb-30s">
-                                <a>
-                                  <img
-                                    alt="alt"
-                                    className="photo-box-img"
-                                    height="30"
-                                    width="30"
-                                    src={photo_XJLvFmxlX5jdMfEyC4dG1g}
-                                  />
-                                </a>
-                              </div>
+                              <Photo
+                                type="avatar_30"
+                                src={photo_XJLvFmxlX5jdMfEyC4dG1g}
+                              />
                             </div>
                             <div className="arrange_unit arrange_unit--fill">
                               <a className="feed-item_user-link"><strong>Zak R.</strong></a><br></br>
@@ -1431,16 +1257,11 @@ class App extends Component {
                             <div className="feed-item_photos">
                               <div className="arrange arrange--2-units arrange--6 arrange--wrap">
                                 <div className="arrange_unit u-size-full">
-                                  <div style={{backgroundImage: `url(${photo_tSaWNHKlJc4iOuGjvCRMmQ})`}} className="feed-item_photo feed-item_photo--big feed-item_photo--with-actions">
-                                    <a className="feed-item_link">
-                                      <img
-                                        alt="Filet"
-                                        src={photo_tSaWNHKlJc4iOuGjvCRMmQ}
-                                        width="300"
-                                        height="300"
-                                      />
-                                    </a>
-                                  </div>
+                                  <Photo
+                                    type="feed_big"
+                                    src={photo_tSaWNHKlJc4iOuGjvCRMmQ}
+                                    title="Filet"
+                                  />
                                   <ul className="feed-item_actions feed-item_actions--contained">
                                     <li className="feed-item_action">
                                       <a className="feed-item_action-link">
@@ -1461,16 +1282,11 @@ class App extends Component {
                                   </ul>
                                 </div>
                                 <div className="arrange_unit">
-                                  <div className="feed-item_photo feed-item_photo--with-actions" style={{backgroundImage: `url(${photo_KVUGoFs40Jt3OdI7vmFog})`}}>
-                                    <a className="feed-item_link">
-                                      <img
-                                        alt="T-bone"
-                                        src={photo_KVUGoFs40Jt3OdI7vmFog}
-                                        height="168"
-                                        width="168"
-                                      />
-                                    </a>
-                                  </div>
+                                  <Photo
+                                    type="feed"
+                                    src={photo_KVUGoFs40Jt3OdI7vmFog}
+                                    title="T-bone"
+                                  />
                                   <ul className="feed-item_actions feed-item_actions--contained">
                                     <li className="feed-item_action">
                                       <a className="feed-item_action-link">
@@ -1491,16 +1307,11 @@ class App extends Component {
                                   </ul>
                                 </div>
                                 <div className="arrange_unit">
-                                  <div className="feed-item_photo feed-item_photo--with-actions" style={{backgroundImage: `url(${photo_yj7A_xSnsbbOsxwYzCDGvw})`}}>
-                                    <a className="feed-item_link">
-                                      <img
-                                        alt="T-bone"
-                                        src={photo_yj7A_xSnsbbOsxwYzCDGvw}
-                                        height="168"
-                                        width="168"
-                                      />
-                                    </a>
-                                  </div>
+                                  <Photo
+                                    type="feed"
+                                    src={photo_yj7A_xSnsbbOsxwYzCDGvw}
+                                    title="T-bone"
+                                  />
                                   <ul className="feed-item_actions feed-item_actions--contained">
                                     <li className="feed-item_action">
                                       <a className="feed-item_action-link">
@@ -1534,11 +1345,10 @@ class App extends Component {
                         <div className="feed-item_header">
                           <div className="arrange arrange--12">
                             <div className="arrange_unit">
-                              <div className="photo-box pb-30s">
-                                <a>
-                                  <img alt="img" className="photo-box-img" src={Q1kaby1yAQEUWlsCP1c3Ow} height="30" width="30"/>
-                                </a>
-                              </div>
+                              <Photo
+                                type="avatar_30"
+                                src={Q1kaby1yAQEUWlsCP1c3Ow}
+                              />
                             </div>
                             <div className="arrange_unit arrange_unit--fill">
                               <a className="feed-item_user-link">
@@ -1549,13 +1359,11 @@ class App extends Component {
                           </div>
                         </div>
                         <div className="feed-item_scrollable-content">
-                          <div className="feed-item_hero">
-                            <div className="photo-box photo-box--interactive photo-box--background" style={{backgroundImage: `url(${jsDmbW9Eaqgyc0Kbw4TUvg})`}}>
-                              <a className="photo-box_link">
-                                <img alt="img" className="photo-box-img" height="400" width="600" src={jsDmbW9Eaqgyc0Kbw4TUvg} />
-                              </a>
-                            </div>
-                          </div>
+                          <Photo
+                            type="feed_hero"
+                            src={jsDmbW9Eaqgyc0Kbw4TUvg}
+                            title="bar"
+                          />
                           <div className="feed-item_body">
                             <div className="feed-item_title u-space-b2 u-text-truncate feed-item_title--bordered">
                               <div className="business-link-hovercard business-link-hovercard--strong">
@@ -1644,17 +1452,10 @@ class App extends Component {
                         <div className="feed-item_header">
                           <div className="arrange arrange--12">
                             <div className="arrange_unit">
-                              <div className="photo-box pb-30s">
-                                <a>
-                                  <img
-                                    alt="alt"
-                                    className="photo-box-img"
-                                    height="30"
-                                    width="30"
-                                    src={photo_XJLvFmxlX5jdMfEyC4dG1g}
-                                  />
-                                </a>
-                              </div>
+                              <Photo
+                                type="avatar_30"
+                                src={photo_XJLvFmxlX5jdMfEyC4dG1g}
+                              />
                             </div>
                             <div className="arrange_unit arrange_unit--fill">
                               <a className="feed-item_user-link"><strong>Zak R.</strong></a><br></br>
@@ -1676,16 +1477,11 @@ class App extends Component {
                             <div className="feed-item_photos">
                               <div className="arrange arrange--2-units arrange--6 arrange--wrap">
                                 <div className="arrange_unit u-size-full">
-                                  <div style={{backgroundImage: `url(${photo_tSaWNHKlJc4iOuGjvCRMmQ})`}} className="feed-item_photo feed-item_photo--big feed-item_photo--with-actions">
-                                    <a className="feed-item_link">
-                                      <img
-                                        alt="Filet"
-                                        src={photo_tSaWNHKlJc4iOuGjvCRMmQ}
-                                        width="300"
-                                        height="300"
-                                      />
-                                    </a>
-                                  </div>
+                                  <Photo
+                                    type="feed_big"
+                                    src={photo_tSaWNHKlJc4iOuGjvCRMmQ}
+                                    title="Filet"
+                                  />
                                   <ul className="feed-item_actions feed-item_actions--contained">
                                     <li className="feed-item_action">
                                       <a className="feed-item_action-link">
@@ -1706,16 +1502,11 @@ class App extends Component {
                                   </ul>
                                 </div>
                                 <div className="arrange_unit">
-                                  <div className="feed-item_photo feed-item_photo--with-actions" style={{backgroundImage: `url(${photo_KVUGoFs40Jt3OdI7vmFog})`}}>
-                                    <a className="feed-item_link">
-                                      <img
-                                        alt="T-bone"
-                                        src={photo_KVUGoFs40Jt3OdI7vmFog}
-                                        height="168"
-                                        width="168"
-                                      />
-                                    </a>
-                                  </div>
+                                  <Photo
+                                    type="feed"
+                                    src={photo_KVUGoFs40Jt3OdI7vmFog}
+                                    title="T-bone"
+                                  />
                                   <ul className="feed-item_actions feed-item_actions--contained">
                                     <li className="feed-item_action">
                                       <a className="feed-item_action-link">
@@ -1736,16 +1527,11 @@ class App extends Component {
                                   </ul>
                                 </div>
                                 <div className="arrange_unit">
-                                  <div className="feed-item_photo feed-item_photo--with-actions" style={{backgroundImage: `url(${photo_yj7A_xSnsbbOsxwYzCDGvw})`}}>
-                                    <a className="feed-item_link">
-                                      <img
-                                        alt="T-bone"
-                                        src={photo_yj7A_xSnsbbOsxwYzCDGvw}
-                                        height="168"
-                                        width="168"
-                                      />
-                                    </a>
-                                  </div>
+                                  <Photo
+                                    type="feed"
+                                    src={photo_yj7A_xSnsbbOsxwYzCDGvw}
+                                    title="T-bone"
+                                  />
                                   <ul className="feed-item_actions feed-item_actions--contained">
                                     <li className="feed-item_action">
                                       <a className="feed-item_action-link">
