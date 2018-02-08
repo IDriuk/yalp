@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import './Icon.css';
 
 export default class Icon extends Component {
-  render () {
 
+  render () {
     const { name, size, currentColor, inverted, count, linked, half, ufc, black, dropdown, tab } = this.props;
 
     const viewBox = `0 0 ${size} ${size}`;
@@ -18,32 +18,15 @@ export default class Icon extends Component {
                           ${ufc ? "icon--ufc" : ""}
                           ${black ? "icon--black" : ""}
                           ${dropdown ? "u-triangle-direction-down dropdown_arrow" : ""}
-                          ${tab ? "tab-link_icon tab-link_icon-wrap" : ""}`;
+                          ${tab ? "tab-link_icon tab-link_icon-wrap" : ""}
+                          ${count ? "icon--count" : ""}`;
 
-    /* "icon icon--24-search icon--size-24 icon--currentColor" */
-    /* "icon icon--18-food icon--size-18 icon--inverse icon--fallback-inverted" */
-    /* "icon icon--18-nightlife icon--size-18 icon--inverse icon--fallback-inverted" */
-    /* "icon icon--18-tools icon--size-18 icon--inverse icon--fallback-inverted" */
-    /* "icon icon--18-order icon--size-18 icon--inverse icon--fallback-inverted" */
-    /* "icon icon--18-flame icon--size-18 icon--currentColor" */
-    /* "icon icon--18-friends icon--size-18" */
-    /* "icon icon--18-review icon--size-18" */
-    /* icon icon--24-like-outline icon--size-24 icon--currentColor icon--hover-linked u-space-r-half" */
-    /* "icon icon--24-useful-outline icon--size-24 icon--ufc" */
-    /* "icon icon--24-funny-outline icon--size-24 icon--ufc" */
-    /* "icon icon--24-cool-outline icon--size-24 icon--ufc" */
-    /* "icon icon--24-compliment icon--size-24 icon--currentColor icon--compliment" */
-    /* "icon icon--18-apple icon--size-18 icon--black" */
-    /* "icon icon--14-triangle-down icon--size-14 icon--currentColor u-triangle-direction-down dropdown_arrow" */
-    /* "icon icon--18-search-small icon--currentColor icon--size-18 tab-link_icon tab-link_icon-wrap" */
-    /* "icon icon--24-chevron-down icon--size-24 icon--currentColor u-space-r-half" */
     return (
       <span
         className={icon_styles}
         style={{
           width: size,
-          height: size,
-          fill: ( count ? '#f15c00' : null )
+          height: size
         }}
         >
           <svg height="100%" width="100%" viewBox={viewBox} >
@@ -51,7 +34,7 @@ export default class Icon extends Component {
           {/* search form icon */}
           { name === "search" && <path d="M20.753 19.34l-4.295-4.297A7.46 7.46 0 0 0 18 10.5a7.5 7.5 0 1 0-7.5 7.5 7.46 7.46 0 0 0 4.543-1.542l4.296 4.295a1 1 0 1 0 1.412-1.414zM10.5 16A5.506 5.506 0 0 1 5 10.5C5 7.467 7.467 5 10.5 5S16 7.467 16 10.5 13.533 16 10.5 16z"></path>}
 
-          {/* heor categories icons */}
+          {/* hero categories icons */}
           { name === "food" && <path d="M13.61 17h-.007a1.39 1.39 0 0 1-1.376-1.587L13 10l-2-1c0-5.373 1.375-8 3.25-8 .497 0 .75.336.75.75v13.86A1.39 1.39 0 0 1 13.61 17zM6.557 9.912l.35 5.59a1.41 1.41 0 1 1-2.813 0l.35-5.59A1.994 1.994 0 0 1 3 8V1.5a.5.5 0 0 1 1 0v5a.5.5 0 0 0 1 0v-5a.5.5 0 0 1 1 0v5a.5.5 0 0 0 1 0v-5a.5.5 0 0 1 1 0V8c0 .91-.61 1.67-1.443 1.912z"></path>}
           { name === "nightlife" && <path d="M15.55 3.66c.565-.648.105-1.66-.754-1.66H3.204a1 1 0 0 0-.753 1.66L8 9v5H6a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2h-2V9l5.55-5.34zM11 3a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>}
           { name === "tools" && <path d="M12.772 8.594c-.337 0-.656-.067-.962-.164l-6.99 7.116a1.472 1.472 0 0 1-2.11 0 1.538 1.538 0 0 1 0-2.15L9.697 6.28a3.34 3.34 0 0 1-.16-.98c0-1.82 1.447-3.294 3.234-3.294.338 0 .657.068.963.165L11.93 4.01l2.11 2.15 1.806-1.837c.095.312.162.637.162.98 0 1.82-1.45 3.294-3.236 3.294zM4.955 6.198L3.54 5.21 1.998 3.64l1.565-1.59 1.54 1.57.905 1.508L7.71 6.86 6.658 7.932 4.955 6.198zm10.006 7.198a1.54 1.54 0 0 1 0 2.15 1.475 1.475 0 0 1-2.11 0l-3.314-3.374 2.11-2.15 3.316 3.374z"></path>}

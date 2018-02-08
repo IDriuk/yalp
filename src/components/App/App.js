@@ -1797,7 +1797,7 @@ class App extends Component {
                   <div className="app-pitch">
                     <div className="arrange arrange--equal arrange--30">
                       <div className="arrange_unit">
-                        <a className="island island-light app-pitch_item app-pitch_item--ios icon--hover-linked icon--active-linked icon">
+                        <a className="island island-light app-pitch_item app-pitch_item--ios">
                           <h4>iPhone, iPad and
                             <Icon
                               name="apple"

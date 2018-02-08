@@ -1,0 +1,101 @@
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -.1em;
+    fill: #666;
+    overflow: hidden;
+}
+
+.icon:before {
+    position: absolute;
+    display: block;
+    left: 0;
+    content: "";
+    background: none;
+    content: "";
+    background-color: transparent;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(transparent,transparent),none;
+}
+
+.icon::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.icon, svg:not(:root) {
+    overflow: hidden;
+}
+
+.icon_amp-svg, .icon_svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    fill: inherit;
+    display: block;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+@media (min-width: 0) {
+  .icon:before {
+      background: none;
+  }
+}
+
+.ufc-action_link .icon--ufc {
+    fill: #999;
+}
+
+.ybtn .icon.icon--size-24 {
+  margin: -12px 0;
+}
+
+.tab-link--nav .tab-link_icon-wrap {
+    line-height: 30px;
+}
+
+.tab-link_icon {
+    padding-bottom: 2px;
+}
+
+.tab-link .icon {
+    top: 0;
+}
+
+.icon--hover-linked.icon {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -.1em;
+    fill: #666;
+}
+
+.icon--hover-inverse:focus, .icon--hover-inverse:hover, .icon--inverse {
+    fill: #fff;
+}
+
+.icon--currentColor, .icon--hover-currentColor:focus, .icon--hover-currentColor:hover {
+    fill: currentColor;
+}
+
+.icon--black {
+    fill: #333;
+}
+
+.icon--count {
+  fill: #f15c00
+}
+
+.u-space-r-half {
+    margin-right: 3px!important;
+}
