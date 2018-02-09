@@ -1,0 +1,58 @@
+.header-nav {
+  display: inline-block;
+}
+
+.header-nav_link {
+  border-radius: 0;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 8px;
+  color: #fff;
+  display: block;
+  padding: 9px 12px 10px;
+  font-size: 14px;
+  line-height: 1.28571em;
+  font-weight: 700;
+  background: none;
+}
+
+.hero-header_nav .header-nav_link {
+  border-radius: 0;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 8px;
+}
+
+.hero-header_nav .header-nav_link, .hero-header_nav .header-nav_text {
+  color: #fff;
+  display: block;
+  padding: 9px 12px 10px;
+  font-size: 14px;
+  line-height: 1.28571em;
+  font-weight: 700;
+  background: none;
+}
+
+.hero-header_nav .header-nav_item {
+  display: inline-block;
+  margin-right: 2px;
+}
+
+.header-nav_button, a.header-nav_button {
+  background: transparent;
+  box-shadow: none;
+  border-radius: 4px;
+  border: 2px solid #fff;
+  margin-top: -2px;
+  padding: 7px 24px 8px;
+}
+
+.main-header_account, .main-header_nav-dropdown {
+  float: right;
+}
+
+.u-space-r2 {
+  margin-right: 12px!important;
+}
+
+.u-space-r0 {
+  margin-right: 0!important;
+}
