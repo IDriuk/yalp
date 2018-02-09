@@ -4,8 +4,9 @@ import './App.css';
 import Stars from '../Stars/Stars';
 import Icon from '../Icon/Icon';
 import Photo from '../Photo/Photo';
-import Search from '../Search/Search';
+import Logo from '../Logo/Logo';
 
+import Search from '../Search/Search';
 import HeaderNav from '../HeaderNav/HeaderNav';
 
 import movers from '../../images/movers.png';
@@ -39,9 +40,6 @@ import jsDmbW9Eaqgyc0Kbw4TUvg from '../../images/jsDmbW9Eaqgyc0Kbw4TUvg.jpg';
 import ios from '../../images/pitch_ios.png';
 import android from '../../images/pitch_android.png';
 
-import logo_desktop_xsmall_outline from '../../images/logo_desktop_xsmall_outline.png';
-import burst_desktop_xsmall_outline from '../../images/burst_desktop_xsmall_outline.png';
-
 class App extends Component {
   render() {
     return (
@@ -49,16 +47,10 @@ class App extends Component {
         {/* homepage hero */}
         <div className="y-container homepage-hero">
           <div className="y-container_content">
-
             <HeaderNav />
 
             <div className="homepage-hero_inner">
-              <div className="u-text-centered">
-                <h1 className="homepage-hero_logo">
-                  <a>Yalp</a>
-                </h1>
-              </div>
-
+              <Logo type="hero" />
               <Search />
 
               <ul className="homepage-hero_categories text-centered">
@@ -1667,8 +1659,8 @@ class App extends Component {
               <div className="main-footer_city-landscape-img"></div>
               <small className="main-footer_copyright">
                 Copyright © 2004–2018 Yelp Inc. Yelp,
-                <img src={logo_desktop_xsmall_outline} alt="Yelp logo" />,&nbsp;
-                <img src={burst_desktop_xsmall_outline} alt="Yelp burst" />&nbsp;
+                <Logo type="logo" />,&nbsp;
+                <Logo type="burst" />&nbsp;
                 and related marks are registered trademarks of Yelp.
               </small>
             </div>
