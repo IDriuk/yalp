@@ -80,7 +80,7 @@ class App extends Component {
             <div className="homepage-hero_inner">
               <div className="u-text-centered">
                 <h1 className="homepage-hero_logo">
-                  <a href="/">Yalp</a>
+                  <a>Yalp</a>
                 </h1>
               </div>
 
