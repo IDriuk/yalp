@@ -1,0 +1,106 @@
+.yform {
+  margin-bottom: 18px;
+}
+
+.yform label, .yform legend {
+  display: inline-block;
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+
+.yform .pseudo-input {
+  cursor: text;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 0 18px;
+  line-height: 1.29em;
+}
+
+.yform .pseudo-input.focused input,
+.yform .pseudo-input input,
+.yform .pseudo-input input:focus{
+  margin: 0;
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+  background: none;
+  padding: 2px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.yform .pseudo-input_text {
+  float: left;
+  margin-right: 5px;
+  font-weight: 700;
+  color: #333;
+  cursor: default;
+  user-select: none;
+}
+
+.yform .pseudo-input_field-holder {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+.yform .pseudo-input_field {
+  width: 100%;
+  vertical-align: baseline !important;
+  padding: 0 !important;
+}
+
+.business-search-form_input,
+.yform .business-search-form_input {
+  padding: 11px;
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+  background: #fff;
+}
+
+.business-search-form_input-text, .yform .business-search-form_input-text {
+  margin-right: 12px;
+  color: #666;
+}
+
+.yform .business-search-form_input,
+.yform .business-search-form_input-field {
+  font-size: 18px;
+}
+
+.main-search_pseudo-input--action, .main-search_suggestions-field {
+  position: relative;
+}
+
+.yform .business-search-form_input--find::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 0;
+  bottom: 8px;
+  width: 1px;
+  background-color: #ccc;
+}
+
+.yform .ybtn.business-search-form_button {
+  border-radius: 0 4px 4px 0;
+  border: 0;
+  background: #d32323;
+  padding: 14px 20px 13px;
+  box-shadow: none;
+}
+
+.yform .business-search-form_input--find {
+  border-radius: 4px 0 0 4px;
+  position: relative;
+}
+
+.ybtn--small:not(.ybtn--social){
+  padding: 5px 8px;
+  font-size: 12px;
+  line-height: 1.5em;
+}
