@@ -188,6 +188,10 @@
   padding-top: 72px;
 }
 
+.home-container_section--top-long {
+  padding-top: 72px;
+}
+
 .homepage-hero_photo-owner, .homepage-hero_photo-owner-link {
   color: #fff;
 }
@@ -258,10 +262,6 @@
 }
 
 /* recent activity */
-
-.home-container_section--top-long {
-    padding-top: 72px;
-}
 
 .u-space-t4 {
     margin-top: 24px!important;
@@ -839,65 +839,6 @@ a.ybtn {
 }
 
 /* hot and new */
-
-.location-bar {
-    border-bottom: 1px solid #ccc;
-}
-
-.tab-nav {
-    display: table;
-    margin: 0 0 -1px;
-    padding: 0;
-    list-style: none;
-    white-space: nowrap;
-}
-
-.tab-nav--center {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-.tab-nav_item {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.tab-link--nav {
-    color: #666;
-    padding: 0 12px;
-    border-top: 3px solid transparent;
-    border-bottom: 3px solid transparent;
-}
-
-.tab-link {
-    display: block;
-    vertical-align: bottom;
-    line-height: 1;
-    white-space: nowrap;
-    outline: 0;
-}
-
-.tab-link--nav .tab-link_label {
-    line-height: 30px;
-}
-
-.tab-link_label {
-    display: inline-block;
-}
-
-.tab-link_label:before {
-    display: block;
-    font-weight: 700;
-    overflow: hidden;
-    visibility: hidden;
-    height: 0;
-    content: attr(title);
-}
-
-.home-container_section:last-child {
-    padding-bottom: 72px;
-}
 
 .explore-city_title {
     text-align: center;

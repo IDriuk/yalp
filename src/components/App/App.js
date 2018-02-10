@@ -10,6 +10,7 @@ import Search from '../Search/Search';
 import HeaderNav from '../HeaderNav/HeaderNav';
 import CategoriesMenu from '../CategoriesMenu/CategoriesMenu';
 import CategoriesList from '../CategoriesList/CategoriesList';
+import LocationBar from '../LocationBar/LocationBar';
 
 import bluestonelane from '../../images/bluestonelane.jpg';
 import kaya from '../../images/kaya.jpg';
@@ -91,53 +92,7 @@ class App extends Component {
 
               <div className="home-container_section home-container_section--top-long">
                 <h2 className="u-text-centered">Yelp San Francisco</h2>
-                <div className="location-bar">
-                  <div className="tab-nav-container">
-                    <ul className="tab-nav tab-nav--center">
-                      <li className="tab-nav_item">
-                        <a className="tab-link tab-link--nav">
-                          <span className="tab-link_label">New York</span>
-                        </a>
-                      </li>
-                      <li className="tab-nav_item">
-                        <a className="tab-link tab-link--nav">
-                          <span className="tab-link_label">San Jose</span>
-                        </a>
-                      </li>
-                      <li className="tab-nav_item">
-                        <a className="tab-link tab-link--nav">
-                          <span className="tab-link_label">Los Angeles</span>
-                        </a>
-                      </li>
-                      <li className="tab-nav_item">
-                        <a className="tab-link tab-link--nav">
-                          <span className="tab-link_label">Chicago</span>
-                        </a>
-                      </li>
-                      <li className="tab-nav_item">
-                        <a className="tab-link tab-link--nav">
-                          <span className="tab-link_label">Palo Alto</span>
-                        </a>
-                      </li>
-                      <li className="tab-nav_item">
-                        <a className="tab-link tab-link--nav">
-                          <span className="tab-link_label">Oakland</span>
-                        </a>
-                      </li>
-                      <li className="tab-nav_item">
-                        <a className="tab-link tab-link--nav">
-                          <Icon
-                            name="search-small"
-                            size={18}
-                            currentColor
-                            tab
-                          />
-                          <span className="tab-link_label">More Cities</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+                <LocationBar />
               </div>
 
               <div className="home-container_section">
