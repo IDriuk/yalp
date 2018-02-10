@@ -4,10 +4,10 @@ import './App.css';
 import Stars from '../Stars/Stars';
 import Icon from '../Icon/Icon';
 import Photo from '../Photo/Photo';
-import Logo from '../Logo/Logo';
 
-import Search from '../Search/Search';
 import HeaderNav from '../HeaderNav/HeaderNav';
+import Logo from '../Logo/Logo';
+import Search from '../Search/Search';
 import CategoriesMenu from '../CategoriesMenu/CategoriesMenu';
 import CategoriesList from '../CategoriesList/CategoriesList';
 import LocationBar from '../LocationBar/LocationBar';
@@ -115,6 +115,7 @@ class App extends Component {
             <div className="home-container">
               <div className="home-container_section">
                 <div className="clearfix layout-block layout-a">
+
                   <div className="column column-alpha">
                     <div>
                       <h3 className="boy_title">
@@ -128,6 +129,7 @@ class App extends Component {
                       </p>
                     </div>
                   </div>
+
                   <div className="column column-beta">
                     <div>
                       <h3 className="boy_title">Recent Lists</h3>
