@@ -130,6 +130,32 @@
   border-spacing: 12px 0;
 }
 
+.arrange--18 {
+  margin-left: -18px;
+  margin-right: -18px;
+  border-collapse: separate;
+  border-spacing: 18px 0;
+}
+
+.arrange--18 > .arrange_unit, .ie .arrange--18.arrange--equal {
+  border-collapse: collapse;
+  border-spacing: 0 0;
+}
+
+.arrange--18 > .arrange_unit {
+  margin-left: 9px;
+  margin-right: 9px;
+}
+
+.arrange--2-units > .arrange_unit {
+  width: 50%;
+}
+
+.arrange_unit--fill {
+  width: 100%;
+}
+
+
 .u-space-b4 {
   margin-bottom: 24px!important;
 }
@@ -367,10 +393,6 @@
 }
 
 /* photos island */
-
-.arrange--2-units > .arrange_unit {
-    width: 50%;
-}
 
 .feed-item_more {
     text-align: center;
@@ -738,27 +760,6 @@
   background-size: cover;
   background-position: 50%;
   background-image: url('../../images/top_photo.jpg');
-}
-
-.arrange--18 {
-  margin-left: -18px;
-  margin-right: -18px;
-  border-collapse: separate;
-  border-spacing: 18px 0;
-}
-
-.arrange--18 > .arrange_unit, .ie .arrange--18.arrange--equal {
-  border-collapse: collapse;
-  border-spacing: 0 0;
-}
-
-.arrange--18 > .arrange_unit {
-  margin-left: 9px;
-  margin-right: 9px;
-}
-
-.arrange_unit--fill {
-  width: 100%;
 }
 
 .nowrap {
