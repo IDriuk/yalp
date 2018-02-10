@@ -8,11 +8,8 @@ import Logo from '../Logo/Logo';
 
 import Search from '../Search/Search';
 import HeaderNav from '../HeaderNav/HeaderNav';
-
-import movers from '../../images/movers.png';
-import hotels from '../../images/hotels.png';
-import dryclean from '../../images/dryclean.png';
-import massage from '../../images/massage.png';
+import CategoriesMenu from '../CategoriesMenu/CategoriesMenu';
+import CategoriesList from '../CategoriesList/CategoriesList';
 
 import bluestonelane from '../../images/bluestonelane.jpg';
 import kaya from '../../images/kaya.jpg';
@@ -50,62 +47,20 @@ class App extends Component {
             <HeaderNav />
 
             <div className="homepage-hero_inner">
+
               <Logo type="hero" />
               <Search />
-
-              <ul className="homepage-hero_categories text-centered">
-                <li className="homepage-hero_category">
-                  <div>
-                    <Icon
-                      name="food"
-                      size={18}
-                      inverted
-                    />
-                    <a className="homepage-hero_link">Restaurants</a>
-                  </div>
-                </li>
-                <li className="homepage-hero_category">
-                  <div>
-                    <Icon
-                      name="nightlife"
-                      size={18}
-                      inverted
-                    />
-                    <a className="homepage-hero_link">Nightlife</a>
-                  </div>
-                </li>
-                <li className="homepage-hero_category">
-                  <div>
-                    <Icon
-                      name="tools"
-                      size={18}
-                      inverted
-                    />
-                    <a className="homepage-hero_link">Home Services</a>
-                  </div>
-                </li>
-                <li className="homepage-hero_category">
-                  <div>
-                    <Icon
-                      name="order"
-                      size={18}
-                      inverted
-                    />
-                    <a className="homepage-hero_link">Delivery</a>
-                  </div>
-                </li>
-              </ul>
+              <CategoriesMenu />
 
               <div className="u-text-centered homepage-hero_biz u-size-full">
-                <div className="business-link-hovercard js-business-link-hovercard business-link-hovercard--strong business-link-hovercard--inline">
-                  <span className="business-link-hovercard_business-link js-business-link">
-                    <a className="biz-name js-analytics-click">
+                <div className="business-link-hovercard business-link-hovercard--strong business-link-hovercard--inline">
+                  <span className="business-link-hovercard_business-link">
+                    <a className="biz-name">
                       <span>Amaranth Bakery & Cafe</span>
                     </a>
                   </span>
                 </div>
               </div>
-
               <div className="u-text-centered homepage-hero_photo-owner u-size-full">
                 <div>
                   <p>
@@ -125,43 +80,7 @@ class App extends Component {
         {/* first businesses */}
         <div className="y-container u-bg-color-alt">
           <div className="y-container_content">
-            <div className="home-container home-container--first-top-short">
-              <div className="home-container_section">
-                <h2 className="browse-businesses_title u-space-b4 u-text-centered">Find the Best Businesses in Town</h2>
-                <div className="browse-businesses_initial-categories">
-                  <div className="arrange arrange--30 arrange--equal u-space-b5 u-text-centered">
-                    <div className="arrange_unit">
-                      <Photo
-                        type="businesses_category"
-                        src={movers}
-                        title="Movers"
-                      />
-                    </div>
-                    <div className="arrange_unit">
-                      <Photo
-                        type="businesses_category"
-                        src={hotels}
-                        title="Hotels"
-                      />
-                    </div>
-                    <div className="arrange_unit">
-                      <Photo
-                        type="businesses_category"
-                        src={dryclean}
-                        title="Dry Cleaning"
-                      />
-                    </div>
-                    <div className="arrange_unit">
-                      <Photo
-                        type="businesses_category"
-                        src={massage}
-                        title="Massage"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <CategoriesList />
           </div>
         </div>
 

@@ -1,0 +1,17 @@
+.homepage-hero_categories {
+  padding-bottom: 168px;
+}
+
+.homepage-hero_category {
+  display: inline-block;
+  padding: 0 12px;
+}
+
+.homepage-hero_link {
+  color: #fff;
+  font-weight: 700;
+}
+
+.text-centered {
+  text-align: center;
+}
