@@ -1,0 +1,57 @@
+.rotd {
+  min-height: 288px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+}
+
+.rotd_text {
+  font-size: 14px;
+  line-height: 1.28571em;
+}
+
+.rotd_read-more {
+  white-space: nowrap;
+}
+
+.ypassport {
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+.ypassport .user-display-name {
+  font-size: 14px;
+  line-height: 1.28571em;
+  font-weight: 700;
+}
+
+.ypassport .user-passport-stats--inline {
+  margin: 3px 0;
+}
+
+.ypassport .is-elite a {
+  color: #f15c00;
+  font-weight: 700;
+}
+
+.user-passport-stats--inline>li {
+  display: inline;
+  margin-right: 6px;
+}
+
+.badge-banner {
+  padding: 4px 52px 3px 6px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.badge-banner--blue {
+  background-color: #d0ecfb;
+}
+
+.badge-banner_img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 6px;
+}

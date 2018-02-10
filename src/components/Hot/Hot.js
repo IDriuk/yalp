@@ -49,7 +49,7 @@ class Hot extends Component {
 
         {
           defaultData.map(data =>
-            <div className="arrange_unit">
+            <div key={data.src} className="arrange_unit">
               <div className="card business-passport-card">
                 <Photo
                   type="card_photo"

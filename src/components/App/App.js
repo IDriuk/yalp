@@ -12,10 +12,8 @@ import CategoriesMenu from '../CategoriesMenu/CategoriesMenu';
 import CategoriesList from '../CategoriesList/CategoriesList';
 import LocationBar from '../LocationBar/LocationBar';
 import Hot from '../Hot/Hot';
+import Rotd from '../Rotd/Rotd';
 
-import rotd from '../../images/rotd.png';
-
-import photo_ESeXb2NVPZzYonGbOJzoEw_60s from '../../images/photo_ESeXb2NVPZzYonGbOJzoEw_60s.jpg';
 import HzFeDvDkWKsugW8ztN4lWg_90s from '../../images/HzFeDvDkWKsugW8ztN4lWg_90s.jpg';
 import BR0mnDHZy3j3RI_hRAMBmg from '../../images/BR0mnDHZy3j3RI_hRAMBmg.jpg';
 import yB8_l5v2e4Rs7rjgkm1WQ from '../../images/8yB8_l5v2e4Rs7rjgkm1WQ.jpg';
@@ -43,7 +41,7 @@ class App extends Component {
         {/* homepage hero */}
         <div className="y-container homepage-hero">
           <div className="y-container_content">
-            
+
             <HeaderNav />
 
             <div className="homepage-hero_inner">
@@ -122,71 +120,9 @@ class App extends Component {
                       <h3 className="boy_title">
                         Review of the Day
                       </h3>
-                      <div className="island island--light rotd">
-                        <div className="ypassport arrange arrange--12 u-space-b3">
-                          <div className="arrange_unit">
-                            <Photo
-                              type="avatar_60"
-                              src={photo_ESeXb2NVPZzYonGbOJzoEw_60s}
-                              title="Emily T."
-                            />
-                          </div>
-                          <div className="arrange_unit arrange_unit--fill">
-                            <strong>
-                              <a className="user-display-name js-analytics-click">Emily T.</a>
-                            </strong>
-                            <ul className="user-passport-stats user-passport-stats--inline" >
-                              <li className="friend-count" >
-                                <Icon
-                                  name="friends"
-                                  size={18}
-                                  count
-                                />
-                                <b>410</b>
-                              </li>
-                              <li className="review-count" >
-                                <Icon
-                                  name="review"
-                                  size={18}
-                                  count
-                                />
-                                <b>250</b>
-                              </li>
-                              <li className="is-elite responsive-small-display-inline-block" >
-                                <a>Elite ’18</a>
-                              </li>
-                            </ul>
-                            <div className="rotd_text" >
-                              Wrote a review for
-                              <div className="business-link-hovercard business-link-hovercard--inline business-link-hovercard--strong">
-                                <span className="business-link-hovercard_business-link">
-                                  <a className="biz-name">
-                                    <span> Dynamo Donut & Coffee</span>
-                                  </a>
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="badge-banner badge-banner--blue">
-                          Review of the Day
-                          <img alt="badge" src={rotd} className="badge-banner_img" width="40" />
-                        </div>
-                        <div className="u-space-t3 u-space-b3">
-                          <div className="biz-rating biz-rating-large clearfix">
-                            <div>
-                              <Stars rating="4.0"/>
-                            </div>
-                            <span className="rating-qualifier">11/5/2017</span>
-                          </div>
-                        </div>
-                        <p className="rotd_comment-text">
-                          Time // Tried to come here on a Saturday around 2pm. Lesson learned: Come early before noon if you want the good donuts! By the time my bf and I arrived, they only had a few donuts of one flavor....the maple bacon apple.  Service // You order first at this small coffee shop looking window, first and then you can go inside and sit down. The front cashier was friendly enough.  Atmosphere // bright interior with small t...
-                          <a className="rotd_read-more">
-                             &nbsp; Continue reading
-                          </a>
-                        </p>
-                      </div>
+
+                      <Rotd />
+
                       <p className="u-text-centered">
                         <a className="boy_more-link">Read previous reviews</a>
                       </p>
