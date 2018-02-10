@@ -11,10 +11,8 @@ import HeaderNav from '../HeaderNav/HeaderNav';
 import CategoriesMenu from '../CategoriesMenu/CategoriesMenu';
 import CategoriesList from '../CategoriesList/CategoriesList';
 import LocationBar from '../LocationBar/LocationBar';
+import Hot from '../Hot/Hot';
 
-import bluestonelane from '../../images/bluestonelane.jpg';
-import kaya from '../../images/kaya.jpg';
-import pastapopup from '../../images/pastapopup.jpg';
 import rotd from '../../images/rotd.png';
 
 import photo_ESeXb2NVPZzYonGbOJzoEw_60s from '../../images/photo_ESeXb2NVPZzYonGbOJzoEw_60s.jpg';
@@ -45,6 +43,7 @@ class App extends Component {
         {/* homepage hero */}
         <div className="y-container homepage-hero">
           <div className="y-container_content">
+            
             <HeaderNav />
 
             <div className="homepage-hero_inner">
@@ -74,14 +73,15 @@ class App extends Component {
               </div>
 
             </div>
-
           </div>
         </div>
 
         {/* first businesses */}
         <div className="y-container u-bg-color-alt">
           <div className="y-container_content">
+
             <CategoriesList />
+
           </div>
         </div>
 
@@ -92,139 +92,16 @@ class App extends Component {
 
               <div className="home-container_section home-container_section--top-long">
                 <h2 className="u-text-centered">Yelp San Francisco</h2>
+
                 <LocationBar />
+
               </div>
 
               <div className="home-container_section">
                 <h3 className="explore-city_title">Hot & New Businesses</h3>
-                <div className="arrange arrange--3-units arrange--30 arrange--wrap">
-                  <div className="arrange_unit">
-                    <div className="card business-passport-card">
-                      <Photo
-                        type="card_photo"
-                        src={bluestonelane}
-                      />
-                      <div className="card_body">
-                        <div className="card_content">
-                          <h3 className="card_content-title--linked u-text-truncate">
-                            <div className="business-link-hovercard">
-                              <span className="business-link-hovercard_business-link">
-                                <a className="biz-name">
-                                  <span>Bluestone Lane</span>
-                                </a>
-                              </span>
-                            </div>
-                          </h3>
-                          <div className="biz-rating biz-rating-large clearfix">
-                            <Stars rating="4.5"/>
-                            <span className="review-count rating-qualifier">15 reviews</span>
-                          </div>
-                          <div className="price-category">
-                            <span className="bullet-after">
-                              <span className="business-attribute price-range">$$</span>
-                            </span>
-                            <span className="category-str-list">Coffee & Tea</span>
-                          </div>
-                          <div className="neighborhood u-text-truncate u-space-t1 u-space-b1">
-                            <span className="neighborhood-str-list">Financial District, SoMa</span>
-                          </div>
-                          <p className="business-passport-card_date-opened">
-                            <Icon
-                              name="flame"
-                              size={18}
-                              currentColor
-                            />
-                            Opened 7 weeks ago
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="arrange_unit">
-                    <div className="card business-passport-card">
-                      <Photo
-                        type="card_photo"
-                        src={kaya}
-                      />
-                      <div className="card_body">
-                        <div className="card_content">
-                          <h3 className="card_content-title--linked u-text-truncate">
-                            <div className="business-link-hovercard">
-                              <span className="business-link-hovercard_business-link">
-                                <a className="biz-name">
-                                  <span>Kaya</span>
-                                </a>
-                              </span>
-                            </div>
-                          </h3>
-                          <div className="biz-rating biz-rating-large clearfix">
-                            <Stars rating="4.5"/>
-                            <span className="review-count rating-qualifier">11 reviews</span>
-                          </div>
-                          <div className="price-category">
-                            <span className="bullet-after">
-                              <span className="business-attribute price-range">$$</span>
-                            </span>
-                            <span className="category-str-list">Caribbean</span>
-                          </div>
-                          <div className="neighborhood u-text-truncate u-space-t1 u-space-b1">
-                            <span className="neighborhood-str-list">Civic Center</span>
-                          </div>
-                          <p className="business-passport-card_date-opened">
-                            <Icon
-                              name="flame"
-                              size={18}
-                              currentColor
-                            />
-                            Opened 2 weeks ago
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="arrange_unit">
-                    <div className="card business-passport-card">
-                      <Photo
-                        type="card_photo"
-                        src={pastapopup}
-                      />
-                      <div className="card_body">
-                        <div className="card_content">
-                          <h3 className="card_content-title--linked u-text-truncate">
-                            <div className="business-link-hovercard">
-                              <span className="business-link-hovercard_business-link">
-                                <a className="biz-name">
-                                  <span>Pasta Pop-Up</span>
-                                </a>
-                              </span>
-                            </div>
-                          </h3>
-                          <div className="biz-rating biz-rating-large clearfix">
-                            <Stars rating="4.5"/>
-                            <span className="review-count rating-qualifier">32 reviews</span>
-                          </div>
-                          <div className="price-category">
-                            <span className="bullet-after">
-                              <span className="business-attribute price-range">$$</span>
-                            </span>
-                            <span className="category-str-list">Italian, Pop-Up Restaurants</span>
-                          </div>
-                          <div className="neighborhood u-text-truncate u-space-t1 u-space-b1">
-                            <span className="neighborhood-str-list">North Beach/Telegraph Hill</span>
-                          </div>
-                          <p className="business-passport-card_date-opened">
-                            <Icon
-                              name="flame"
-                              size={18}
-                              currentColor
-                            />
-                            Opened 6 weeks ago
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+
+                <Hot />
+
                 <div className="u-space-t2 u-text-centered">
                   <a className="explore-city_see-all">See more hot and new businesses</a>
                 </div>
