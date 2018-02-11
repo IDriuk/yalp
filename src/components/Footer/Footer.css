@@ -1,0 +1,43 @@
+.main-footer {
+  padding: 36px 0 18px;
+  font-size: 14px;
+  line-height: 1.28571em;
+  color: #666;
+}
+
+.main-footer_menu {
+  margin-bottom: 36px;
+}
+
+.main-footer_item {
+  float: left;
+  padding: 0 15px;
+  min-height: 1px;
+  box-sizing: border-box;
+  width: 25%;
+}
+
+.main-footer_item.arrange_unit {
+  float: none;
+}
+
+.footer-menu_header {
+  margin-bottom: 12px;
+}
+
+.footer-menu_item {
+  margin-bottom: 6px;
+}
+
+.main-footer_city-landscape-img {
+  background: url(../../images/footer_cityscape.png) no-repeat bottom;
+  background-size: 660px 140px;
+  margin: 42px auto 18px;
+  height: 140px;
+}
+
+.main-footer_copyright {
+  display: block;
+  margin-top: 18px;
+  text-align: center;
+}

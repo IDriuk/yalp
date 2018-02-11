@@ -9,6 +9,12 @@
   padding: 0 15px;
 }
 
+.content-container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .arrange {
   display: table;
   min-width: 100%;
@@ -120,10 +126,6 @@
   width: 33.33333%;
 }
 
-.main-footer_item.arrange_unit {
-  float: none;
-}
-
 .arrange--12 > .arrange_unit {
   margin-left: 6px;
   margin-right: 6px;
@@ -166,6 +168,10 @@
   width: 100%;
 }
 
+.u-space-b0 {
+  margin-bottom: 0 !important;
+}
+
 .u-space-t1 {
   margin-top: 6px !important;
 }
@@ -200,6 +206,15 @@
 
 .u-text-centered {
   text-align: center!important;
+}
+
+.homepage-hero {
+  padding-top: 30px;
+  height: 570px;
+  background-color: #333;
+  background-size: cover;
+  background-position: 50%;
+  background-image: url('../../images/top_photo.jpg');
 }
 
 .homepage-hero_inner {
@@ -393,80 +408,16 @@ h3 a.biz-name  {
   border-top: 1px solid #e6e6e6;
 }
 
-/* footer */
 .main-content-wrap {
-    min-width: 1020px;
+  min-width: 1020px;
 }
 
 .main-content-wrap--separated {
-    border-top: 1px solid #ccc;
-}
-
-.content-container {
-    width: 960px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-.main-footer {
-    padding: 36px 0 18px;
-    font-size: 14px;
-    line-height: 1.28571em;
-    color: #666;
-}
-
-.main-footer_menu {
-    margin-bottom: 36px;
-}
-
-.main-footer_item {
-    float: left;
-    padding: 0 15px;
-    min-height: 1px;
-    box-sizing: border-box;
-    width: 25%;
-}
-
-.footer-menu_header {
-    margin-bottom: 12px;
-}
-
-.footer-menu_item {
-    margin-bottom: 6px;
-}
-
-.main-footer_city-landscape-img {
-    background: url(../../images/footer_cityscape.png) no-repeat bottom;
-    background-size: 660px 140px;
-    margin: 42px auto 18px;
-    height: 140px;
-}
-
-.main-footer_copyright {
-    display: block;
-    margin-top: 18px;
-    text-align: center;
-}
-
-
-/* column alpha and beta end */
-
-.homepage-hero {
-  padding-top: 30px;
-  height: 570px;
-  background-color: #333;
-  background-size: cover;
-  background-position: 50%;
-  background-image: url('../../images/top_photo.jpg');
+  border-top: 1px solid #ccc;
 }
 
 .nowrap {
   white-space: nowrap;
-}
-
-/* form */
-.u-space-b0 {
-  margin-bottom: 0 !important;
 }
 
 a.ybtn {
@@ -506,13 +457,9 @@ a.ybtn {
 }
 
 .hero_photo-owner-link {
-    color: #fff;
+  color: #fff;
 }
 
 .u-bg-color-alt {
-    background-color: #f5f5f5!important;
-}
-
-.h4 b {
-    color: #333;
+  background-color: #f5f5f5!important;
 }
