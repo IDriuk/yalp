@@ -153,6 +153,7 @@ class App extends Component {
                   </p>
                 </div>
               </div>
+              
               {/* mobile apps */}
               <div className="home-container_section home-container_section--top-long">
                 <div className="u-text-centered">

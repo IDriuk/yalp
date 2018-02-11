@@ -1,0 +1,13 @@
+.ufc-action {
+  float: left;
+  margin-right: 12px;
+}
+
+.ufc-action_link {
+  color: #999;
+  display: block;
+}
+
+.ufc-action_link .show-tooltip {
+  display: inline-block;
+}
