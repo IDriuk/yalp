@@ -13,10 +13,7 @@ import CategoriesList from '../CategoriesList/CategoriesList';
 import LocationBar from '../LocationBar/LocationBar';
 import Hot from '../Hot/Hot';
 import Rotd from '../Rotd/Rotd';
-
-import HzFeDvDkWKsugW8ztN4lWg_90s from '../../images/HzFeDvDkWKsugW8ztN4lWg_90s.jpg';
-import BR0mnDHZy3j3RI_hRAMBmg from '../../images/BR0mnDHZy3j3RI_hRAMBmg.jpg';
-import yB8_l5v2e4Rs7rjgkm1WQ from '../../images/8yB8_l5v2e4Rs7rjgkm1WQ.jpg';
+import RecentLists from '../RecentLists/RecentLists';
 
 import photo_0os9VoR2evxRmqt2_Yx8Iw from '../../images/photo_0os9VoR2evxRmqt2_Yx8Iw.jpg';
 import photo_EiZICTpAxWEmpvhDnduYdw from '../../images/photo_EiZICTpAxWEmpvhDnduYdw.jpg';
@@ -136,68 +133,9 @@ class App extends Component {
                       <div className="island fresh-list island--light list-island">
                         <div className="arrange arrange--30 arrange--equal">
                           <div className="arrange_unit">
-                            <ul className="list-island_set">
-                              <li className="list-island_item">
-                                <div className="media-block media-block--12">
-                                  <Photo
-                                    type="avatar_media"
-                                    src={HzFeDvDkWKsugW8ztN4lWg_90s}
-                                  />
-                                  <div className="media-story">
-                                    <p className="list-island_item-title u-text-truncate media-title">
-                                      <a>Not-Good-For-Retirement Stars</a>
-                                    </p>
-                                    <p className="list-island_item-description">
-                                      Michelin restaurants In the order that I experienced them =)
-                                    </p>
-                                    <div className="list-island_item-owner">
-                                      By
-                                      <a className="user-display-name"> Annie Z.</a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </li>
-                              <li className="list-island_item">
-                                <div className="media-block media-block--12">
-                                  <Photo
-                                    type="avatar_media"
-                                    src={BR0mnDHZy3j3RI_hRAMBmg}
-                                  />
-                                  <div className="media-story">
-                                    <p className="list-island_item-title u-text-truncate media-title">
-                                      <a>2018 AudVentures</a>
-                                    </p>
-                                    <p className="list-island_item-description">
-                                      Finally settling down and still ready to explore!  For all places visited in 2018
-                                    </p>
-                                    <div className="list-island_item-owner">
-                                      By
-                                      <a className="user-display-name"> Audrey H.</a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </li>
-                              <li className="list-island_item">
-                                <div className="media-block media-block--12">
-                                  <Photo
-                                    type="avatar_media"
-                                    src={yB8_l5v2e4Rs7rjgkm1WQ}
-                                  />
-                                  <div className="media-story">
-                                    <p className="list-island_item-title u-text-truncate media-title">
-                                      <a>My reviews for 2014</a>
-                                    </p>
-                                    <p className="list-island_item-description">
-                                      Thanks to my fellow yelper, Andrew I, who is totally cool, he has inspired me to do a list of reviews for 2014.  It's the new year and a new start.
-                                    </p>
-                                    <div className="list-island_item-owner">
-                                      By
-                                      <a className="user-display-name"> Carol C.</a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </li>
-                            </ul>
+
+                            <RecentLists />
+
                           </div>
                         </div>
                       </div>

@@ -1,0 +1,14 @@
+.media-block {
+  position: relative;
+  display: flex;
+}
+
+.media-story {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+}
+
+.media-title a {
+  font-weight: 700;
+}

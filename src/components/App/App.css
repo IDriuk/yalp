@@ -624,32 +624,6 @@ h3 a.biz-name  {
 }
 /* photos island end */
 
-/* column alpha and beta */
-/* column beta */
-
-.media-block {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-}
-
-.media-story {
-    flex: 1;
-    min-width: 0;
-    min-height: 0;
-}
-
-.media-story {
-    flex: 1;
-    min-width: 0;
-    min-height: 0;
-}
-
-.media-title a {
-    font-weight: 700;
-}
-
 /* column alpha and beta end */
 
 .homepage-hero {
