@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './Footer.css'
 
-import Logo from '../common/Logo/Logo';
-import Icon from '../common/Icon/Icon';
+import Logo from '../../common/Logo/Logo';
+import Icon from '../../common/Icon/Icon';
 
 const aboutList = [
   "About Yelp",

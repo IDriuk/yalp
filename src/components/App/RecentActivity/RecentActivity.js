@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
 import './RecentActivity.css';
 
-import FeedReview from '../FeedReview/FeedReview';
-import FeedSinglePhoto from '../FeedSinglePhoto/FeedSinglePhoto';
-import FeedThreePhoto from '../FeedThreePhoto/FeedThreePhoto';
+import FeedReview from './FeedReview/FeedReview';
+import FeedSinglePhoto from './FeedSinglePhoto/FeedSinglePhoto';
+import FeedThreePhoto from './FeedThreePhoto/FeedThreePhoto';
 
-import avatar_2 from '../../images/avatar_2.jpg';
-import avatar_3 from '../../images/avatar_3.jpg';
+import avatar_2 from '../../../images/avatar_2.jpg';
+import avatar_3 from '../../../images/avatar_3.jpg';
 
-import feed_photo_big_1 from '../../images/feed_photo_big_1.jpg';
-import feed_photo_big_2 from '../../images/feed_photo_big_2.jpg';
+import feed_photo_big_1 from '../../../images/feed_photo_big_1.jpg';
+import feed_photo_big_2 from '../../../images/feed_photo_big_2.jpg';
 
-import feed_photo_1 from '../../images/feed_photo_1.jpg';
-import feed_photo_2 from '../../images/feed_photo_2.jpg';
-import feed_photo_3 from '../../images/feed_photo_3.jpg';
-import feed_photo_4 from '../../images/feed_photo_4.jpg';
+import feed_photo_1 from '../../../images/feed_photo_1.jpg';
+import feed_photo_2 from '../../../images/feed_photo_2.jpg';
+import feed_photo_3 from '../../../images/feed_photo_3.jpg';
+import feed_photo_4 from '../../../images/feed_photo_4.jpg';
 
 const feed_three_photos = [
   {

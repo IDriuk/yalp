@@ -4,17 +4,17 @@ import './App.css';
 import Icon from '../common/Icon/Icon';
 import Logo from '../common/Logo/Logo';
 
-import HeaderNav from '../HeaderNav/HeaderNav';
-import Search from '../Search/Search';
-import CategoriesMenu from '../CategoriesMenu/CategoriesMenu';
-import CategoriesList from '../CategoriesList/CategoriesList';
-import LocationBar from '../LocationBar/LocationBar';
-import Hot from '../Hot/Hot';
-import Rotd from '../Rotd/Rotd';
-import RecentLists from '../RecentLists/RecentLists';
-import RecentActivity from '../RecentActivity/RecentActivity';
-import MobileApps from '../MobileApps/MobileApps';
-import Footer from '../Footer/Footer';
+import HeaderNav from './HeaderNav/HeaderNav';
+import Search from './Search/Search';
+import CategoriesMenu from './CategoriesMenu/CategoriesMenu';
+import CategoriesList from './CategoriesList/CategoriesList';
+import LocationBar from './LocationBar/LocationBar';
+import Hot from './Hot/Hot';
+import Rotd from './Rotd/Rotd';
+import RecentLists from './RecentLists/RecentLists';
+import RecentActivity from './RecentActivity/RecentActivity';
+import MobileApps from './MobileApps/MobileApps';
+import Footer from './Footer/Footer';
 
 class App extends Component {
   render() {

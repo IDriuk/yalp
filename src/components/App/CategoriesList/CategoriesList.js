@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './CategoriesList.css'
 
-import Photo from '../common/Photo/Photo';
+import Photo from '../../common/Photo/Photo';
 
-import movers from '../../images/movers.png';
-import hotels from '../../images/hotels.png';
-import dryclean from '../../images/dryclean.png';
-import massage from '../../images/massage.png';
+import movers from '../../../images/movers.png';
+import hotels from '../../../images/hotels.png';
+import dryclean from '../../../images/dryclean.png';
+import massage from '../../../images/massage.png';
 
 class CategoriesList extends Component {
   render () {

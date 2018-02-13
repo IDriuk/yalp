@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './FeedSinglePhoto.css';
 
-import Icon from '../common/Icon/Icon';
-import Photo from '../common/Photo/Photo';
+import Icon from '../../../common/Icon/Icon';
+import Photo from '../../../common/Photo/Photo';
 
-import avatar_1 from '../../images/avatar_1.jpg';
-import feed_photo_single from '../../images/feed_photo_single.jpg';
+import avatar_1 from '../../../../images/avatar_1.jpg';
+import feed_photo_single from '../../../../images/feed_photo_single.jpg';
 
 class FeedSinglePhoto extends Component {
   render () {

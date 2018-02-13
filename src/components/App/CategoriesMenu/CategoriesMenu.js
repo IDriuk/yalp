@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './CategoriesMenu.css'
-import Icon from '../common/Icon/Icon';
+import Icon from '../../common/Icon/Icon';
 
 class CategoriesMenu extends Component {
   render () {

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './FeedThreePhoto.css';
 
-import Icon from '../common/Icon/Icon';
-import Photo from '../common/Photo/Photo';
+import Icon from '../../../common/Icon/Icon';
+import Photo from '../../../common/Photo/Photo';
 
 class FeedThreePhoto extends Component {
   render () {

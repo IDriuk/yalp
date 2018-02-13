@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './Rotd.css';
 
-import Photo from '../common/Photo/Photo';
-import Icon from '../common/Icon/Icon';
-import Stars from '../common/Stars/Stars';
+import Photo from '../../common/Photo/Photo';
+import Icon from '../../common/Icon/Icon';
+import Stars from '../../common/Stars/Stars';
 
-import rotd_badge from '../../images/rotd_badge.png';
-import rotd_photo from '../../images/rotd_photo.jpg';
+import rotd_badge from '../../../images/rotd_badge.png';
+import rotd_photo from '../../../images/rotd_photo.jpg';
 
 const data = {
   photo: rotd_photo,
