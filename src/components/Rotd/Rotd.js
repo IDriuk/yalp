@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './Rotd.css';
 
-import Photo from '../common/Photo/Photo';
-import Icon from '../common/Icon/Icon';
-import Stars from '../common/Stars/Stars';
+import Photo from '../Photo/Photo';
+import Icon from '../Icon/Icon';
+import Stars from '../Stars/Stars';
 
 import rotd_badge from '../../images/rotd_badge.png';
 import rotd_photo from '../../images/rotd_photo.jpg';

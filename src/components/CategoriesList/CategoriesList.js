@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './CategoriesList.css'
 
-import Photo from '../common/Photo/Photo';
+import Photo from '../Photo/Photo';
 
 import movers from '../../images/movers.png';
 import hotels from '../../images/hotels.png';

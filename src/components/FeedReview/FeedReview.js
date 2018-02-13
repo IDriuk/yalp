@@ -1,9 +1,9 @@
 import React , { Component } from 'react';
 import './FeedReview.css';
 
-import Stars from '../common/Stars/Stars';
-import Icon from '../common/Icon/Icon';
-import Photo from '../common/Photo/Photo';
+import Stars from '../Stars/Stars';
+import Icon from '../Icon/Icon';
+import Photo from '../Photo/Photo';
 
 import feed_hero_1 from '../../images/feed_hero_1.jpg';
 import avatar_4 from '../../images/avatar_4.jpg';

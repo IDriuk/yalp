@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './Hot.css'
 
-import Stars from '../common/Stars/Stars';
-import Icon from '../common/Icon/Icon';
-import Photo from '../common/Photo/Photo';
+import Stars from '../Stars/Stars';
+import Icon from '../Icon/Icon';
+import Photo from '../Photo/Photo';
 
 import bluestonelane from '../../images/bluestonelane.jpg';
 import kaya from '../../images/kaya.jpg';

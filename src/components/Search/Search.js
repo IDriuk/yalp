@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Search.css';
-import Icon from '../common/Icon/Icon';
+import Icon from '../Icon/Icon';
 
 class Search extends Component {
   render () {
