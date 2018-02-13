@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './LocationBar.css'
 
-import Icon from '../Icon/Icon';
+import Icon from '../common/Icon/Icon';
 
 class LocationBar extends Component {
   render () {

@@ -1,8 +1,8 @@
 import React, { Component, Fragment } from 'react';
 import './Logo.css';
 
-import logo_desktop_xsmall_outline from '../../images/logo_desktop_xsmall_outline.png';
-import burst_desktop_xsmall_outline from '../../images/burst_desktop_xsmall_outline.png';
+import logo_desktop_xsmall_outline from '../../../images/logo_desktop_xsmall_outline.png';
+import burst_desktop_xsmall_outline from '../../../images/burst_desktop_xsmall_outline.png';
 
 class Logo extends Component {
   render () {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './MobileApps.css';
 
-import Icon from '../Icon/Icon';
+import Icon from '../common/Icon/Icon';
 
 import ios from '../../images/pitch_ios.png';
 import android from '../../images/pitch_android.png';

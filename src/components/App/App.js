@@ -1,8 +1,8 @@
 import React, { Component, Fragment } from 'react';
 import './App.css';
 
-import Icon from '../Icon/Icon';
-import Logo from '../Logo/Logo';
+import Icon from '../common/Icon/Icon';
+import Logo from '../common/Logo/Logo';
 
 import HeaderNav from '../HeaderNav/HeaderNav';
 import Search from '../Search/Search';

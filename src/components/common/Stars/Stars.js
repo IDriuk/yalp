@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Stars.css';
-import stars_img from '../../images/stars.png';
+import stars_img from '../../../images/stars.png';
 
 export default class Stars extends Component {
   render () {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './RecentLists.css';
 
-import Photo from '../Photo/Photo';
+import Photo from '../common/Photo/Photo';
 
 import rlists_photo_1 from '../../images/rlists_photo_1.jpg';
 import rlists_photo_2 from '../../images/rlists_photo_2.jpg';
