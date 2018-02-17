@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import { connect } from 'react-redux';
 import './App.css';
 
 import Icon from '../common/Icon/Icon';
@@ -16,7 +17,13 @@ import RecentActivity from './RecentActivity/RecentActivity';
 import MobileApps from './MobileApps/MobileApps';
 import Footer from './Footer/Footer';
 
+import { fetchFromYelpAsync } from '../../actions';
+
 class App extends Component {
+  componentDidMount() {
+    this.props.fetchFromYelpAsync();
+  }
+
   render() {
     return (
       <Fragment>
@@ -152,4 +159,8 @@ class App extends Component {
   }
 }
 
-export default App;
+function mapStateToProps (state) {
+  return { yalp: state.yalp };
+}
+
+export default connect(mapStateToProps, { fetchFromYelpAsync })(App);
