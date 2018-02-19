@@ -17,11 +17,11 @@ import RecentActivity from './RecentActivity/RecentActivity';
 import MobileApps from './MobileApps/MobileApps';
 import Footer from './Footer/Footer';
 
-import { fetchFromYelpAsync } from '../../actions';
+import { fetchBusinesses } from '../../actions';
 
 class App extends Component {
   componentDidMount() {
-    this.props.fetchFromYelpAsync();
+    this.props.fetchBusinesses();
   }
 
   render() {
@@ -160,7 +160,7 @@ class App extends Component {
 }
 
 function mapStateToProps (state) {
-  return { yalp: state.yalp };
+  return { businesses: state.businesses };
 }
 
-export default connect(mapStateToProps, { fetchFromYelpAsync })(App);
+export default connect(mapStateToProps, { fetchBusinesses })(App);

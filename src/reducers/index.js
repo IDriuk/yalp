@@ -1,10 +1,8 @@
 import { combineReducers } from 'redux';
-import { reducer as formReducer } from 'redux-form';
-import YalpReducer from './reducer_yalp';
+import BusinessesReducer from './reducer_businesses';
 
 const rootReducer = combineReducers({
-  form: formReducer,
-  yalp: YalpReducer
+  businesses: BusinessesReducer
 });
 
 export default rootReducer;
