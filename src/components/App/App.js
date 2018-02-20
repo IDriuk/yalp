@@ -25,6 +25,8 @@ class App extends Component {
   }
 
   render() {
+    const { businesses } = this.props;
+
     return (
       <Fragment>
 
@@ -76,7 +78,9 @@ class App extends Component {
               </div>
               <div className="home-container_section">
                 <h3 className="explore-city_title">Hot & New Businesses</h3>
-                <Hot />
+                <Hot
+                  businesses={businesses}
+                />
                 <div className="u-space-t2 u-text-centered">
                   <a className="explore-city_see-all">See more hot and new businesses</a>
                 </div>
@@ -157,6 +161,10 @@ class App extends Component {
       </Fragment>
     );
   }
+}
+
+App.defaultProps = {
+  businesses: []
 }
 
 function mapStateToProps (state) {
