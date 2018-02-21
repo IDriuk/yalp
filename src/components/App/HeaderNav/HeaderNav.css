@@ -21,6 +21,16 @@
   padding-bottom: 8px;
 }
 
+.hero-header_nav .header-nav_link:hover {
+    color: #fff;
+    text-decoration: none;
+    border-bottom-color: #fff;
+}
+
+.hero-header_nav .header-nav_link:active {
+  color: #999;
+}
+
 .hero-header_nav .header-nav_link, .hero-header_nav .header-nav_text {
   color: #fff;
   display: block;
@@ -43,6 +53,16 @@
   border: 2px solid #fff;
   margin-top: -2px;
   padding: 7px 24px 8px;
+}
+
+a.header-nav_button:focus, a.header-nav_button:hover {
+  background: #fff;
+  color: #666;
+}
+
+.header-nav_button:active, a.header-nav_button:active {
+  background: #fff;
+  color: #999;
 }
 
 .main-header_account, .main-header_nav-dropdown {
