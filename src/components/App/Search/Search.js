@@ -1,9 +1,41 @@
 import React, { Component } from 'react';
 import './Search.css';
 import Icon from '../../common/Icon/Icon';
+import Suggestions from './Suggestions/Suggestions';
 
 class Search extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      showSuggestions: false,
+      searchText: ""
+    }
+
+    this.showSuggestions = this.showSuggestions.bind(this);
+    this.hideSuggestions = this.hideSuggestions.bind(this);
+    this.handleSearchChange = this.handleSearchChange.bind(this);
+    this.updateSearchInput = this.updateSearchInput.bind(this);
+  }
+
+  handleSearchChange(event) {
+    this.setState({searchText: event.target.value});
+  }
+
+  updateSearchInput(searchText) {
+    this.setState({searchText})
+  }
+
+  showSuggestions() {
+    this.setState({ showSuggestions: true });
+  }
+
+  hideSuggestions() {
+    setTimeout(() => {this.setState({ showSuggestions: false })}, 200);
+  }
+
   render () {
+    const { showSuggestions, searchText } = this.state;
+
     return (
       <form className="business-search-form main-search yform u-space-b0">
         <div className="arrange arrange--equal arrange--stack-small">
@@ -14,6 +46,10 @@ class Search extends Component {
                   <span className="pseudo-input_text business-search-form_input-text">Find</span>
                   <span className="pseudo-input_field-holder">
                     <input
+                      onFocus={this.showSuggestions}
+                      onBlur={this.hideSuggestions}
+                      onChange={this.handleSearchChange}
+                      value={searchText}
                       className="pseudo-input_field business-search-form_input-field"
                       placeholder="burgers, barbers, spas, handymen…"
                       style={{
@@ -27,6 +63,7 @@ class Search extends Component {
                   </span>
                 </div>
               </label>
+              {showSuggestions && <Suggestions updateSearchInput={this.updateSearchInput} />}
             </div>
           </div>
 
@@ -41,6 +78,7 @@ class Search extends Component {
                         <input
                           className="pseudo-input_field business-search-form_input-field"
                           placeholder="address, neighborhood, city, state or zip"
+                          defaultValue="San Francisco, CA"
                         />
                       </span>
                     </div>
