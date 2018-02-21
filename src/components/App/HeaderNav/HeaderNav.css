@@ -22,9 +22,9 @@
 }
 
 .hero-header_nav .header-nav_link:hover {
-    color: #fff;
-    text-decoration: none;
-    border-bottom-color: #fff;
+  color: #fff;
+  text-decoration: none;
+  border-bottom-color: #fff;
 }
 
 .hero-header_nav .header-nav_link:active {
