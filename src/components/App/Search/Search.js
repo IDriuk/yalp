@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Search.css';
 import Icon from '../../common/Icon/Icon';
 import Suggestions from './Suggestions/Suggestions';
+import Spinner from './Spinner/Spinner';
 
 class Search extends Component {
   constructor(props) {
@@ -9,11 +10,13 @@ class Search extends Component {
     this.state = {
       showSearchSuggestions: false,
       searchText: "",
-      showLocationsSuggestions: false
+      showLocationsSuggestions: false,
+      submit: false
     }
 
     this.showSearchSuggestions = this.showSearchSuggestions.bind(this);
     this.hideSearchSuggestions = this.hideSearchSuggestions.bind(this);
+    this.submit = this.submit.bind(this);
 
     this.handleSearchChange = this.handleSearchChange.bind(this);
     this.updateSearchInput = this.updateSearchInput.bind(this);
@@ -46,11 +49,19 @@ class Search extends Component {
     setTimeout(() => {this.setState({ showLocationsSuggestions: false })}, 200);
   }
 
+  submit(e) {
+    e.preventDefault();
+    this.setState({ submit: true });
+    setTimeout(() => {this.setState({ submit: false })}, 1000);
+  }
+
   render () {
-    const { showSearchSuggestions, searchText, showLocationsSuggestions } = this.state;
+    const { showSearchSuggestions, searchText, showLocationsSuggestions, submit } = this.state;
 
     return (
-      <form className="business-search-form main-search yform u-space-b0">
+      <form
+        onSubmit={this.submit}
+        className="business-search-form main-search yform u-space-b0">
         <div className="arrange arrange--equal arrange--stack-small">
           <div className="arrange_unit">
             <div className="main-search_suggestions-field search-field-container find-decorator">
@@ -104,13 +115,15 @@ class Search extends Component {
 
               <div className="arrange_unit">
                 <button className="ybtn ybtn--primary ybtn--small business-search-form_button">
-                  <span className="main-search_action-icon-wrap">
-                    <Icon
-                      name="search"
-                      size={24}
-                      currentColor
-                    />
-                  </span>
+                  {submit ?
+                    <Spinner /> :
+                    <span className="main-search_action-icon-wrap">
+                      <Icon
+                        name="search"
+                        size={24}
+                        currentColor
+                      />
+                    </span>}
                 </button>
               </div>
             </div>

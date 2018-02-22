@@ -105,3 +105,10 @@
   font-size: 12px;
   line-height: 1.5em;
 }
+
+.business-search-form_button .circle-spinner, .yform .ybtn.business-search-form_button .circle-spinner {
+  width: 24px;
+  height: 24px;
+  top: 2px;
+  margin: -5px 0;
+}
