@@ -3,11 +3,14 @@ import './Suggestions.css';
 
 class Suggestions extends Component {
   render () {
+    const { search, updateSearchInput, locations } = this.props;
+
     return (
       <div className="main-search_suggestions suggestions-list-container">
+        {search &&
         <ul className="suggestions-list">
           <li
-            onClick={(e) => { this.props.updateSearchInput("Restaurants") }}
+            onClick={() => updateSearchInput("Restaurants") }
             className="suggestions-list-item">
             <div className="media-block">
               <div className="media-avatar">
@@ -21,7 +24,7 @@ class Suggestions extends Component {
             </div>
           </li>
           <li
-            onClick={() => this.props.updateSearchInput("Breakfast & Brunch")}
+            onClick={() => updateSearchInput("Breakfast & Brunch")}
             className="suggestions-list-item">
             <div className="media-block">
               <div className="media-avatar">
@@ -35,7 +38,7 @@ class Suggestions extends Component {
             </div>
           </li>
           <li
-            onClick={() => this.props.updateSearchInput("Coffee & Tea")}
+            onClick={() => updateSearchInput("Coffee & Tea")}
             className="suggestions-list-item">
             <div className="media-block">
               <div className="media-avatar">
@@ -49,7 +52,7 @@ class Suggestions extends Component {
             </div>
           </li>
           <li
-            onClick={() => this.props.updateSearchInput("Delivery")}
+            onClick={() => updateSearchInput("Delivery")}
             className="suggestions-list-item">
             <div className="media-block">
               <div className="media-avatar">
@@ -61,7 +64,7 @@ class Suggestions extends Component {
             </div>
           </li>
           <li
-            onClick={() => this.props.updateSearchInput("Takeout")}
+            onClick={() => updateSearchInput("Takeout")}
             className="suggestions-list-item">
             <div className="media-block">
               <div className="media-avatar">
@@ -73,7 +76,7 @@ class Suggestions extends Component {
             </div>
           </li>
           <li
-            onClick={() => this.props.updateSearchInput("Reservations")}
+            onClick={() => updateSearchInput("Reservations")}
             className="suggestions-list-item">
             <div className="media-block">
               <div className="media-avatar">
@@ -84,7 +87,29 @@ class Suggestions extends Component {
               <div className="media-story">Reservations</div>
             </div>
           </li>
-        </ul>
+        </ul>}
+
+        {locations &&
+        <ul className="suggestions-list">
+          <li
+            className="suggestions-list-item suggest-button">
+            <div className="media-block">
+              <div className="media-avatar">
+                <span className="icon icon--blue-dark" style={{width: 24, height: 24}}>
+                  <svg  className="icon_svg" id="24x24_location" height="100%" viewBox="0 0 24 24" width="100%"><path d="M3 12.73L20 4l-8.73 17-.696-7.574L3 12.73z"></path></svg>
+                </span>
+              </div>
+              <div className="media-story">Current Location</div>
+            </div>
+          </li>
+          <li
+            className="suggestions-list-item">
+            <div className="media-block">
+              <div className="media-story">San Francisco, CA</div>
+            </div>
+          </li>
+        </ul>}
+
       </div>
     );
   }

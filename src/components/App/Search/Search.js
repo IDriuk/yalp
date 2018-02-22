@@ -7,14 +7,19 @@ class Search extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showSuggestions: false,
-      searchText: ""
+      showSearchSuggestions: false,
+      searchText: "",
+      showLocationsSuggestions: false
     }
 
-    this.showSuggestions = this.showSuggestions.bind(this);
-    this.hideSuggestions = this.hideSuggestions.bind(this);
+    this.showSearchSuggestions = this.showSearchSuggestions.bind(this);
+    this.hideSearchSuggestions = this.hideSearchSuggestions.bind(this);
+
     this.handleSearchChange = this.handleSearchChange.bind(this);
     this.updateSearchInput = this.updateSearchInput.bind(this);
+
+    this.showLocationsSuggestions = this.showLocationsSuggestions.bind(this);
+    this.hideLocationsSuggestions = this.hideLocationsSuggestions.bind(this);
   }
 
   handleSearchChange(event) {
@@ -25,16 +30,24 @@ class Search extends Component {
     this.setState({searchText})
   }
 
-  showSuggestions() {
-    this.setState({ showSuggestions: true });
+  showSearchSuggestions() {
+    this.setState({ showSearchSuggestions: true });
   }
 
-  hideSuggestions() {
-    setTimeout(() => {this.setState({ showSuggestions: false })}, 200);
+  hideSearchSuggestions() {
+    setTimeout(() => {this.setState({ showSearchSuggestions: false })}, 200);
+  }
+
+  showLocationsSuggestions() {
+    this.setState({ showLocationsSuggestions: true });
+  }
+
+  hideLocationsSuggestions() {
+    setTimeout(() => {this.setState({ showLocationsSuggestions: false })}, 200);
   }
 
   render () {
-    const { showSuggestions, searchText } = this.state;
+    const { showSearchSuggestions, searchText, showLocationsSuggestions } = this.state;
 
     return (
       <form className="business-search-form main-search yform u-space-b0">
@@ -46,8 +59,8 @@ class Search extends Component {
                   <span className="pseudo-input_text business-search-form_input-text">Find</span>
                   <span className="pseudo-input_field-holder">
                     <input
-                      onFocus={this.showSuggestions}
-                      onBlur={this.hideSuggestions}
+                      onFocus={this.showSearchSuggestions}
+                      onBlur={this.hideSearchSuggestions}
                       onChange={this.handleSearchChange}
                       value={searchText}
                       className="pseudo-input_field business-search-form_input-field"
@@ -63,7 +76,7 @@ class Search extends Component {
                   </span>
                 </div>
               </label>
-              {showSuggestions && <Suggestions updateSearchInput={this.updateSearchInput} />}
+              {showSearchSuggestions && <Suggestions search updateSearchInput={this.updateSearchInput} />}
             </div>
           </div>
 
@@ -76,6 +89,8 @@ class Search extends Component {
                       <span className="pseudo-input_text business-search-form_input-text">Near</span>
                       <span className="pseudo-input_field-holder">
                         <input
+                          onFocus={this.showLocationsSuggestions}
+                          onBlur={this.hideLocationsSuggestions}
                           className="pseudo-input_field business-search-form_input-field"
                           placeholder="address, neighborhood, city, state or zip"
                           defaultValue="San Francisco, CA"
@@ -83,6 +98,7 @@ class Search extends Component {
                       </span>
                     </div>
                   </label>
+                  {showLocationsSuggestions && <Suggestions locations />}
                 </div>
               </div>
 

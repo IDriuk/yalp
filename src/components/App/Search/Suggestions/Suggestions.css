@@ -24,6 +24,10 @@
   cursor: pointer;
 }
 
+.suggestions-list-container>.suggestions-list>.suggestions-list-item.suggest-button {
+    color: #0073bb;
+}
+
 .media-block {
   position: relative;
   display: flex;

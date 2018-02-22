@@ -92,6 +92,10 @@
     fill: #333;
 }
 
+.icon--blue-dark, .icon--hover-blue-dark:focus, .icon--hover-blue-dark:hover {
+    fill: #0073bb;
+}
+
 .icon--count {
   fill: #f15c00
 }
