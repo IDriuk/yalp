@@ -15,3 +15,45 @@
 .text-centered {
   text-align: center;
 }
+
+/* dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown_menu-container {
+  z-index: 5;
+}
+
+.dropdown_menu {
+  display: none;
+  padding: .5em 0;
+  position: absolute;
+  top: auto;
+  z-index: 5;
+  border-radius: 3px;
+  border: 1px solid #e6e6e6;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,.2);
+}
+
+.dropdown_menu.is-visible {
+  display: block;
+}
+
+.dropdown_item {
+  width: 100%;
+  min-width: 200px;
+}
+
+.homepage-hero_category .dropdown_link {
+  text-align: left;
+}
+
+.dropdown_link {
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: .25em 1em;
+}
