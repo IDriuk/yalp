@@ -2,6 +2,15 @@ import React, { Component } from 'react';
 import './Suggestions.css';
 import Icon from '../../../common/Icon/Icon';
 
+const searchSuggestions = [
+  {icon_name: "food", story: "Restaurants"},
+  {icon_name: "croissant", story: "Breakfast & Brunch"},
+  {icon_name: "coffee", story: "Coffee & Tea"},
+  {icon_name: "order", story: "Delivery"},
+  {icon_name: "shopping", story: "Takeout"},
+  {icon_name: "reservation", story: "Reservations"},
+]
+
 class Suggestions extends Component {
   render () {
     const { search, updateSearchInput, locations } = this.props;
@@ -10,66 +19,17 @@ class Suggestions extends Component {
       <div className="main-search_suggestions suggestions-list-container">
         {search &&
         <ul className="suggestions-list">
+          {searchSuggestions.map(suggestion =>
           <li
-            onClick={() => updateSearchInput("Restaurants") }
+            onClick={() => updateSearchInput(suggestion.story) }
             className="suggestions-list-item">
             <div className="media-block">
               <div className="media-avatar">
-                <Icon name="suggestions_food" size={24} />
+                <Icon name={`suggestions_${suggestion.icon_name}`} size={24} />
               </div>
-              <div className="media-story">Restaurants</div>
+              <div className="media-story">{suggestion.story}</div>
             </div>
-          </li>
-          <li
-            onClick={() => updateSearchInput("Breakfast & Brunch")}
-            className="suggestions-list-item">
-            <div className="media-block">
-              <div className="media-avatar">
-                <Icon name="suggestions_croissant" size={24} />
-              </div>
-              <div className="media-story">Breakfast & Brunch</div>
-            </div>
-          </li>
-          <li
-            onClick={() => updateSearchInput("Coffee & Tea")}
-            className="suggestions-list-item">
-            <div className="media-block">
-              <div className="media-avatar">
-                <Icon name="suggestions_coffee" size={24} />
-              </div>
-              <div className="media-story">Coffee & Tea</div>
-            </div>
-          </li>
-          <li
-            onClick={() => updateSearchInput("Delivery")}
-            className="suggestions-list-item">
-            <div className="media-block">
-              <div className="media-avatar">
-                <Icon name="suggestions_order" size={24} />
-              </div>
-              <div className="media-story">Delivery</div>
-            </div>
-          </li>
-          <li
-            onClick={() => updateSearchInput("Takeout")}
-            className="suggestions-list-item">
-            <div className="media-block">
-              <div className="media-avatar">
-                <Icon name="suggestions_shopping" size={24} />
-              </div>
-              <div className="media-story">Takeout</div>
-            </div>
-          </li>
-          <li
-            onClick={() => updateSearchInput("Reservations")}
-            className="suggestions-list-item">
-            <div className="media-block">
-              <div className="media-avatar">
-                <Icon name="suggestions_reservation" size={24} />
-              </div>
-              <div className="media-story">Reservations</div>
-            </div>
-          </li>
+          </li>)}
         </ul>}
 
         {locations &&
