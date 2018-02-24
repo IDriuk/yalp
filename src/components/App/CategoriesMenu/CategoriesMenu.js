@@ -25,16 +25,19 @@ class CategoriesMenu extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {is_active: false}
+    this.state = {
+      is_active: false,
+      hovered: false
+    }
   }
 
   renderDropdown(category) {
-    const { is_active } = this.state;
+    const { is_active, hovered } = this.state;
 
     return(
       <li key={category}
         className={`homepage-hero_category dropdown dropdown--arrow dropdown--fade ${is_active ? "is-active" : ""}`}
-        onMouseOver={() => {this.setState({is_active: true})}}
+        onMouseOver={() => {this.setState({is_active: true, hovered: true})}}
         onMouseOut={() => {this.setState({is_active: false})}}
       >
         <div className={`dropdown_toggle ${is_active ? "is-active hover" : ""}`}>
@@ -51,6 +54,7 @@ class CategoriesMenu extends Component {
           </span>
         </div>
         <div className="dropdown_menu-container">
+          {hovered &&
           <div className={`dropdown_menu ${is_active ? "is-visible" : "" }`} >
             <div className="dropdown_menu-inner">
               <ul className="dropdown_menu-group">
@@ -62,7 +66,7 @@ class CategoriesMenu extends Component {
                 </li>)}
               </ul>
             </div>
-          </div>
+          </div>}
         </div>
       </li>
     );
