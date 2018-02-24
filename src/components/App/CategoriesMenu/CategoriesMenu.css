@@ -21,10 +21,6 @@
   position: relative;
 }
 
-.dropdown_menu-container {
-  z-index: 5;
-}
-
 .dropdown_menu {
   display: none;
   padding: .5em 0;
@@ -37,7 +33,7 @@
   box-shadow: 0 2px 8px rgba(0,0,0,.2);
 }
 
-.dropdown_menu.is-visible {
+.dropdown_menu {
   display: block;
 }
 
@@ -56,4 +52,92 @@
   overflow: hidden;
   white-space: nowrap;
   padding: .25em 1em;
+}
+
+/* triangle */
+.dropdown--arrow .dropdown_toggle {
+  position: relative;
+}
+
+.dropdown--arrow .dropdown_toggle:after, .dropdown--arrow .dropdown_toggle:before {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  left: 50%;
+  bottom: -11px;
+  width: 0;
+  height: 0;
+  border: solid transparent;
+  pointer-events: none;
+  display: none;
+}
+
+.dropdown--arrow .dropdown_toggle:after {
+  border-bottom-color: #fff;
+  border-width: 10px;
+  margin-left: -10px;
+}
+
+.dropdown--arrow .dropdown_toggle:before {
+  border-bottom-color: #e6e6e6;
+  border-width: 11px;
+  margin-left: -11px;
+}
+
+.dropdown--arrow .dropdown_toggle:after, .dropdown--arrow .dropdown_toggle:before {
+  z-index: 1000;
+}
+
+.dropdown--arrow .dropdown_toggle.is-active:after, .dropdown--arrow .dropdown_toggle.is-active:before {
+  display: block;
+}
+
+.dropdown_menu-container {
+  z-index: 5;
+  padding-top: 10px;
+}
+
+/* animation */
+.dropdown--fade.dropdown--arrow .dropdown_toggle.is-active:after,
+.dropdown--fade.dropdown--arrow .dropdown_toggle.is-active:before,
+.dropdown--fade .dropdown_toggle.is-active ~ .dropdown_menu-container {
+  animation: fadeInFromNone .15s ease-out;
+}
+
+.dropdown--fade.dropdown--arrow .dropdown_toggle:not(.is-active):after,
+.dropdown--fade.dropdown--arrow .dropdown_toggle:not(.is-active):before,
+.dropdown--fade .dropdown_toggle:not(.is-active) ~ .dropdown_menu-container {
+  animation: fadeOutToNone .15s ease-out;
+  animation-fill-mode: forwards;
+  pointer-events: none;
+}
+
+@keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOutToNone {
+  0% {
+    display: block;
+    opacity: 1;
+  }
+  99% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: none;
+    opacity: 0;
+  }
 }
