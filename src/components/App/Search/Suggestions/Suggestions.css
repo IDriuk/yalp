@@ -42,6 +42,6 @@
   border-left: none;
 }
 
-.media-block > .media-story {
+form .media-block > .media-story {
   line-height: 22px;
 }

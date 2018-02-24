@@ -21,6 +21,7 @@ class Suggestions extends Component {
         <ul className="suggestions-list">
           {searchSuggestions.map(suggestion =>
           <li
+            key={suggestion.story}
             onClick={() => updateSearchInput(suggestion.story) }
             className="suggestions-list-item">
             <div className="media-block">
