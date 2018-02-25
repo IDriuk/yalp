@@ -8,6 +8,7 @@ import Logo from '../common/Logo/Logo';
 import HeaderNav from './HeaderNav/HeaderNav';
 import Search from './Search/Search';
 import CategoriesMenu from './CategoriesMenu/CategoriesMenu';
+import HeroBiz from './HeroBiz/HeroBiz';
 import CategoriesList from './CategoriesList/CategoriesList';
 import LocationBar from './LocationBar/LocationBar';
 import Hot from './Hot/Hot';
@@ -38,25 +39,7 @@ class App extends Component {
               <Logo type="hero" />
               <Search />
               <CategoriesMenu />
-              <div className="u-text-centered homepage-hero_biz u-size-full">
-                <div className="business-link-hovercard business-link-hovercard--strong business-link-hovercard--inline">
-                  <span className="business-link-hovercard_business-link">
-                    <a className="biz-name">
-                      <span>Amaranth Bakery & Cafe</span>
-                    </a>
-                  </span>
-                </div>
-              </div>
-              <div className="u-text-centered homepage-hero_photo-owner u-size-full">
-                <div>
-                  <p>
-                    Photo by
-                    <a className="homepage-hero_photo-owner-link">
-                      <strong> Jen K.</strong>
-                    </a>
-                  </p>
-                </div>
-              </div>
+              <HeroBiz />
             </div>
           </div>
         </div>

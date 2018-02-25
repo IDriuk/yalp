@@ -28,11 +28,6 @@
     color: #0073bb;
 }
 
-.media-block {
-  position: relative;
-  display: flex;
-}
-
 .suggestions-list-container > .suggestions-list > .suggestions-list-item .media-avatar {
   margin-right: 5px;
 }

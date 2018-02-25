@@ -70,11 +70,6 @@
   position: relative;
 }
 
-.media-block--12 > .media-avatar {
-  border-right: 12px solid transparent;
-  border-left: none;
-}
-
 .list-island_item-avatar {
   width: 72px;
   height: 72px;

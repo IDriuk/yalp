@@ -467,3 +467,27 @@ a.ybtn {
 .inline-block {
   display: inline-block;
 }
+
+.media-block {
+  position: relative;
+  display: flex;
+}
+
+.media-block--12 > .media-avatar {
+  border-right: 12px solid transparent;
+  border-left: none;
+}
+
+.media-story {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+}
+
+.price-category {
+  clear: both;
+}
+
+.media-title a {
+  font-weight: 700;
+}
