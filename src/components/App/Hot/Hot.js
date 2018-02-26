@@ -6,9 +6,13 @@ import Stars from '../../common/Stars/Stars';
 import Icon from '../../common/Icon/Icon';
 import Photo from '../../common/Photo/Photo';
 
+import defaultBusinesses from './TestBusinesses';
+
 class Hot extends Component {
   render () {
-    const  { businesses }  = this.props;
+    
+    let  { businesses }  = this.props;
+    businesses = businesses.length > 0 ? businesses : defaultBusinesses;
 
     return (
       <div className="arrange arrange--3-units arrange--30 arrange--wrap">
