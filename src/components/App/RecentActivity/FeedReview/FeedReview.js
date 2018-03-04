@@ -12,7 +12,7 @@ class FeedReview extends Component {
   renderTooltip(name) {
     return (
       <span className="tooltip-wrapper">
-        <span class="tooltip">
+        <span className="tooltip">
           {name}
         </span>
       </span>
