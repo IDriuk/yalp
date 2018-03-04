@@ -56,6 +56,35 @@
     fill: #999;
 }
 
+.ufc-action_link--funny:hover .icon--ufc {
+    fill: #41a700;
+}
+
+.ufc-action_link--cool:hover .icon--ufc {
+    fill: #0097ec;
+}
+
+.ufc-action_link--useful:hover .icon--ufc {
+    fill: #f15c00;
+}
+
+.compliment-btn--not-sent:hover .icon--compliment {
+    fill: #d32323;
+}
+
+.feed-item_action-link:hover {
+    text-decoration: none;
+    color: #0073bb;
+}
+
+span:hover > .icon--currentColor {
+    fill: currentColor;
+}
+
+.app-pitch_item:hover .icon.icon--apple {
+    fill: #0073bb;
+}
+
 .ybtn .icon.icon--size-24 {
   margin: -12px 0;
 }
