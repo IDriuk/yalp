@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import './Hot.css'
 
 import Stars from '../../common/Stars/Stars';
