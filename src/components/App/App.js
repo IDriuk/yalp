@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from 'react';
-import { connect } from 'react-redux';
 import './App.css';
 
 import Icon from '../common/Icon/Icon';
@@ -18,15 +17,9 @@ import RecentActivity from './RecentActivity/RecentActivity';
 import MobileApps from './MobileApps/MobileApps';
 import Footer from './Footer/Footer';
 
-import { fetchBusinesses } from '../../actions';
-
 class App extends Component {
-  componentDidMount() {
-    this.props.fetchBusinesses();
-  }
 
   render() {
-    const { businesses } = this.props;
 
     return (
       <Fragment>
@@ -61,9 +54,7 @@ class App extends Component {
               </div>
               <div className="home-container_section">
                 <h3 className="explore-city_title">Hot & New Businesses</h3>
-                <Hot
-                  businesses={businesses}
-                />
+                <Hot />
                 <div className="u-space-t2 u-text-centered">
                   <a className="explore-city_see-all">See more hot and new businesses</a>
                 </div>
@@ -146,12 +137,4 @@ class App extends Component {
   }
 }
 
-App.defaultProps = {
-  businesses: []
-}
-
-function mapStateToProps (state) {
-  return { businesses: state.businesses };
-}
-
-export default connect(mapStateToProps, { fetchBusinesses })(App);
+export default App;
