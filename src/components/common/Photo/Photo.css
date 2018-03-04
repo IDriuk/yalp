@@ -15,6 +15,11 @@
   display: block;
 }
 
+.browse-businesses_category--full-width-island:hover {
+  text-decoration: none;
+  box-shadow: 0 6px 12px rgba(0,0,0,.1);
+}
+
 .browse-businesses_category--full-width-island .browse-businesses_category-img {
   width: auto;
   height: 174px;
@@ -26,6 +31,10 @@
   padding-bottom: 12px;
   border: 1px solid #e6e6e6;
   border-radius: 0 0 4px 4px;
+}
+
+.browse-businesses_category--full-width-island:hover .browse-businesses_category-title {
+  color: #0073bb;
 }
 
 .card_photo {

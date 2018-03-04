@@ -36,6 +36,10 @@
     border-bottom: 3px solid transparent;
 }
 
+.tab-nav:not(.tab-nav--paged):hover .tab-link--nav:hover {
+    border-bottom-color: #d32323;
+}
+
 .tab-link--nav .tab-link_label {
     line-height: 30px;
 }

@@ -2,3 +2,13 @@
   display: block;
   padding: 30px;
 }
+
+.app-pitch_item:hover {
+  text-decoration: none;
+  box-shadow: 0 6px 12px rgba(0,0,0,.1);
+  border-color: #0073bb;
+}
+
+.app-pitch_item:hover h4 {
+  color: #0073bb;
+}
