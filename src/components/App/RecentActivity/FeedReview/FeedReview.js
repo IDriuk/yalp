@@ -9,6 +9,15 @@ import feed_hero_1 from '../../../../images/feed_hero_1.jpg';
 import avatar_4 from '../../../../images/avatar_4.jpg';
 
 class FeedReview extends Component {
+  renderTooltip(name) {
+    return (
+      <span className="tooltip-wrapper">
+        <span class="tooltip">
+          {name}
+        </span>
+      </span>
+    );
+  }
   render () {
     return (
       <div className="activity-feed_item activity-feed_item--first-load activity-feed_item--review island island--light" >
@@ -72,6 +81,7 @@ class FeedReview extends Component {
                         size={24}
                         ufc
                       />
+                      {this.renderTooltip("Useful")}
                     </span>
                   </a>
                 </li>
@@ -83,6 +93,7 @@ class FeedReview extends Component {
                         size={24}
                         ufc
                       />
+                      {this.renderTooltip("Funny")}
                     </span>
                   </a>
                 </li>
@@ -94,6 +105,7 @@ class FeedReview extends Component {
                         size={24}
                         ufc
                       />
+                      {this.renderTooltip("Cool")}
                     </span>
                   </a>
                 </li>
@@ -109,6 +121,7 @@ class FeedReview extends Component {
                         size={24}
                         currentColor
                       />
+                      {this.renderTooltip("Send a Compliment")}
                     </span>
                   </a>
                 </div>
